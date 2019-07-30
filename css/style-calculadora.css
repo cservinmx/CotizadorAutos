@@ -15,19 +15,45 @@ h1{color:#ff852c;}
 h2{color:#ff852c;}
 h3{color:#ff852c;}
 label{margin-top: 15px;}
-.demo2 {
+.divgauge {
       /*  position: a;*/
+       border: solid 1px blue;
+        margin: auto;
         width: 20vw;
         height: 20vw;
         box-sizing: border-box;
-        margin:20px
 }
 #main{
   margin: auto;
-  max-width: 1000px;
-  min-height: 900px;
+  max-width: 1100px;
+  min-height: 820px;
+/*  border: solid 1px pink;*/
+}
+.fiz{
+  width: 40%;
+/*  border: solid 1px green;*/
+}
+.fcen{
+  width: 20%;
+  min-width: 80px;
+  min-height: 590px;
+  /*border: solid 1px black;*/
+}
+.fder{
+  width: 40%;
+  min-height: 590px;
+  /*border: solid 1px red;*/
+}
+.botones_end{width: 40%; text-align: center;}
+
+.dimg img{
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  max-width: 383px;
 }
 .space10{height: 10px;}
+.inlines{white-space:nowrap;  text-align: center;}
 .floats{
   float: left;
 }
@@ -39,6 +65,7 @@ label{margin-top: 15px;}
   border: solid 2px #1c325c;
   background-color: #f2f2f2;
   width: 200px;
+/*  height: 40px;*/
   float: right;
   -moz-appearance:none; /* Firefox */
   -webkit-appearance:none; /* Safari and Chrome */
@@ -68,3 +95,32 @@ label{margin-top: 15px;}
 	background: url(../img/checked.jpg);
 	background-size: cover;
 }
+
+.chk2 input[type="checkbox"] {
+	display: none;
+}
+
+.chk2 input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	background: url(../img/unchecked.jpg);
+	background-size: cover;
+	cursor: pointer;
+}
+.chk2 input[type="checkbox"]:checked + label span {
+	background: url(../img/checked.jpg);
+	background-size: cover;
+}
+
+/***/
+@media screen and (max-width: 400px) {
+ .fcen{display: none;}
+ .fiz{width: 100%;}
+ .fder{width: 100%;}
+ .botones_end{width: 100%;}
+}
+
+/***********/
