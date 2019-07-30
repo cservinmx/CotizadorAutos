@@ -8,9 +8,10 @@
 <link rel="icon" type="image/png" href="https://www.renting.cr/images/favicon/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="https://www.renting.cr/images/favicon/manifest.json">
 <link rel="mask-icon" href="https://www.renting.cr/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<!--<link href="css/css_library.min.css" type="text/css" rel="stylesheet">-->
+<link href="css/css_library.min.css" type="text/css" rel="stylesheet">
 <link href="css/jquery-gauge.css" type="text/css" rel="stylesheet">
 <link href="css/style-calculadora.css" type="text/css" rel="stylesheet">
+<link href="css/style-gauge2.css" type="text/css" rel="stylesheet">
 <meta name="theme-color" content="#ffffff">
 <title>Carros disponibles para leasing en Costa Rica, RENTING.cr</title>
 <meta name="description" content="Nuestra flota de vehículos disponibles para renting. Llámenos al Tel: +506 2436-2053. Renting forma parte de la familia Budget Car Rental Costa Rica.">
@@ -37,7 +38,7 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
 
 
 <body>
-<!--  <div class="section">
+  <div class="section">
      <div class="navbar navbar-default">
        <div id="main-nav">
          <div class="navbar-header">
@@ -76,8 +77,8 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
        </div>
      </div>
    </div>
-   <div class="section"> -->
-  <div id="main">
+   <div class="section">
+  <div class="main">
     <!--Div left-->
     <div class="title" id="title"><h1>Cotice su vehiculo</h1></div>
     <br>
@@ -87,7 +88,29 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
     </div>
       <div style="text-align: center;">
         <strong>Precio</strong>
-        <div class="gauge2 divgauge"></div>
+        <!--<div class="gauge2 divgauge"></div>-->
+        <div style="height: 60px;" >
+          <div class="wrapper">
+            <div class="percent-0">
+              <div class="speedometer play">
+                <div class="dial">
+                  <div class="bar">
+                    <div class="half-circle half-circle-bg"></div>
+                    <!--<div class="half-circle half-circle-speed animated"></div>-->
+                    <div class="half-circle half-circle-cover"></div>
+                  </div>
+                  <div class="needle animated">
+                    <div class="inner">
+                      <div class="top"></div>
+                      <div class="bottom"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
         <strong>$1024</strong>
         <p>* Precio no incluye I.V.A.</p>
 
@@ -203,7 +226,8 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
 <div class="botones_end" >
   <a href="#" target="_blank">Ver más información</a>
   <button id="lightbox-btn" class="bt-more-vehicles open-lightbox" type="button">Contáctenos </button>
-  <a href="/planes-renting.php?vehicle=toyota-hilux" class="btn btn-style6" title="Cotice Su Hilux 4x4">Comparar<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+  <button type="button" class="btn btn-style6 btn-addBody">Comparar<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+  <!--<a href="/planes-renting.php?vehicle=toyota-hilux" class="btn btn-style6" title="Cotice Su Hilux 4x4">Comparar<i class="fa fa-angle-right" aria-hidden="true"></i></a>-->
   <br>
   <a href="/planes-renting.php?vehicle=toyota-hilux" class="btn btn-style6" title="Cotice Su Hilux 4x4">Reiniciar<i class="fa fa-angle-right" aria-hidden="true"></i></a>
 </div>
@@ -213,11 +237,91 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
 
 
 
+  <footer class="section section-primary">
+  <div class="footer with-footer-banner" >
+  <div class="container">
+  <div class="row">
+  <div class="fullwidthxs col-xs-8">
+  <div class="wrapper-contactus">
+    <h3>Cont&aacute;ctenos</h3>
+    <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:corporativo@renting.cr" title="Cont&aacute;ctenos">corporativo@renting.cr</a></p>
+    <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+50624362028"  title="Llamenos">+506 2436-2028</a></p>
+    <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+50624362029"  title="Llamenos">+506 2436-2029</a></p>
+    <p class="small-facebook"><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/#!/pages/Budget-Car-Rental-Costa-Rica/104666326240189"  title="S&iacute;ganos en Facebook">S&iacute;ganos en Facebook</a></p>
+  </br>
+  </br>
+    <html>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<body>
 
+  		<div class="w3-container" style="width: 700px; padding:0px;">
+  			<button onclick="document.getElementById('id01').style.display='block'" style="display: block;
+      background-color: #ff852c;
+      padding: 5px;
+      width: 200px;
+      text-align: center;
+      font-size: 15px; border:0px; color:#fff;">Unete a Renting</button>
+
+  			<div id="id01" class="w3-modal" style="z-index: 1000000000000;">
+  				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+  					<div class="w3-center"><br>
+  						<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+              <img src="https://www.renting.cr/images/Re.png" alt="Smiley face" height="50%" width="25%">
+                          <h2>Trabaja con Nosotros</h2>
+  					</div>
+
+  					<div>
+                          <center>
+                              <iframe style=width:100%;height:300px;border:none; src='https://recruit.zoho.com/recruit/WebFormServeServlet?rid=d710d90c2451652ed28e78d6e6603a3ba27af2538bbb42d4b2e9527249c46da0gid3acfae9d8a69b2b8364c3853a4ec929ef0705f514e1b34bacc2556e8f43ed90a'></iframe>
+                          </center>
+                      </div>
+
+  					<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+  						<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+
+  					</div>
+
+  				</div>
+  			</div>
+  		</div>
+
+  	</body>
+  </html>
+
+  </div>
+  </div>
+  <div class="fullwidthxs col-xs-16">
+  <div class="right">
+      <a href="/gestion-calidad.php" target="_blank"><img id="white-logo-footer" src="https://www.renting.cr/images/iso-9001-empresa-certificada-2.png" title="Empresa Certificada ISO 9001" /></a>
+      <a href="https://www.budget.co.cr/" target="_blank"><img id="white-logo-footer" src="https://www.renting.cr/images/white-logo.png" title="With Support of Budget Costa Rica" /></a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </footer>
 
 </body>
 <script>
 
+var speed = {
+  'trigger': '#speed-compare',
+  'target': '.modal_content .speedometer' };
+
+$(function () {
+  $(speed.trigger).on('click', function () {
+    setTimeout(function () {
+      $(speed.target).each(function () {
+        $(this).addClass('play');
+      });
+    }, 1000);
+  });
+});
+$('.btn-addBody').click(function( event ) {
+$('.main').append('<div class="divBody">¡Felicidades! Has insertado un nuevo DIV en el BODY</div>')
+});
         var gauge = new Gauge($('.gauge2'));
         $('.gauge2').gauge({
             values: {

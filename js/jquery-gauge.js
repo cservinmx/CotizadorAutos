@@ -219,7 +219,7 @@ Gauge.prototype = {
         this.appendSVG('polyline', {
             'class'  : 'b-gauge__arrow',
             'points' : points,
-            'fill'   : this.options.arrowColor
+            'fill'   : this.options.arrowColor,
             'height' : this.options.pathsHeight / 2
         });
     },
