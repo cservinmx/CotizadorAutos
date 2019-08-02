@@ -3,7 +3,7 @@
   email: carlos@servin.mx, cservinmx@gmail.com
 */
 html{
-  font-family:sans-serif;
+  font-family: Verdana,sans-serif;
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%
 }
@@ -14,6 +14,7 @@ h1{color:#ff852c;}
 h2{color:#ff852c;}
 h3{color:#ff852c;}
 label{margin-top: 15px;}
+
 .divgauge {
       /*  position: a;*/
         border: solid 1px blue;
@@ -26,31 +27,58 @@ label{margin-top: 15px;}
 /*  background-color: #f2f2f2;*/
   margin: auto;
   max-width: 1100px;
-  min-height: 820px;
-/*  border: solid 1px pink;*/
+  min-height: auto;
+  /*border: solid 1px pink;*/
+}
+.main label{
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: normal;
 }
 .fiz{
-  width: 40%;
-/*  border: solid 1px green;*/
+  width: 45%;
+  min-height: auto;
+  /*border: solid 1px green; */
+}
+.fiz2{
+  width: 45%;
+  margin: auto;
+  min-height: auto;
+  /*border: solid 1px green; */
+  float:left;
 }
 .fcen{
-  width: 20%;
+  width: 10%;
   min-width: 80px;
-  min-height: 590px;
+  min-height: 2px;
+  /*border: solid 1px black;*/
+}
+.fcen2{
+  float:left;
+  width: 10%;
+  min-width: 80px;
+/*  min-height: 190px;*/
   /*border: solid 1px black;*/
 }
 .fder{
-  width: 40%;
-  min-height: 590px;
+  width: 45%;
+  min-height: auto;
   /*border: solid 1px red;*/
 }
-.botones_end{width: 40%; text-align: center;}
+#divmodelo{
+  float:right;
+  width: 45%;
+/*  border: solid 1px purple;*/
+}
+#botones_end{margin-top: -80px;}
+.botones_end{text-align: center;}
 
 .dimg img{
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   height: auto;
-  max-width: 383px;
+  max-width: 500px;
 }
 .space10{height: 10px;}
 .inlines{white-space:nowrap;  text-align: center;}
@@ -59,12 +87,14 @@ label{margin-top: 15px;}
 }
 .title{
   margin: auto;
+  font-family: Arial,sans-serif;
+  font-size: 26.75pt;
   text-align: center;
 }
 .selects{
   border: solid 2px #1c325c;
   background-color: #f2f2f2;
-  width: 200px;
+  width: 300px;
 /*  height: 40px;*/
   float: right;
   -moz-appearance:none; /* Firefox */
@@ -116,11 +146,67 @@ label{margin-top: 15px;}
 }
 
 /***/
-@media screen and (max-width: 400px) {
- .fcen{display: none;}
- .fiz{width: 100%;}
- .fder{width: 100%;}
- .botones_end{width: 100%;}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...}*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (max-width: 992px) {...}*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .fcen{display: none;}
+  .fiz{width: 100%;}
+  .fder{width: 100%;}
+  .botones_end{width: 100%;}
+  .selects{text-align: left;width:150px; }
+  label select{width: 80%;}
+  .fcen2{display: none;}
+  #divmodelo{width: 100%; margin: 0 auto; text-align: center;}
+  .fiz2 #botones_end{clear: both; width: 370px; margin: auto;}
+  #divmodelo{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 30px 10px 0px;
+      }
+  #rightbutt, #depsgar, #prebut, #divimg{
+    /*  width: 80%;*/
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 30px 10px 10px;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .fcen{display: none;}
+  .fiz{width: 100%;}
+  .fder{width: 100%;}
+  .botones_end{width: 100%;}
+  .selects{text-align: left;width:150px; }
+  .fcen2{display: none;}
+  #divmodelo{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 50px 10px 10px;
+      }
+
+  .fiz2 #botones_end{clear: both; width: 100%; margin: auto;}
+  #rightbutt, #depsgar, #prebut{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 30px 10px 10px;
+    }
+
+    #divimg{
+      /*  width: 80%;*/
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 10px 10px 10px;
+      }
 }
 
 /***********/

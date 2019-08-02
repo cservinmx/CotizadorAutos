@@ -17,11 +17,11 @@
 <meta name="description" content="Nuestra flota de vehículos disponibles para renting. Llámenos al Tel: +506 2436-2053. Renting forma parte de la familia Budget Car Rental Costa Rica.">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-gauge.min.js"></script>
-<script type="text/javascript" src="js/jquery-gauge.js"></script>
+<script type="text/javascript" src="js/calculadora.js"></script>
 </head>
 
 <?php
-
+//require(quickstart.php);
 //Esto puede ser un arreglo JSON
 $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
                 'Tvehiculo'=>'Nuevo',
@@ -79,19 +79,38 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
    </div>
    <div class="section">
   <div class="main">
-    <!--Div left-->
-    <div class="title" id="title"><h1>Cotice su vehiculo</h1></div>
-    <br>
+
+    <div class="title" id="title"><h1>Cotice su vehículo</h1></div>
+      <div>
+            <div id="divmodelo" style="white-space:nowrap;">
+
+              <label for="modelo">Modelo:</label>
+              <select id="modelo" name="modelo" class="selects">
+                <option value="1" selected>Hi-lux Doble Cabina 4X4</option>
+                <option value="2">Hi-lux Cabina Sencilla 4X2</option>
+                <option value="3">Prado</option>
+                <option value="4">Fortuner</option>
+                <option value="5">Rav4</option>
+                <option value="6">Rush</option>
+                <option value="7">Corola</option>
+                <option value="8">Yaris</option>
+                <option value="9">Figo</option>
+              </select>
+            </div>
+            <div class="cearboth"></div>
+      </div>
+
     <div class="floats fiz">
       <div class="dimg">
-      <img src="img/yaris.png">
-    </div>
+        <img id="divimg" src="img/hilux.png">
+      </div>
       <div style="text-align: center;">
+        <br>
         <strong>Precio</strong>
         <!--<div class="gauge2 divgauge"></div>-->
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div class="percent-0">
+            <div class="percent-50">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
@@ -109,131 +128,129 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
               </div>
             </div>
           </div>
-
         </div>
         <strong>$1024</strong>
         <p>* Precio no incluye I.V.A.</p>
-
+        <div class="cearboth"></div>
       </div>
-
-
     </div>
-    <!--End Div left-->
-    <!--Div center-->
-    <div class="floats fcen"></div>
-    <!--End Div left-->
-    <!--Div right-->
-    <div class="floats fder">
-      <div style="white-space:nowrap">
 
-        <label for="modelo">Modelo:</label>
-        <select id="modelo" name="modelo" class="selects">
-          <option val="<?= $arreglo['Modelo']; ?>"><?= $arreglo['Modelo']; ?></option>
-          <option val="1">1</option>
-          <option val="2">2</option>
-        </select>
-      </div>
-      <div class="cearboth"></div>
-    </br>
-      <div style="white-space:nowrap">
-        <label for="tvehiculo">Tipo de Vehículo:</label>
-        <select id="tvehiculo" name="tvehiculo" class="selects">
-          <option val="<?= $arreglo['Tvehiculo']; ?>"><?= $arreglo['Tvehiculo']; ?></option>
-          <option val="1">1</option>
-          <option val="2">2</option>
-        </select>
+
+    <div class="floats fcen"></div>
+
+    <div  id="rightbutt" class="floats fder">
+        </br>
+          <div style="white-space:nowrap">
+            <label for="tvehiculo">Tipo de Vehículo:</label>
+            <select id="tvehiculo" name="tvehiculo" class="selects">
+              <option val="Nuevo">Nuevo</option>
+              <option val="Seminuevo">Seminuevo</option>
+            </select>
+         </div>
+         <div class="cearboth"></div>
+         </br>
+         <div style="white-space:nowrap">
+           <label for="transmision">Transmisión:</label>
+           <select id="transmision" name="transmision" class="selects">
+             <option val="1">Manual</option>
+             <option val="2">Automática</option>
+           </select>
+        </div>
+        <div class="cearboth"></div>
+        </br>
+        <div style="white-space:nowrap">
+          <label for="pcontrato">Plazo del contrato:</label>
+          <select id="pcontrato" name="pcontrato" class="selects">
+            <option val="36 Meses">36 Meses</option>
+            <option val="24 Meses">24 Meses</option>
+            <option val="12 Meses">12 Meses</option>
+          </select>
+       </div>
+       <div class="cearboth"></div>
+        </br>
+       <div style="white-space:nowrap">
+         <label for="kilometraje">Kilometraje:</label>
+         <select id="kilometraje" name="kilometraje" class="selects">
+
+           <option val="3000">3000</option>
+           <option val="2500">2500</option>
+         </select>
+       </div>
+       <div class="cearboth"></div>
+       </br>
+     ¿Necesita Vehículo Sustituto?
+     <div class="space10"></div>
+     <div class="inlines">
+       <div id="check1" class="chk">
+           Si <input type="checkbox" id="op-1-1" name="vsustituto[]" value="Si" >
+           <label for="op-1-1"><span></span></label>
+           No <input type="checkbox" id="op-1-2" name="vsustituto[]" value="No" >
+           <label for="op-1-2"><span></span></label>
+       </div>
+       <div class="space10"></div>
+     </div>
+
+     <div style="white-space:nowrap">
+       <label for="tcobertura">Tipo de cobertura:</label>
+       <select id="tcobertura" name="tcobertura" class="selects">
+         <option val="Total">Total</option>
+         <option val="Con Deducible">Con Deducible</option>
+       </select>
      </div>
      <div class="cearboth"></div>
-     </br>
-     <div style="white-space:nowrap">
-       <label for="transmision">Transmisión:</label>
-       <select id="transmision" name="transmision" class="selects">
-         <option val="<?= $arreglo['Transmision']; ?>"><?= $arreglo['Transmision']; ?></option>
-         <option val="1">1</option>
-         <option val="2">2</option>
-       </select>
-    </div>
-    <div class="cearboth"></div>
     </br>
-    <div style="white-space:nowrap">
-      <label for="pcontrato">Plazo del contrato:</label>
-      <select id="pcontrato" name="pcontrato" class="selects">
-        <option val="<?= $arreglo['Plazo']; ?>"><?= $arreglo['Plazo']; ?></option>
-        <option val="1">1</option>
-        <option val="2">2</option>
-      </select>
-   </div>
-   <div class="cearboth"></div>
-</br>
-   <div style="white-space:nowrap">
-     <label for="kilometraje">Kilometraje:</label>
-     <select id="kilometraje" name="kilometraje" class="selects">
-       <option val="<?= $arreglo['Kilometraje']; ?>"><?= $arreglo['Kilometraje']; ?></option>
-       <option val="1">1</option>
-       <option val="2">2</option>
-     </select>
-   </div>
-   <div class="cearboth"></div>
-  </br>
-      ¿Necesita Vehículo Sustituto?
-      <div class="space10"></div>
-      <div class="inlines">
-        <div id="check1" class="chk">
-            Si <input type="checkbox" id="op-1-1" name="vsustituto[]" value="Si" >
-            <label for="op-1-1"><span></span></label>
-            No <input type="checkbox" id="op-1-2" name="vsustituto[]" value="No" >
-            <label for="op-1-2"><span></span></label>
-        </div>
-        <div class="space10"></div>
+       ¿Necesita Taller móvil para mantenimiento?
+       <div class="inlines">
+           <div id="check2" class="chk">
+               Si <input type="checkbox" id="op-2-1" name="tmovil[]" value="Si" >
+               <label for="op-2-1"><span></span></label>
+               No <input type="checkbox" id="op-2-2" name="tmovil[]" value="No" >
+               <label for="op-2-2"><span></span></label>
+           </div>
+           <div class="space10"></div>
+       </div>
+
+
     </div>
 
-      <div style="white-space:nowrap">
-        <label for="tcobertura">Tipo de cobertura:</label>
-        <select id="tcobertura" name="tcobertura" class="selects">
-          <option val="<?= $arreglo['Cobertura']; ?>"><?= $arreglo['Cobertura']; ?></option>
-          <option val="1">1</option>
-          <option val="2">2</option>
-        </select>
-      </div>
-      <div class="cearboth"></div>
-    </br>
-        ¿Necesita Taller móvil para mantenimiento?
-        <div class="space10"></div>
-        <div class="inlines">
-          <div id="check2" class="chk">
-              Si <input type="checkbox" id="op-2-1" name="tmovil[]" value="Si" >
-              <label for="op-2-1"><span></span></label>
-              No <input type="checkbox" id="op-2-2" name="tmovil[]" value="No" >
-              <label for="op-2-2"><span></span></label>
+    <div>
+          <div>
+            <div class="fiz2"><br></div>
+            <div class="fcen2"><br></div>
+              <div id="depsgar" class="fder" style="float:left;">
+                <div style="white-space:nowrap">
+                  <label for="dgarantia">Depósito de garantía:</label>
+                  <select id="dgarantia" name="dgarantia" class="selects">
+                    <option val="1">2 Depósitos</option>
+                    <option val="2">3 Depósitos</option>
+                    <option val="2">4 Depósitos o más</option>
+                  </select>
+                </div>
+              </div>
           </div>
-          <div class="space10"></div>
-      </div>
 
-      </br>
 
-      <div style="white-space:nowrap">
-        <label for="dgarantia">Depósito de garantía:</label>
-        <select id="dgarantia" name="dgarantia" class="selects">
-          <option val="<?= $arreglo['Deposito']; ?>"><?= $arreglo['Deposito']; ?></option>
-          <option val="1">1</option>
-          <option val="2">2</option>
-        </select>
-      </div>
-      </br>
+        <div>
+          <div id="clear_botones_end" class="cearboth"></div>
+          <div id="prebut" class="fiz2">
+
+            <div id="botones_end" class="botones_end" >
+              <a href="#" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+              <button id="lightbox-btn" class="bt-more-vehicles open-lightbox" type="button">Contáctenos </button>
+              <button type="button" class="btn btn-style6 btn-addBody">Comparar<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              <!--<a href="/planes-renting.php?vehicle=toyota-hilux" class="btn btn-style6" title="Cotice Su Hilux 4x4">Comparar<i class="fa fa-angle-right" aria-hidden="true"></i></a>-->
+              <br>
+              <a id="breiniciar" href="#" class="btn btn-style6" title="Cotice Su Hilux 4x4">Reiniciar<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+         </div>
     </div>
-    <!--Div right-->
-<div class="cearboth"></div>
-<div class="botones_end" >
-  <a href="#" target="_blank">Ver más información</a>
-  <button id="lightbox-btn" class="bt-more-vehicles open-lightbox" type="button">Contáctenos </button>
-  <button type="button" class="btn btn-style6 btn-addBody">Comparar<i class="fa fa-angle-right" aria-hidden="true"></i></button>
-  <!--<a href="/planes-renting.php?vehicle=toyota-hilux" class="btn btn-style6" title="Cotice Su Hilux 4x4">Comparar<i class="fa fa-angle-right" aria-hidden="true"></i></a>-->
-  <br>
-  <a href="/planes-renting.php?vehicle=toyota-hilux" class="btn btn-style6" title="Cotice Su Hilux 4x4">Reiniciar<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-</div>
+
 
 
   </div>
+
+  <div class="cearboth" style="height: 20px;"></div>
 
 
 
@@ -304,51 +321,7 @@ $arreglo=array( 'Modelo'=>'Hi-Lux Doble Cabina 4x4',
   </footer>
 
 </body>
-<script>
 
-var speed = {
-  'trigger': '#speed-compare',
-  'target': '.modal_content .speedometer' };
-
-$(function () {
-  $(speed.trigger).on('click', function () {
-    setTimeout(function () {
-      $(speed.target).each(function () {
-        $(this).addClass('play');
-      });
-    }, 1000);
-  });
-});
-$('.btn-addBody').click(function( event ) {
-$('.main').append('<div class="divBody">¡Felicidades! Has insertado un nuevo DIV en el BODY</div>')
-});
-        var gauge = new Gauge($('.gauge2'));
-        $('.gauge2').gauge({
-            values: {
-                0 : '450',
-              /*  20: '2',
-                40: '4',
-                60: '6',
-                80: '8',*/
-                100: '2022'
-            },
-            colors: {
-                0 : '#f00',
-                30: '#ffa500',
-                70: '#378618'
-            },
-            angles: [
-                180,
-                360
-            ],
-            lineWidth: 20,
-            /*arrowWidth: 20,*/
-            arrowColor: '#ccc',
-            inset:false,
-
-            value: 30
-        });
-    </script>
 <script type="text/javascript" src="https://www.renting.cr/js/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.renting.cr/js/jquery-ui.min.js?date=20180927"></script>
 <script type="text/javascript" src="https://www.renting.cr/js/custom.min.js?date=20180927"></script>

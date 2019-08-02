@@ -65,8 +65,13 @@ $service = new Google_Service_Sheets($client);
 
 // Prints the names and majors of students in a sample spreadsheet:
 // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-$spreadsheetId = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms';
+$spreadsheetId = '1KaPdzDtoTQy5xFz26gC0J-LjstVvTnn4iaV6Ne96Mrg';
+/*$range = 'Class Data!A2:E';*/
+
 $range = 'Class Data!A2:E';
+$range = 'Class Data!A1:B';
+$range = 'A:B';
+
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 $values = $response->getValues();
 
@@ -76,7 +81,7 @@ if (empty($values)) {
     print "Name, Major:\n";
     foreach ($values as $row) {
         // Print columns A and E, which correspond to indices 0 and 4.
-        printf("%s, %s\n", $row[0], $row[4]);
+        printf("%s, %s\n", $row[0], $row[1]);
     }
 }
 ?>
