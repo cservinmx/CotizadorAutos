@@ -2,158 +2,195 @@
   Author: Carlos Servín Romero
   email: carlos@servin.mx, cservinmx@gmail.com
 */
-html{
-  font-family: Verdana,sans-serif;
-  -ms-text-size-adjust:100%;
-  -webkit-text-size-adjust:100%
-}
-body{
-  color: #1c325c;
-}
-h1{color:#ff852c;}
-h2{color:#ff852c;}
-h3{color:#ff852c;}
-label{margin-top: 15px;}
+.inner-right-floats{width: 85%;}
+  .divgauge {
+          border: solid 1px blue;
+          margin: auto;
+          width: 20vw;
+          height: 20vw;
+          box-sizing: border-box;
+  }
 
-.divgauge {
-      /*  position: a;*/
-        border: solid 1px blue;
-        margin: auto;
-        width: 20vw;
-        height: 20vw;
-        box-sizing: border-box;
-}
-.main{
-/*  background-color: #f2f2f2;*/
-  margin: auto;
-  max-width: 1100px;
-  min-height: auto;
-  /*border: solid 1px pink;*/
-}
-.main label{
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: normal;
-}
-.fiz{
-  width: 45%;
-  min-height: auto;
-  /*border: solid 1px green; */
-}
-.fiz2{
-  width: 45%;
-  margin: auto;
-  min-height: auto;
-  /*border: solid 1px green; */
-  float:left;
-}
-.fcen{
-  width: 10%;
-  min-width: 80px;
-  min-height: 2px;
-  /*border: solid 1px black;*/
-}
-.fcen2{
-  float:left;
-  width: 10%;
-  min-width: 80px;
-/*  min-height: 190px;*/
-  /*border: solid 1px black;*/
-}
-.fder{
-  width: 45%;
-  min-height: auto;
-  /*border: solid 1px red;*/
-}
-#divmodelo{
-  float:right;
-  width: 45%;
-/*  border: solid 1px purple;*/
-}
-#botones_end{margin-top: -80px;}
-.botones_end{text-align: center;}
+  .main{
+    /*border: solid 1px pink;*/
+    margin: auto;
+    max-width: 1266px;
+    min-height: auto;
+    font-family: Verdana,sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+  }
 
-.dimg img{
-  width: 100%;
-  margin: auto;
-  height: auto;
-  max-width: 500px;
-}
-.space10{height: 10px;}
-.inlines{white-space:nowrap;  text-align: center;}
-.floats{
-  float: left;
-}
-.title{
-  margin: auto;
-  font-family: Arial,sans-serif;
-  font-size: 26.75pt;
-  text-align: center;
-}
-.selects{
-  border: solid 2px #1c325c;
-  background-color: #f2f2f2;
-  width: 300px;
-/*  height: 40px;*/
-  float: right;
-  -moz-appearance:none; /* Firefox */
-  -webkit-appearance:none; /* Safari and Chrome */
-  appearance:none;
-   background: url(../img/selectbutton.jpg) no-repeat right #f2f2f2;
-}
+  .main h1{
+          color:#ff852c;
+          font-family: Arial,sans-serif;
+          /*font-size: 26px;*/
+  }
 
+  .main label, .main p, .main .chk, .main a {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal;
+    /*font-size: 15.24pt;*/
+    font-size: 15px;
+  }
 
-.cearboth{
-  clear: both;
-}
-/****/
-.chk input[type="checkbox"] {
-	display: none;
-}
-.chk input[type="checkbox"] + label span {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin: -1px 4px 0 0;
-	vertical-align: middle;
-	background: url(../img/unchecked.jpg);
-	background-size: cover;
-	cursor: pointer;
-}
-.chk input[type="checkbox"]:checked + label span {
-	background: url(../img/checked.jpg);
-	background-size: cover;
-}
+  .main .price_title{
+    font-family: Verdana,sans-serif;
+    /*font-size: 13.84pt;*/
+    font-size: 13px;
+  }
+  .main .price{
+    font-family: Verdana,sans-serif;
+    /*font-size: 21.8pt;*/
+    font-size: 21px;
+  }
+  .main .price_iva{
+    font-family: Verdana,sans-serif;
+    /*font-size: 14pt;*/
+    font-size: 14px;
+    color: #1d2e5e;
+  }
+.main select{ /*font-size: 15.24pt;*/ font-size: 15px; }
+  .fiz{
+    width: 41.77%;
+    min-height: auto;
+   /*border: solid 1px green; */
+  }
+  .fiz2{
+    width: 41.77%;
+    margin: auto;
+    min-height: auto;
+    border: solid 1px green; /**/
+    float:left;
+  }
+  .fcen{
+    width: 17.75%;
+    min-width: 80px;
+    min-height: 2px;
+    /*border: solid 1px black;*/
+  }
+  .fder{
+    width: 39.5%;
+    min-height: auto;
+    /*border: solid 1px red;*/
+  }
+  #divmodelo{
+    float:right;
+    width: 40.5%;
+    padding-right: 130px;
+    /*border: solid 1px purple;*/
+  }
+  #botones_end{margin-top: 40px;}
+  .btt{
+        font-family: Verdana,sans-serif;
+        /*font-size: 14pt;*/
+        font-size: 14px;
+        color: #FFF;
+        cursor: pointer;
+      }
+  .main .btt a:hover {text-decoration: none;}
+  .blue{  background-color: #1d2e5e;
+          width: 182px;
+          padding: 7px 0;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+        }
+  .orange{
+          background-color: #ed5505;
+          width: 319px;
+          padding: 7px 0;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+        }
+  .botones_end{text-align: center;}
+  .prebut{margin: 0 auto; text-align: center;}
+  #prebut2{display:none;}
+  .dimg img{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    max-width: 500px;
+  }
+  .space10{height: 10px;}
+  .space20{height: 20px;}
+  .space30{height: 36px;}
+  .vspase20{width: 20px;}
+  .vspase{width: 100px;}
+  .inlines{white-space:nowrap; }
+  .float-left{
+    float: left;
+  }
+  .title{
+    margin: auto;
+    font-family: Arial,sans-serif;
+    /*font-size: 26.75pt;*/
+    font-size: 26px;
+    text-align: center;
+  }
+  .selects{
+    border: solid 2px #1c325c;
+    background-color: #f2f2f2;
+    width: 200px;
+    height: 40px;
+    padding: 1px 20px 1px 3px;
+    cursor: pointer;
+    float: right;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+     background: url(../img/selectbutton.jpg) no-repeat right #f2f2f2;
+  }
+  .cearboth{clear: both;}
+  .chk input[type="checkbox"] { display: none; }
+  .chk input[type="checkbox"] + label span {
+  	display: inline-block;
+  	width: 20px;
+  	height: 20px;
+  	vertical-align: middle;
+  	background: url(../img/unchecked.jpg);
+  	background-size: cover;
+  	cursor: pointer;
+  }
+  .chk input[type="checkbox"]:checked + label span {
+  	background: url(../img/checked.jpg);
+  	background-size: cover;
+  }
 
-.chk2 input[type="checkbox"] {
-	display: none;
-}
+  .chk2 input[type="checkbox"] {
+  	display: none;
 
-.chk2 input[type="checkbox"] + label span {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin: -1px 4px 0 0;
-	vertical-align: middle;
-	background: url(../img/unchecked.jpg);
-	background-size: cover;
-	cursor: pointer;
-}
-.chk2 input[type="checkbox"]:checked + label span {
-	background: url(../img/checked.jpg);
-	background-size: cover;
-}
+  }
 
-/***/
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {...}*/
+  .chk2 input[type="checkbox"] + label span {
+  	display: inline-block;
+  	width: 20px;
+  	height: 20px;
+  	margin: -2px 4px 0 0;
+  	vertical-align: middle;
+  	background: url(../img/unchecked.jpg);
+  	background-size: cover;
+  	cursor: pointer;
+  }
+  .chk2 input[type="checkbox"]:checked + label span {
+  	background: url(../img/checked.jpg);
+  	background-size: cover;
+  }
+
 
 /* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (max-width: 992px) {...}*/
+@media only screen and (max-width: 992px) {
+.main{ padding: 0 20px 0 20px;}
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .inner-right-floats{width: 100%; text-align: left;}
+  .main{ padding: 0 20px 0 20px;}
   .fcen{display: none;}
   .fiz{width: 100%;}
   .fder{width: 100%;}
@@ -161,52 +198,111 @@ label{margin-top: 15px;}
   .selects{text-align: left;width:150px; }
   label select{width: 80%;}
   .fcen2{display: none;}
+  .dimg{
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+
+  }
+  #prebut{display:none;}
+  #prebut2{display: inline;}
   #divmodelo{width: 100%; margin: 0 auto; text-align: center;}
-  .fiz2 #botones_end{clear: both; width: 370px; margin: auto;}
+  #botones_end{clear: both; width: 370px; margin: auto;}
   #divmodelo{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding: 0 30px 10px 0px;
+        padding: 0 192px 10px 0px;
       }
-  #rightbutt, #depsgar, #prebut, #divimg{
+  #rightbutt, #depsgar{
     /*  width: 80%;*/
       margin: 0 auto;
-      text-align: center;
-      padding: 0 30px 10px 10px;
+      /*text-align: center;*/
+      padding: 0 0 10px 10px;
     }
+    #divimg{
+      width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
 
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .inner-right-floats{width: 100%;}
+  .main{ padding: 0 20px 0 20px;}
+  .main h1{font-size: 39.9pt;}
+  .main label, .main p, .main .chk, .main a { font-size: 18.85pt; }
+  .main .price{ font-size: 18px; }
   .fcen{display: none;}
   .fiz{width: 100%;}
   .fder{width: 100%;}
   .botones_end{width: 100%;}
   .selects{text-align: left;width:150px; }
   .fcen2{display: none;}
+  #prebut{display:none;}
+  #prebut2{display: inline;}
   #divmodelo{
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding: 0 50px 10px 10px;
+        padding: 0 192px 10px 10px;
       }
 
-  .fiz2 #botones_end{clear: both; width: 100%; margin: auto;}
-  #rightbutt, #depsgar, #prebut{
+  #botones_end{ width: 100%; margin: 0 auto;}
+  #rightbutt, #depsgar{
       width: 100%;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
       padding: 0 30px 10px 10px;
     }
 
     #divimg{
       /*  width: 80%;*/
         margin: 0 auto;
+        text-align: left;
+        padding: 0 10px 10px 10px;
+      }
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  .main{max-width: 400px;  overflow-x: hidden;}
+  .inner-right-floats{width: 100%;}
+  .main{ padding: 0 20px 0 20px;}
+  .main h1{font-size: 26px;}
+  .main label, .main p, .main .chk, .main a { font-size: 16px; }
+  .main .price{ font-size: 18px; }
+  .fcen{display: none;}
+  .fiz{width: 100%;}
+  .fder{width: 100%;}
+  .botones_end{width: 100%;}
+  .selects{text-align: left;width:150px; }
+  .fcen2{display: none;}
+  #prebut{display:none;}
+  #prebut2{display: inline;}
+  #divmodelo{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 80px 10px 10px;
+      }
+
+  #botones_end{ width: 100%; margin: 0 auto;}
+  #rightbutt, #depsgar{
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      padding: 0 30px 10px 10px;
+    }
+
+    #divimg{
+        margin: 0 auto;
         text-align: center;
         padding: 0 10px 10px 10px;
       }
+
 }
 
 /***********/

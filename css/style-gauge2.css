@@ -10,10 +10,13 @@
 
 .speedometer {
   overflow: hidden;
-  width: 210px;
-  height: 120px;
+  width: 236px;
+  height: 140px;
   position: relative;
   margin: 60px auto;
+  background: url(../img/tacometro.png) no-repeat;
+
+  /*border: solid 1px red;*/
 }
 .speedometer::after {
   background-color: #fff;
@@ -42,11 +45,11 @@
   z-index: 50;
 }
 .speedometer .needle .inner {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMSBUaW55Ly9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLXRpbnkuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEycHgiIGhlaWdodD0iMTEzcHgiIHZpZXdCb3g9IjAgMCAxMiAxMTMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiM2NzY3NjciIGQ9Ik0wLjA2NywxMDYuMzQ0Yy0wLjAxNiwwLjEzNS0wLjAyNCwwLjU0My0wLjAzMiwwLjY4MWwtMC4wMTIsMC40MTFoMC4wMDVjLTAuMDAxLDAtMC4wMTEtMC4xNDYtMC4wMTEtMC4wODFjMC4wMDYsMy4xOSwyLjY4OSw1LjYzNSw1Ljk5NSw1LjYyOWMzLjMwNC0wLjAwNyw1Ljk3OC0yLjY2Niw1Ljk3MS01Ljg1NmMtMC4wMDEtMC40MTUtMC4wNS0wLjg1My0wLjEzNi0xLjI0Mkw2LjAxMiwwLjEyNEwwLjA2NywxMDYuMzQ0eiIvPjwvc3ZnPg==);
+  background-image: url('../img/needle.png');
   background-size: 95%;
-  margin-top: 15px;
+  margin-top: 30px;
   height: 92px;
-  width: 11px;
+  width: 19px;
   position: relative;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -70,9 +73,9 @@
   height: 95px;
 }
 .speedometer .half-circle {
-  height: 85px;
+  height: 90px;
   width: 180px;
-  border-radius: 190px 190px 0 0;
+  border-radius: 180px 180px 0 0;
   margin: 0 auto;
   position: absolute;
   left: 0;
@@ -84,7 +87,7 @@
 .speedometer .half-circle-bg {
   /*background-color: #e0f3fc;
   background-color: #FD00ff;*/
-  background-image: linear-gradient(to right, #990000 0%, #33cc33 100%);
+  background-image: linear-gradient(to right, #a3231e 0%, #7db03f 70%);
   z-index: 10;
 }
 .speedometer .half-circle-speed {
@@ -93,9 +96,9 @@
 }
 .speedometer .half-circle-cover {
   background-color: #fff;
-  height: 85px;
-  width: 160px;
-  border-radius: 190px 190px 0 0;
+  height: 90px;
+  width: 170px;
+  border-radius: 180px 180px 0 0;
   background: #fff;
   margin: 0 auto;
   top: auto;
@@ -354,24 +357,51 @@
 .percent-100-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
-.percent-66 .speedometer.play .animated,
-.percent-66-sm .speedometer.play .animated {
-  -webkit-animation-name: to-66;
-          animation-name: to-66;
+.percent-95 .speedometer.play .animated,
+.percent-95-sm .speedometer.play .animated {
+  -webkit-animation-name: to-95;
+          animation-name: to-95;
 }
 
-.percent-66-static .animated,
-.percent-66-static-sm .animated {
+.percent-95-static .animated,
+.percent-95-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-60.12deg);
-          transform: rotate(-60.12deg);
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+}
+.percent-80 .speedometer.play .animated,
+.percent-80-sm .speedometer.play .animated {
+  -webkit-animation-name: to-80;
+          animation-name: to-80;
 }
 
+.percent-80-static .animated,
+.percent-80-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-36deg);
+          transform: rotate(-36deg);
+}
+
+.percent-70 .speedometer.play .animated,
+.percent-70-sm .speedometer.play .animated {
+  -webkit-animation-name: to-70;
+          animation-name: to-70;
+}
+
+.percent-70-static .animated,
+.percent-70-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
+}
+/*
 .percent-60 .speedometer.play .animated,
 .percent-60-sm .speedometer.play .animated {
   -webkit-animation-name: to-60;
@@ -384,13 +414,27 @@
           animation: none;
   -webkit-transform: rotate(-72deg);
           transform: rotate(-72deg);
+}*/
+.percent-55 .speedometer.play .animated,
+.percent-55-sm .speedometer.play .animated {
+  -webkit-animation-name: to-55;
+          animation-name: to-55;
 }
+
+.percent-55-static .animated,
+.percent-55-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-81deg);
+          transform: rotate(-81deg);
+}
+
 .percent-50 .speedometer.play .animated,
 .percent-50-sm .speedometer.play .animated {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
-
+/*
 .percent-40 .speedometer.play .animated,
 .percent-40-sm .speedometer.play .animated {
   -webkit-animation-name: to-40;
@@ -403,56 +447,56 @@
           animation: none;
   -webkit-transform: rotate(-108deg);
           transform: rotate(-108deg);
+}*/
+
+.percent-35 .speedometer.play .animated,
+.percent-35-sm .speedometer.play .animated {
+  -webkit-animation-name: to-35;
+          animation-name: to-35;
 }
 
-.percent-33 .speedometer.play .animated,
-.percent-33-sm .speedometer.play .animated {
-  -webkit-animation-name: to-33;
-          animation-name: to-33;
-}
-
-.percent-33-static .animated,
-.percent-33-static-sm .animated {
+.percent-35-static .animated,
+.percent-35-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-120.06deg);
-          transform: rotate(-120.06deg);
+  -webkit-transform: rotate(-117deg);
+          transform: rotate(-117deg);
 }
 
-.percent-30 .speedometer.play .animated,
-.percent-30-sm .speedometer.play .animated {
-  -webkit-animation-name: to-30;
-          animation-name: to-30;
+.percent-20 .speedometer.play .animated,
+.percent-20-sm .speedometer.play .animated {
+  -webkit-animation-name: to-20;
+          animation-name: to-20;
 }
 
-.percent-30-static .animated,
-.percent-30-static-sm .animated {
+.percent-20-static .animated,
+.percent-20-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-126deg);
-          transform: rotate(-126deg);
+  -webkit-transform: rotate(-144deg);
+          transform: rotate(-144deg);
 }
 
-.percent-16 .speedometer.play .animated,
-.percent-16-sm .speedometer.play .animated {
-  -webkit-animation-name: to-16;
-          animation-name: to-16;
+.percent-10 .speedometer.play .animated,
+.percent-10-sm .speedometer.play .animated {
+  -webkit-animation-name: to-10;
+          animation-name: to-10;
 }
 
 .percent-16-static .animated,
 .percent-16-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-150.12deg);
-          transform: rotate(-150.12deg);
+  -webkit-transform: rotate(-162deg);
+          transform: rotate(-162deg);
 }
 
 .percent-0-static .animated,
 .percent-0-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-180.0deg);
-          transform: rotate(-180.0deg);
+  -webkit-transform: rotate(-150.12deg);
+          transform: rotate(-150.12deg);
 }
 
 @-webkit-keyframes to-100 {
@@ -476,44 +520,44 @@
             transform: rotate(0deg);
   }
 }
-@-webkit-keyframes to-66 {
+@-webkit-keyframes to-95 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-60.12deg);
-            transform: rotate(-60.12deg);
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
   }
 }
-@keyframes to-66 {
+@keyframes to-80 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-60.12deg);
-            transform: rotate(-60.12deg);
+    -webkit-transform: rotate(-36deg);
+            transform: rotate(-36deg);
   }
 }
-@-webkit-keyframes to-60 {
+@-webkit-keyframes to-70 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-72deg);
-            transform: rotate(-72deg);
+    -webkit-transform: rotate(-54deg);
+            transform: rotate(-54deg);
   }
 }
-@keyframes to-60 {
+@keyframes to-55 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-72deg);
-            transform: rotate(-72deg);
+    -webkit-transform: rotate(-81deg);
+            transform: rotate(-81deg);
   }
 }
 @keyframes to-50 {
@@ -526,34 +570,34 @@
             transform: rotate(-90deg);
   }
 }
-@-webkit-keyframes to-40 {
+@-webkit-keyframes to-35 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-108deg);
-            transform: rotate(-108deg);
+    -webkit-transform: rotate(-117deg);
+            transform: rotate(-117deg);
   }
 }
-@keyframes to-40 {
+@keyframes to-20 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-108deg);
-            transform: rotate(-108deg);
+    -webkit-transform: rotate(-144deg);
+            transform: rotate(-144deg);
   }
 }
-@-webkit-keyframes to-33 {
+@-webkit-keyframes to-10 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-120.06deg);
-            transform: rotate(-120.06deg);
+    -webkit-transform: rotate(-162deg);
+            transform: rotate(-162deg);
   }
 }
 @keyframes to-33 {

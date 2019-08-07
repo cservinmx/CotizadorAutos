@@ -140,8 +140,8 @@
           <div style="white-space:nowrap">
             <label for="tvehiculo">Tipo de vehículo</label>
             <select id="tvehiculo" name="tvehiculo" class="selects">
-              <option val="0">Nuevo</option>
-              <option val="1">Seminuevo</option>
+              <option value="0">Nuevo</option>
+              <option value="1">Seminuevo</option>
             </select>
          </div>
          <div class="cearboth"></div>
@@ -149,7 +149,7 @@
          <div style="white-space:nowrap">
            <label for="transmision">Transmisión</label>
            <select id="transmision" name="transmision" class="selects">
-             <option val="0">Manual</option>
+             <option value="0">Manual</option>
            </select>
         </div>
         <div class="cearboth"></div>
@@ -157,9 +157,9 @@
         <div style="white-space:nowrap">
           <label for="pcontrato">Plazo del contrato</label>
           <select id="pcontrato" name="pcontrato" class="selects">
-            <option val="0">36 Meses</option>
-            <option val="1">24 Meses</option>
-            <option val="2">12 Meses</option>
+            <option value="0">36 Meses</option>
+            <option value="1">24 Meses</option>
+            <option value="2">12 Meses</option>
           </select>
        </div>
        <div class="cearboth"></div>
@@ -179,12 +179,12 @@
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
 
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto[]" value="Si" >
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto[]" value="1" >
            <label for="op-1-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto[]" value="No">
+           No <input type="checkbox" id="op-1-2" name="vsustituto[]" value="0">
          <label for="op-1-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
@@ -202,12 +202,12 @@
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil[]" value="Si" >
+               Sí <input type="checkbox" id="op-2-1" name="tmovil[]" value="1" >
                <label for="op-2-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil[]" value="No" >
+               No <input type="checkbox" id="op-2-2" name="tmovil[]" value="0" >
                <label for="op-2-2"><span></span></label>
            </div>
            <div class="cearboth"></div>
@@ -245,23 +245,23 @@
 
   <div class="cearboth" style="height: 20px;"></div>
 
-
+  <div style="border: solid 1px gray; height: 100%">
+    Div debug JSONPHP
+    <?php include ('json_data.php'); ?>
+    <input type="hidden" id="36m" >
+    <input type="hidden" id="24m" >
+    <input type="hidden" id="12m" >
+    <input type="hidden" id="24m_s" >
+    <input type="hidden" id="12m_s" >
+    <script>
+      $("#36m").val('<?php echo json_encode($array_36m); ?>');
+      $("#24m").val('<?php echo json_encode($array_24m); ?>');
+      $("#12m").val('<?php echo json_encode($array_12m); ?>');
+      $("#24m_s").val('<?php echo json_encode($array_24m_s); ?>');
+      $("#12m_s").val('<?php echo json_encode($array_12m_s); ?>');
+    </script>
  </div>
 
-
- <?php include ('json_data.php'); ?>
- <input type="hidden" id="36m" >
- <input type="hidden" id="24m" >
- <input type="hidden" id="12m" >
- <input type="hidden" id="24m_s" >
- <input type="hidden" id="12m_s" >
- <script>
-   $("#36m").val('<?php echo json_encode($array_36m); ?>');
-   $("#24m").val('<?php echo json_encode($array_24m); ?>');
-   $("#12m").val('<?php echo json_encode($array_12m); ?>');
-   $("#24m_s").val('<?php echo json_encode($array_24m_s); ?>');
-   $("#12m_s").val('<?php echo json_encode($array_12m_s); ?>');
- </script>
 
   <footer class="section section-primary">
   <div class="footer with-footer-banner" >
