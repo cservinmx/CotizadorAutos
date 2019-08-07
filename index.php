@@ -140,8 +140,8 @@
           <div style="white-space:nowrap">
             <label for="tvehiculo">Tipo de vehículo</label>
             <select id="tvehiculo" name="tvehiculo" class="selects">
-              <option val="0">Nuevo</option>
-              <option val="1">Seminuevo</option>
+              <option value="0">Nuevo</option>
+              <option value="1">Seminuevo</option>
             </select>
          </div>
          <div class="cearboth"></div>
@@ -149,7 +149,8 @@
          <div style="white-space:nowrap">
            <label for="transmision">Transmisión</label>
            <select id="transmision" name="transmision" class="selects">
-             <option val="0">Manual</option>
+             <option value="0">Manual</option>
+             <option value="0">Automática</option>
            </select>
         </div>
         <div class="cearboth"></div>
@@ -157,9 +158,9 @@
         <div style="white-space:nowrap">
           <label for="pcontrato">Plazo del contrato</label>
           <select id="pcontrato" name="pcontrato" class="selects">
-            <option val="0">36 Meses</option>
-            <option val="1">24 Meses</option>
-            <option val="2">12 Meses</option>
+            <option value="0">36 Meses</option>
+            <option value="1">24 Meses</option>
+            <option value="2">12 Meses</option>
           </select>
        </div>
        <div class="cearboth"></div>
@@ -167,9 +168,8 @@
        <div style="white-space:nowrap">
          <label for="kilometraje">Kilometraje</label>
          <select id="kilometraje" name="kilometraje" class="selects">
-
-           <option val="0">3000</option>
-           <option val="1">2500</option>
+           <option value="0">3000</option>
+           <option value="1">2500</option>
          </select>
        </div>
        <div class="cearboth"></div>
@@ -192,8 +192,8 @@
      <div style="white-space:nowrap">
        <label for="tcobertura">Tipo de cobertura</label>
        <select id="tcobertura" name="tcobertura" class="selects">
-         <option val="0">Total</option>
-         <option val="1">Con deducible</option>
+         <option value="0">Total</option>
+         <option value="1">Con deducible</option>
        </select>
      </div>
      <div class="cearboth"></div>
@@ -217,9 +217,9 @@
          <div style="white-space:nowrap">
            <label for="dgarantia">Depósito de garantía</label>
            <select id="dgarantia" name="dgarantia" class="selects">
-             <option val="0">2 Depósitos</option>
-             <option val="1">3 Depósitos</option>
-             <option val="2">4 Depósitos o más</option>
+             <option value="0">2 Depósitos</option>
+             <option value="1">3 Depósitos</option>
+             <option value="2">4 Depósitos o más</option>
            </select>
          </div>
        </div>

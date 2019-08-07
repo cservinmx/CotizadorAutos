@@ -168,9 +168,8 @@
        <div style="white-space:nowrap">
          <label for="kilometraje">Kilometraje</label>
          <select id="kilometraje" name="kilometraje" class="selects">
-
-           <option val="0">3000</option>
-           <option val="1">2500</option>
+           <option value="0">3000</option>
+           <option value="1">2500</option>
          </select>
        </div>
        <div class="cearboth"></div>
@@ -179,7 +178,6 @@
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-
            Sí <input type="checkbox" id="op-1-1" name="vsustituto[]" value="1" >
            <label for="op-1-1"><span></span></label>
       </div>
@@ -193,8 +191,8 @@
      <div style="white-space:nowrap">
        <label for="tcobertura">Tipo de cobertura</label>
        <select id="tcobertura" name="tcobertura" class="selects">
-         <option val="0">Total</option>
-         <option val="1">Con deducible</option>
+         <option value="0">Total</option>
+         <option value="1">Con deducible</option>
        </select>
      </div>
      <div class="cearboth"></div>
@@ -218,9 +216,10 @@
          <div style="white-space:nowrap">
            <label for="dgarantia">Depósito de garantía</label>
            <select id="dgarantia" name="dgarantia" class="selects">
-             <option val="0">2 Depósitos</option>
-             <option val="1">3 Depósitos</option>
-             <option val="2">4 Depósitos o más</option>
+             <option value="0">1 Depósito</option>
+             <option value="1">2 Depósitos</option>
+             <option value="2">3 Depósitos</option>
+             <option value="3">4 Depósitos o más</option>
            </select>
          </div>
        </div>

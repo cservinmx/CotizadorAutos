@@ -18,6 +18,7 @@ $(document).ready(function(){
     var m12=JSON.parse($("#12m").val());
     var m24_s=JSON.parse($("#24m_s").val());
     var m12_s=JSON.parse($("#12m_s").val());
+    var modelo=$("#modelo").val();
     //console.log(m36);
   /* Fin carga JSON*/
 
@@ -31,84 +32,125 @@ $(document).ready(function(){
       //console.log(m36[0].p1);
         $("#divimg").attr("src","img/hiluxsencilla.png");
         link="toyota-hilux-single";
-        $('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
-      /*  var prec=m36[3].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();*/
-        //precios(tvehiculo, modelo, transmision, meses)
-        //console.log("Entra al case1");
-        precio=precios(0, 1, 0, 0, m36, m24, m12, m24_s, m12_s);
-
+        //$('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 1, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       case '2':
         $("#divimg").attr("src","img/Prado.png");
         link="toyota-prado";
-        $('select[name="transmision"] option[value="0"]').remove();
-        //si el precio es p1 si no se va variando
-        var prec=m36[0].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+      //  $('select[name="transmision"] option[value="0"]').remove();
+        //precios(tvehiculo, modelo, transmision, meses)
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 2, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       case '3':
         $("#divimg").attr("src","img/Fortuner.png");
-        $('select[name="transmision"] option[value="0"]').remove();
+        //$('select[name="transmision"] option[value="0"]').remove();
         link="toyota-fortuner";
-        var prec=m36[1].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 3, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       case '4':
         $("#divimg").attr("src","img/Rav4.png");
         link="toyota-rav4";
-        var prec=m36[4].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 4, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       case '5':
         $("#divimg").attr("src","img/Rush.png");
         link="toyota-hilux-single";
-        var prec=m36[6].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 5, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       case '6':
         $("#divimg").attr("src","img/Corolla.png");
-        $('select[name="transmision"] option[value="0"]').remove(); //Remueve manual
+        //$('select[name="transmision"] option[value="0"]').remove(); //Remueve manual
         link="toyota-corolla";
-        var prec=m36[7].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 6, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       case '7':
         $("#divimg").attr("src","img/Yaris.png");
         link="toyota-yaris";
-        var prec=m36[8].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 7, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       case '8':
         $("#divimg").attr("src","img/Figo.png");
         link="ford-figo";
-        var prec=m36[0].p16;
-        var prec1=prec.replace(",", "");
-        precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+        tvehiculo=$("#tvehiculo").val();
+        transmision=$("#transmision").val();
+        pcontrato=$("#pcontrato").val();
+        kilometraje=$("#kilometraje").val();
+        vsustituto=$("input[name*='vsustituto']").val();
+        tcobertura=$("#tcobertura").val();
+        tmovil=$("input[name*='tmovil']").val();
+        dgarantia=$("#dgarantia").val();
+        precio=precios(tvehiculo, 8, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         break;
       default:
       $("#divimg").attr("src","img/hilux.png");
-      $('select[name="transmision"] option[value="0"]').remove();
+      //$('select[name="transmision"] option[value="0"]').remove();
       link="toyota-hilux";
-      var prec=m36[4].p16;
-      var prec1=prec.replace(",", "");
-      precio=prec1.replace("$ ", "");
-      precio=precio.toString();
+      tvehiculo=$("#tvehiculo").val();
+      transmision=$("#transmision").val();
+      pcontrato=$("#pcontrato").val();
+      kilometraje=$("#kilometraje").val();
+      vsustituto=$("input[name*='vsustituto']").val();
+      tcobertura=$("#tcobertura").val();
+      tmovil=$("input[name*='tmovil']").val();
+      dgarantia=$("#dgarantia").val();
+      precio=precios(tvehiculo, 0, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
     }
     var dir="https://www.renting.cr/planes-renting.php?vehicle=";
     var href=dir+link;
@@ -131,16 +173,75 @@ $(document).ready(function(){
 
   /*  Cambiar mensualidades*/
   $('#pcontrato').change(function( event ) {
-    var modelo=$("#modelo").val();
-    var tvehiculo=$("#tvehiculo").val();
-    var transmision=$("#transmision").val();
-    var pcontrato=$("#pcontrato").val();
-    //tvehiculo, modelo, transmision, meses,
-    precio=precios(tvehiculo, modelo, transmision, pcontrato, m36, m24, m12, m24_s, m12_s);
+    modelo=$("#modelo").val();
+    tvehiculo=$("#tvehiculo").val();
+    transmision=$("#transmision").val();
+    pcontrato=$("#pcontrato").val();
+    kilometraje=$("#kilometraje").val();
+    vsustituto=$("input[name*='vsustituto']").val();
+    tcobertura=$("#tcobertura").val();
+    tmovil=$("input[name*='tmovil']").val();
+    dgarantia=$("#dgarantia").val();
+    console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
+    precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
   });
   /* Fin para agregar nuevo auto */
+
+  /* Cambio de kilometraje */
+  $('#kilometraje').change(function( event ) {
+    modelo=$("#modelo").val();
+    tvehiculo=$("#tvehiculo").val();
+    transmision=$("#transmision").val();
+    pcontrato=$("#pcontrato").val();
+    kilometraje=$("#kilometraje").val();
+    vsustituto=$("input[name*='vsustituto']").val();
+    tcobertura=$("#tcobertura").val();
+    tmovil=$("input[name*='tmovil']").val();
+    dgarantia=$("#dgarantia").val();
+    console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
+    precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+    $("#clas-per").attr("class",thepercent(precio));
+    $("#precio").html(precio);
+  });
+  /*fin Cambio de transmisión*/
+
+  /* Cambio de cobertura */
+  $('#tcobertura').change(function( event ) {
+    modelo=$("#modelo").val();
+    tvehiculo=$("#tvehiculo").val();
+    transmision=$("#transmision").val();
+    pcontrato=$("#pcontrato").val();
+    kilometraje=$("#kilometraje").val();
+    vsustituto=$("input[name*='vsustituto']").val();
+    tcobertura=$("#tcobertura").val();
+    tmovil=$("input[name*='tmovil']").val();
+    dgarantia=$("#dgarantia").val();
+    console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
+    precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+    $("#clas-per").attr("class",thepercent(precio));
+    $("#precio").html(precio);
+  });
+  /*fin Cambio de cobertura*/
+
+  /* Cambio de deposito garantia */
+  $('#dgarantia').change(function( event ) {
+    modelo=$("#modelo").val();
+    tvehiculo=$("#tvehiculo").val();
+    transmision=$("#transmision").val();
+    pcontrato=$("#pcontrato").val();
+    kilometraje=$("#kilometraje").val();
+    vsustituto=$("input[name*='vsustituto']").val();
+    tcobertura=$("#tcobertura").val();
+    tmovil=$("input[name*='tmovil']").val();
+    dgarantia=$("#dgarantia").val();
+    console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
+    precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+    $("#clas-per").attr("class",thepercent(precio));
+    $("#precio").html(precio);
+  });
+  /*fin Cambio de cobertura*/
 
   /*  Agregar un nuevo auto para comparar*/
   $('#comparar').click(function( event ) {
@@ -155,17 +256,21 @@ $(document).ready(function(){
 
 
   /* Muestra los nuevos y oculta los seminuevos viceversa*/
-  $('#tvehiculo').change(function(event) {
+  $("#tvehiculo").change(function(event) {
+    alert("Entra "+this.value);
     //option[value=title]
-    if(this.value=="Seminuevo"){
-        $("#divimg").attr("src","img/prado.png");
+    if(this.value==1){//Seminuevo
+        $("#divimg").attr("src","img/Prado.png");
         $('select[name="modelo"] option[value="0"]').remove();
         $('select[name="modelo"] option[value="1"]').remove();
         $('select[name="modelo"] option[value="3"]').remove();
         $('select[name="modelo"] option[value="5"]').remove();
         $('select[name="modelo"] option[value="8"]').remove();
         $('#modelo').append('<option value="9">Bego</option>');
-    }else if(this.value=="Nuevo"){
+        precio=precios(1, 2, 0, 0, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+        $("#clas-per").attr("class",thepercent(precio));
+        $("#precio").html(precio);
+    }else if(this.value==0){//Nuevo
       $("#divimg").attr("src","img/hilux.png");
       $('select[name="modelo"] option[value="2"]').remove();
       $('select[name="modelo"] option[value="4"]').remove();
@@ -181,16 +286,36 @@ $(document).ready(function(){
       $('#modelo').append('<option value="6">Corola</option>');
       $('#modelo').append('<option value="7">Yaris</option>');
       $('#modelo').append('<option value="8">Figo</option>');
+      precio=precios(0, 0, 0, 0, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+      $("#clas-per").attr("class",thepercent(precio));
+      $("#precio").html(precio);
     }
   });
 
   /* Fin Muestra los nuevos y oculta los seminuevos viceversa*/
 
+  /* Cambio de transmisión */
+  $('#transmision').change(function( event ) {
+    modelo=$("#modelo").val();
+    tvehiculo=$("#tvehiculo").val();
+    transmision=$("#transmision").val();
+    pcontrato=$("#pcontrato").val();
+    kilometraje=$("#kilometraje").val();
+    vsustituto=$("input[name*='vsustituto']").val();
+    tcobertura=$("#tcobertura").val();
+    tmovil=$("input[name*='tmovil']").val();
+    dgarantia=$("#dgarantia").val();
+    console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
+    precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+    $("#clas-per").attr("class",thepercent(precio));
+    $("#precio").html(precio);
+  });
+  /*fin Cambio de transmisión*/
 
-   $("#breiniciar").click(function( event ) {
-      alert("Reiniciar");
-      location.reload();
-    });
+  $("#breiniciar").click(function( event ) {
+    //alert("Reiniciar");
+    location.reload();
+  });
 
 }); //Fin Document ready
 
@@ -235,58 +360,350 @@ function thepercent(precio){
 }
 /* Fin Tranforma el precio a porecentaje*/
 
-function precios(tvehiculo, modelo, transmision, meses, m36, m24, m12, m24_s, m12_s){
-console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+meses  );
+function precios(tvehiculo, modelo, transmision, meses, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s){
+console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+meses+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
   if(tvehiculo==0) { // Nuevo
     switch(modelo){
-      case 1:
+      case 1: //Hilux Sencilla
       //console.log("Entra al case1 precios");
           //Solo Transmisión manual
           if(meses==0){ //36meses
-              var prec=m36[3].p16;
-              var prec1=prec.replace(",", "");
-              precio=prec1.replace("$ ", "");
-              precio=precio.toString();
-              //console.log(precio);
-              return precio;
+              /*con cobertura con deducible*/
+              if(tcobertura==1 && tmovil==0 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m36[3].p16;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p15;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==0 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m36[3].p14;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p13;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==1 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m36[3].p12;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p11;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==1 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m36[3].p10;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p9;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+                /* Con cobertura total*/
+              if(tcobertura==0 && tmovil==0 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m36[3].p8;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p7;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==0 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m36[3].p6;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p5;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==1 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m36[3].p4;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p3;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==1 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m36[3].p2;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m36[3].p1;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
           }else if(meses==1){ //24meses
-              var prec=m24[3].p16;
-              var prec1=prec.replace(",", "");
-              precio=prec1.replace("$ ", "");
-              precio=precio.toString();
-              return precio;
+            /*con cobertura con deducible*/
+              if(tcobertura==1 && tmovil==0 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m24[3].p16;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p15;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==0 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m24[3].p14;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p13;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==1 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m24[3].p12;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p11;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==1 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m24[3].p10;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p9;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+                /* Con cobertura total*/
+              if(tcobertura==0 && tmovil==0 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m24[3].p8;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p7;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==0 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m24[3].p6;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p5;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==1 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m24[3].p4;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p3;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==1 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m24[3].p2;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m24[3].p1;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+              /*var prec=m24[3].p16;
+              precio=limparprecio(prec);
+              return precio;*/
           }else{ //12meses
-              var prec=m24[3].p16;
-              var prec1=prec.replace(",", "");
-              precio=prec1.replace("$ ", "");
-              precio=precio.toString();
-              return precio;
+
+            /*con cobertura con deducible*/
+              if(tcobertura==1 && tmovil==0 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m12[3].p16;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p15;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==0 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m12[3].p14;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p13;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==1 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m12[3].p12;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p11;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==1 && tmovil==1 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m12[3].p10;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p9;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+                /* Con cobertura total*/
+              if(tcobertura==0 && tmovil==0 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m12[3].p8;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p7;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==0 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m12[3].p6;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p5;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==1 && vsustituto==0){
+                if(kilometraje==1){
+                  var prec=m12[3].p4;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p3;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+
+              if(tcobertura==0 && tmovil==1 && vsustituto==1){
+                if(kilometraje==1){
+                  var prec=m12[3].p2;
+                  precio=limparprecio(prec);
+                  return precio;
+                }else{
+                  var prec=m12[3].p1;
+                  precio=limparprecio(prec);
+                  return precio;
+                }
+              }
+            /*  var prec=m12[3].p16;
+              precio=limparprecio(prec);
+              return precio;*/
           }
       break;
-      case 2:
+      case 2://Prado
           //Solo Transmisión Automatica
           if(meses==0){ //36meses
-
+            var prec=m36[0].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
 
           }
       break;
-      case 3:
+      case 3: //Fortuner
           //Solo Transmisión Automatica
           if(meses==0){ //36meses
-
+            var prec=m36[1].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
 
           }
       break;
-      case 4:
+      case 4://Rav4
         if(transmision==0){//Man
           if(meses==0){ //36meses
-
+            var prec=m36[5].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -294,7 +711,10 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }else{//Aut
           if(meses==0){ //36meses
-
+            var prec=m36[4].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -305,7 +725,10 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
       case 5:
         if(transmision==0){//Man
           if(meses==0){ //36meses
-
+            var prec=m36[7].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -313,7 +736,10 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }else{//Aut
           if(meses==0){ //36meses
-
+            var prec=m36[6].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -321,20 +747,26 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }
       break;
-      case 6:
+      case 6: //Corolla
           //Solo automatica
           if(meses==0){ //36meses
-
+            var prec=m36[8].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
 
           }
       break;
-      case 7:
+      case 7://yaris
         if(transmision==0){//Man
           if(meses==0){ //36meses
-
+            var prec=m36[10].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -342,7 +774,10 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }else{//Aut
           if(meses==0){ //36meses
-
+            var prec=m36[9].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -350,10 +785,13 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }
       break;
-      case 8:
+      case 8://Figo
         if(transmision==0){//Man
           if(meses==0){ //36meses
-
+            var prec=m36[12].p16;
+            precio=limparprecio(prec);
+            //console.log(precio);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -361,7 +799,9 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }else{//Aut
           if(meses==0){ //36meses
-
+            var prec=m36[11].p16;
+            precio=limparprecio(prec);
+            return precio;
           }else if(meses==1){ //24meses
 
           }else{ //12meses
@@ -373,7 +813,9 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
       default:
         //Manual
         if(meses==0){ //36meses
-
+          var prec=m36[2].p16;
+          precio=limparprecio(prec);
+          return precio;
         }else if(meses==1){ //24meses
 
         }else{ //12meses
@@ -384,26 +826,38 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
   }else if(tvehiculo==0){ //Seminuevo
 
     switch(modelo){
-      case 2:
+      case 2: //Prado
         //Automatica
         if(meses==1){ //24meses
-
+          console.log(m24_s);
+          var prec=m24_s[0].p16;
+          precio=limparprecio(prec);
+          return precio;
         }else{ //12meses
-
+          var prec=m12_s[0].p16;
+          precio=limparprecio(prec);
+          return precio;
         }
       break;
-      case 4:
+      case 4: //Rav4
         if(transmision==0){//Man
           if(meses==1){ //24meses
-
+            var prec=m24_s[2].p16;
+            precio=limparprecio(prec);
+            return precio;
           }else{ //12meses
-
+            var prec=m12_s[2].p16;
+            precio=limparprecio(prec);
+            return precio;
           }
         }else{//Aut
           if(meses==1){ //24meses
-
+            var prec=m24_s[1].p16;
+            return precio;
           }else{ //12meses
-
+            var prec=m12_s[2].p16;
+            precio=limparprecio(prec);
+            return precio;
           }
         }
       break;
@@ -446,4 +900,12 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
     }
 
   }
+}
+
+//Quita la Coma y el símbolo de $ que viene en google xls
+function limparprecio(precio){
+  var prec1=precio.replace(",", "");
+  precio=prec1.replace("$ ", "");
+  precio=precio.toString();
+  return precio;
 }
