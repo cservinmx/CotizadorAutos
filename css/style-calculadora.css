@@ -76,6 +76,7 @@
     min-height: auto;
     /*border: solid 1px red;*/
   }
+  #comparar{text-decoration: none; color: #FFF;}
   #divmodelo{
     float:right;
     width: 40.5%;

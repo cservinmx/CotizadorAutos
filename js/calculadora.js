@@ -11,14 +11,20 @@ var speed = {
 var numdiv=0;
 
 $(document).ready(function(){
-  $('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
-  $("#modelo").change(function(event){
+
+  /* Carga los JSON de la matriz Google*/
     var m36=JSON.parse($("#36m").val());
     var m24=JSON.parse($("#24m").val());
     var m12=JSON.parse($("#12m").val());
     var m24_s=JSON.parse($("#24m_s").val());
     var m12_s=JSON.parse($("#12m_s").val());
-    console.log(m36);
+    //console.log(m36);
+  /* Fin carga JSON*/
+
+  //$('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
+
+  /* Cambiar el modelo de auto */
+  $("#modelo").change(function(event){
     var precio="";
     switch (this.value) {
       case '1':
@@ -26,13 +32,17 @@ $(document).ready(function(){
         $("#divimg").attr("src","img/hiluxsencilla.png");
         link="toyota-hilux-single";
         $('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
-        var prec=m36[3].p16;
+      /*  var prec=m36[3].p16;
         var prec1=prec.replace(",", "");
         precio=prec1.replace("$ ", "");
-        precio=precio.toString();
+        precio=precio.toString();*/
+        //precios(tvehiculo, modelo, transmision, meses)
+        //console.log("Entra al case1");
+        precio=precios(0, 1, 0, 0, m36, m24, m12, m24_s, m12_s);
+
         break;
       case '2':
-        $("#divimg").attr("src","img/prado.png");
+        $("#divimg").attr("src","img/Prado.png");
         link="toyota-prado";
         $('select[name="transmision"] option[value="0"]').remove();
         //si el precio es p1 si no se va variando
@@ -42,7 +52,7 @@ $(document).ready(function(){
         precio=precio.toString();
         break;
       case '3':
-        $("#divimg").attr("src","img/fortuner.png");
+        $("#divimg").attr("src","img/Fortuner.png");
         $('select[name="transmision"] option[value="0"]').remove();
         link="toyota-fortuner";
         var prec=m36[1].p16;
@@ -51,7 +61,7 @@ $(document).ready(function(){
         precio=precio.toString();
         break;
       case '4':
-        $("#divimg").attr("src","img/rav4-1.png");
+        $("#divimg").attr("src","img/Rav4.png");
         link="toyota-rav4";
         var prec=m36[4].p16;
         var prec1=prec.replace(",", "");
@@ -59,7 +69,7 @@ $(document).ready(function(){
         precio=precio.toString();
         break;
       case '5':
-        $("#divimg").attr("src","img/rush1.png");
+        $("#divimg").attr("src","img/Rush.png");
         link="toyota-hilux-single";
         var prec=m36[6].p16;
         var prec1=prec.replace(",", "");
@@ -67,7 +77,7 @@ $(document).ready(function(){
         precio=precio.toString();
         break;
       case '6':
-        $("#divimg").attr("src","img/corolla.png");
+        $("#divimg").attr("src","img/Corolla.png");
         $('select[name="transmision"] option[value="0"]').remove(); //Remueve manual
         link="toyota-corolla";
         var prec=m36[7].p16;
@@ -76,7 +86,7 @@ $(document).ready(function(){
         precio=precio.toString();
         break;
       case '7':
-        $("#divimg").attr("src","img/yaris.png");
+        $("#divimg").attr("src","img/Yaris.png");
         link="toyota-yaris";
         var prec=m36[8].p16;
         var prec1=prec.replace(",", "");
@@ -84,7 +94,7 @@ $(document).ready(function(){
         precio=precio.toString();
         break;
       case '8':
-        $("#divimg").attr("src","img/figo.png");
+        $("#divimg").attr("src","img/Figo.png");
         link="ford-figo";
         var prec=m36[0].p16;
         var prec1=prec.replace(",", "");
@@ -107,6 +117,8 @@ $(document).ready(function(){
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
   });
+  /* Fin cambiar modelo del auto*/
+
 
   $(speed.trigger).on('click', function () {
     setTimeout(function () {
@@ -116,18 +128,33 @@ $(document).ready(function(){
     }, 1000);
   });
 
-  $('.btn-addBody').click(function( event ) {
+
+  /*  Cambiar mensualidades*/
+  $('#pcontrato').change(function( event ) {
+    var modelo=$("#modelo").val();
+    var tvehiculo=$("#tvehiculo").val();
+    var transmision=$("#transmision").val();
+    var pcontrato=$("#pcontrato").val();
+    //tvehiculo, modelo, transmision, meses,
+    precio=precios(tvehiculo, modelo, transmision, pcontrato, m36, m24, m12, m24_s, m12_s);
+    $("#clas-per").attr("class",thepercent(precio));
+    $("#precio").html(precio);
+  });
+  /* Fin para agregar nuevo auto */
+
+  /*  Agregar un nuevo auto para comparar*/
+  $('#comparar').click(function( event ) {
       numdiv++;
       if(numdiv<3){
-        $('.main').append('<div class="divBody">Nuevo div</div>');
+        $('.main').append('<div class="cearboth"></div><div class="divBody">Nuevo div</div>');
       }else{
         alert("Comparar hasta 3");
       }
-
   });
+  /* Fin para agregar nuevo auto */
 
 
-
+  /* Muestra los nuevos y oculta los seminuevos viceversa*/
   $('#tvehiculo').change(function(event) {
     //option[value=title]
     if(this.value=="Seminuevo"){
@@ -157,13 +184,17 @@ $(document).ready(function(){
     }
   });
 
-  $("#breiniciar").click(function( event ) {
+  /* Fin Muestra los nuevos y oculta los seminuevos viceversa*/
+
+
+   $("#breiniciar").click(function( event ) {
       alert("Reiniciar");
       location.reload();
-  });
+    });
 
-});
+}); //Fin Document ready
 
+/* Tranforma el precio a porecentaje tacómetro*/
 function thepercent(precio){
   var min=450;
   var max=2022;
@@ -202,22 +233,37 @@ function thepercent(precio){
 
   return clas;
 }
+/* Fin Tranforma el precio a porecentaje*/
 
-function precios(tvehiculo, modelo, transmision, meses){
-
+function precios(tvehiculo, modelo, transmision, meses, m36, m24, m12, m24_s, m12_s){
+console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+meses  );
   if(tvehiculo==0) { // Nuevo
     switch(modelo){
-      case '1':
+      case 1:
+      //console.log("Entra al case1 precios");
           //Solo Transmisión manual
           if(meses==0){ //36meses
-
+              var prec=m36[3].p16;
+              var prec1=prec.replace(",", "");
+              precio=prec1.replace("$ ", "");
+              precio=precio.toString();
+              //console.log(precio);
+              return precio;
           }else if(meses==1){ //24meses
-
+              var prec=m24[3].p16;
+              var prec1=prec.replace(",", "");
+              precio=prec1.replace("$ ", "");
+              precio=precio.toString();
+              return precio;
           }else{ //12meses
-
+              var prec=m24[3].p16;
+              var prec1=prec.replace(",", "");
+              precio=prec1.replace("$ ", "");
+              precio=precio.toString();
+              return precio;
           }
       break;
-      case '2':
+      case 2:
           //Solo Transmisión Automatica
           if(meses==0){ //36meses
 
@@ -227,7 +273,7 @@ function precios(tvehiculo, modelo, transmision, meses){
 
           }
       break;
-      case '3':
+      case 3:
           //Solo Transmisión Automatica
           if(meses==0){ //36meses
 
@@ -237,7 +283,7 @@ function precios(tvehiculo, modelo, transmision, meses){
 
           }
       break;
-      case '4':
+      case 4:
         if(transmision==0){//Man
           if(meses==0){ //36meses
 
@@ -256,7 +302,7 @@ function precios(tvehiculo, modelo, transmision, meses){
           }
         }
       break;
-      case '5':
+      case 5:
         if(transmision==0){//Man
           if(meses==0){ //36meses
 
@@ -275,7 +321,7 @@ function precios(tvehiculo, modelo, transmision, meses){
           }
         }
       break;
-      case '6':
+      case 6:
           //Solo automatica
           if(meses==0){ //36meses
 
@@ -285,7 +331,7 @@ function precios(tvehiculo, modelo, transmision, meses){
 
           }
       break;
-      case '7':
+      case 7:
         if(transmision==0){//Man
           if(meses==0){ //36meses
 
@@ -304,7 +350,7 @@ function precios(tvehiculo, modelo, transmision, meses){
           }
         }
       break;
-      case '8':
+      case 8:
         if(transmision==0){//Man
           if(meses==0){ //36meses
 
@@ -338,7 +384,7 @@ function precios(tvehiculo, modelo, transmision, meses){
   }else if(tvehiculo==0){ //Seminuevo
 
     switch(modelo){
-      case '2':
+      case 2:
         //Automatica
         if(meses==1){ //24meses
 
@@ -346,7 +392,7 @@ function precios(tvehiculo, modelo, transmision, meses){
 
         }
       break;
-      case '4':
+      case 4:
         if(transmision==0){//Man
           if(meses==1){ //24meses
 
@@ -361,7 +407,7 @@ function precios(tvehiculo, modelo, transmision, meses){
           }
         }
       break;
-      case '6':
+      case 6:
         //Automatica
         if(meses==1){ //24meses
 
@@ -369,7 +415,7 @@ function precios(tvehiculo, modelo, transmision, meses){
 
         }
       break;
-      case '7':
+      case 7:
         if(transmision==0){//Man
           if(meses==1){ //24meses
 
@@ -384,7 +430,7 @@ function precios(tvehiculo, modelo, transmision, meses){
           }
         }
       break;
-      case '9':
+      case 9:
         if(transmision==0){//Man
           if(meses==1){ //24meses
 

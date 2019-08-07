@@ -127,7 +127,7 @@
               <div class="space10"></div>
               <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
               <div class="space10"></div>
-              <a  href="#" class="btt blue" style="text-decoration: none; color: #FFF;" title="">Comparar</a>
+              <button type="button" id="comparar" class="btt blue">Comparar</button>
               <div class="space10"></div>
               <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
           </div>
@@ -150,6 +150,7 @@
            <label for="transmision">Transmisión</label>
            <select id="transmision" name="transmision" class="selects">
              <option value="0">Manual</option>
+             <option value="1">Automatica</option>
            </select>
         </div>
         <div class="cearboth"></div>
@@ -231,7 +232,7 @@
         <div class="space10"></div>
         <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
         <div class="space10"></div>
-        <a  href="#" class="btt blue" style="text-decoration: none; color: #FFF;" title="">Comparar</a>
+        <button type="button" id="comparar" class="btt blue">Comparar</button>
         <div class="space10"></div>
         <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
     </div>
