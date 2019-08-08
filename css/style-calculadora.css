@@ -2,7 +2,10 @@
   Author: Carlos Servín Romero
   email: carlos@servin.mx, cservinmx@gmail.com
 */
+
+
 .inner-right-floats{width: 85%;}
+  .backbutton{font-family: Verdana,sans-serif; size: 15px;  font-weight: bold;}
   .divgauge {
           border: solid 1px blue;
           margin: auto;
@@ -76,6 +79,8 @@
     min-height: auto;
     /*border: solid 1px red;*/
   }
+  .cgray{background: #f2f2f2;}
+  .cwhite{background: #fff;}
   #comparar{text-decoration: none; color: #FFF;}
   #divmodelo{
     float:right;
@@ -83,6 +88,7 @@
     padding-right: 130px;
     /*border: solid 1px purple;*/
   }
+/*#opcion3{display: none;}*/
   #botones_end{margin-top: 40px;}
   .btt{
         font-family: Verdana,sans-serif;

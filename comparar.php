@@ -60,11 +60,13 @@
        </div>
      </div>
    </div>
-   <div class="section">
 
+   <div id="opcion1" class="section cgray" >
+<div><a href="index.php" class="backbutton"> < Volver</a></div>
+<div class="cgray">
   <div class="main">
 
-    <div class="title" id="title"><h1>Cotice su vehículo</h1></div>
+    <div class="title" id="title"><h1>Opción 1</h1></div>
       <div>
             <div id="divmodelo" style="white-space:nowrap;">
 
@@ -126,8 +128,6 @@
               <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
               <div class="space10"></div>
               <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
-              <div class="space10"></div>
-              <a  href="comparar.php" class="btt blue" style="text-decoration: none; color: #FFF;" title="">Comparar</a>
               <div class="space10"></div>
               <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
           </div>
@@ -225,14 +225,351 @@
        </div>
      </div>
     </div>
+</div>
+
+<div class="cearboth"></div>
+
+<div class="cwhite">
+  <div class="main">
+
+    <div class="title" id="title"><h1>Opción 2</h1></div>
+      <div>
+            <div id="divmodelo" style="white-space:nowrap;">
+
+              <label for="modelo">Modelo</label>
+              <select id="modelo" name="modelo" class="selects">
+                <option value="0" selected>Hi-lux Doble Cabina 4X4</option>
+                <option value="1">Hi-lux Cabina Sencilla 4X2</option>
+                <option value="2">Prado</option>
+                <option value="3">Fortuner</option>
+                <option value="4">Rav4</option>
+                <option value="5">Rush</option>
+                <option value="6">Corola</option>
+                <option value="7">Yaris</option>
+                <option value="8">Figo</option>
+              </select>
+            </div>
+            <div class="cearboth"></div>
+      </div>
+
+    <div class="float-left fiz">
+      <div class="dimg">
+        <img id="divimg" src="img/hilux.png">
+      </div>
+      <div style="text-align: center;">
+        <div class="space20"></div>
+        <div class="price_title">Precio</div>
+        <div class="space20"></div>
+        <div style="height: 60px;" >
+          <div class="wrapper">
+            <div id="clas-per" class="percent-80">
+              <div class="speedometer play">
+                <div class="dial">
+                  <div class="bar">
+                    <!--<div class="half-circle half-circle-bg"></div>-->
+                    <!--<div class="half-circle half-circle-speed animated"></div>-->
+                    <div class="half-circle half-circle-cover"></div>
+                  </div>
+                  <div class="needle animated">
+                    <div class="inner">
+                      <div class="top"></div>
+                      <div class="bottom"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space20"></div>
+        <div class="price">$<span id="precio">910</span></div>
+        <div class="space30"></div>
+        <div class="price_iva">* Precio no incluye I.V.A.</div>
+        <div class="cearboth"></div>
+      </div>
+
+        <div class="space20"></div>
+        <div class="space20"></div>
+          <div id="prebut"  class="prebut">
+              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+              <div class="space10"></div>
+              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
+              <div class="space10"></div>
+              <button type="button"   id="Butcomparar" class="btt blue" style="border: none; color: #FFF;" title="">Comparar</button>
+              <div class="space10"></div>
+              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
+          </div>
+
+    </div>
+    <div class="float-left fcen"></div>
+    <div  id="rightbutt" class="float-left fder">
+      <div class="space30"></div>
+        <div class="inner-right-floats">
+          <div style="white-space:nowrap">
+            <label for="tvehiculo">Tipo de vehículo</label>
+            <select id="tvehiculo" name="tvehiculo" class="selects">
+              <option value="0">Nuevo</option>
+              <option value="1">Seminuevo</option>
+            </select>
+         </div>
+         <div class="cearboth"></div>
+         <div class="space30"></div>
+         <div style="white-space:nowrap">
+           <label for="transmision">Transmisión</label>
+           <select id="transmision" name="transmision" class="selects">
+             <option value="0">Manual</option>
+             <option value="1">Automática</option>
+           </select>
+        </div>
+        <div class="cearboth"></div>
+        <div class="space30"></div>
+        <div style="white-space:nowrap">
+          <label for="pcontrato">Plazo del contrato</label>
+          <select id="pcontrato" name="pcontrato" class="selects">
+            <option value="0">36 Meses</option>
+            <option value="1">24 Meses</option>
+            <option value="2">12 Meses</option>
+          </select>
+       </div>
+       <div class="cearboth"></div>
+        <div class="space30"></div>
+       <div style="white-space:nowrap">
+         <label for="kilometraje">Kilometraje</label>
+         <select id="kilometraje" name="kilometraje" class="selects">
+           <option value="0">3000</option>
+           <option value="1">2500</option>
+         </select>
+       </div>
+       <div class="cearboth"></div>
+       <div class="space30"></div>
+     <p>¿Necesita vehículo sustituto?</p>
+     <div class="space30"></div>
+     <div class="space10"></div>
+       <div class="float-left chk" style="margin-left: 26.5px;">
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1">
+           <label for="op-1-1"><span></span></label>
+      </div>
+      <div class="float-left chk" style="width: 78px;"></div>
+      <div class="float-left chk">
+           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" checked="checked">
+         <label for="op-1-2"><span></span></label>
+      </div>
+      <div class="cearboth"></div>
+      <div class="space30"></div>
+     <div style="white-space:nowrap">
+       <label for="tcobertura">Tipo de cobertura</label>
+       <select id="tcobertura" name="tcobertura" class="selects">
+         <option value="0">Total</option>
+         <option value="1">Con deducible</option>
+       </select>
+     </div>
+     <div class="cearboth"></div>
+     <div class="space30"></div>
+       <p>¿Necesita taller móvil para mantenimiento?</p>
+        <div class="space30"></div>
+       <div class="inlines">
+           <div class="float-left chk" style="margin-left: 26.5px;">
+               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" >
+               <label for="op-2-1"><span></span></label>
+           </div>
+           <div class="float-left chk" style="width: 78px;"></div>
+           <div class="float-left chk">
+               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" checked="checked">
+               <label for="op-2-2"><span></span></label>
+           </div>
+           <div class="cearboth"></div>
+           <div class="space30"></div>
+       </div>
+       <div id="depsgar">
+         <div style="white-space:nowrap">
+           <label for="dgarantia">Depósito de garantía</label>
+           <select id="dgarantia" name="dgarantia" class="selects">
+             <option value="0">1 Depósito</option>
+             <option value="1">2 Depósitos</option>
+             <option value="2">3 Depósitos</option>
+             <option value="3">4 Depósitos o más</option>
+           </select>
+         </div>
+       </div>
+     </div>
+    </div>
+</div>
+
+<div class="cearboth"></div>
+<div id="opcion3" ><div style="background-image: url('../img/opc3.png'); no-repeat right;"></div>
+  <div class="cgray">
+  <div class="main">
+
+    <div class="title" id="title"><h1>Opción 3</h1></div>
+      <div>
+            <div id="divmodelo" style="white-space:nowrap;">
+
+              <label for="modelo">Modelo</label>
+              <select id="modelo" name="modelo" class="selects">
+                <option value="0" selected>Hi-lux Doble Cabina 4X4</option>
+                <option value="1">Hi-lux Cabina Sencilla 4X2</option>
+                <option value="2">Prado</option>
+                <option value="3">Fortuner</option>
+                <option value="4">Rav4</option>
+                <option value="5">Rush</option>
+                <option value="6">Corola</option>
+                <option value="7">Yaris</option>
+                <option value="8">Figo</option>
+              </select>
+            </div>
+            <div class="cearboth"></div>
+      </div>
+
+    <div class="float-left fiz">
+      <div class="dimg">
+        <img id="divimg" src="img/hilux.png">
+      </div>
+      <div style="text-align: center;">
+        <div class="space20"></div>
+        <div class="price_title">Precio</div>
+        <div class="space20"></div>
+        <div style="height: 60px;" >
+          <div class="wrapper">
+            <div id="clas-per" class="percent-80">
+              <div class="speedometer play">
+                <div class="dial">
+                  <div class="bar">
+                    <!--<div class="half-circle half-circle-bg"></div>-->
+                    <!--<div class="half-circle half-circle-speed animated"></div>-->
+                    <div class="half-circle half-circle-cover"></div>
+                  </div>
+                  <div class="needle animated">
+                    <div class="inner">
+                      <div class="top"></div>
+                      <div class="bottom"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space20"></div>
+        <div class="price">$<span id="precio">910</span></div>
+        <div class="space30"></div>
+        <div class="price_iva">* Precio no incluye I.V.A.</div>
+        <div class="cearboth"></div>
+      </div>
+
+        <div class="space20"></div>
+        <div class="space20"></div>
+          <div id="prebut"  class="prebut">
+              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+              <div class="space10"></div>
+              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
+              <div class="space10"></div>
+              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
+          </div>
+
+    </div>
+    <div class="float-left fcen"></div>
+    <div  id="rightbutt" class="float-left fder">
+      <div class="space30"></div>
+        <div class="inner-right-floats">
+          <div style="white-space:nowrap">
+            <label for="tvehiculo">Tipo de vehículo</label>
+            <select id="tvehiculo" name="tvehiculo" class="selects">
+              <option value="0">Nuevo</option>
+              <option value="1">Seminuevo</option>
+            </select>
+         </div>
+         <div class="cearboth"></div>
+         <div class="space30"></div>
+         <div style="white-space:nowrap">
+           <label for="transmision">Transmisión</label>
+           <select id="transmision" name="transmision" class="selects">
+             <option value="0">Manual</option>
+             <option value="1">Automática</option>
+           </select>
+        </div>
+        <div class="cearboth"></div>
+        <div class="space30"></div>
+        <div style="white-space:nowrap">
+          <label for="pcontrato">Plazo del contrato</label>
+          <select id="pcontrato" name="pcontrato" class="selects">
+            <option value="0">36 Meses</option>
+            <option value="1">24 Meses</option>
+            <option value="2">12 Meses</option>
+          </select>
+       </div>
+       <div class="cearboth"></div>
+        <div class="space30"></div>
+       <div style="white-space:nowrap">
+         <label for="kilometraje">Kilometraje</label>
+         <select id="kilometraje" name="kilometraje" class="selects">
+           <option value="0">3000</option>
+           <option value="1">2500</option>
+         </select>
+       </div>
+       <div class="cearboth"></div>
+       <div class="space30"></div>
+     <p>¿Necesita vehículo sustituto?</p>
+     <div class="space30"></div>
+     <div class="space10"></div>
+       <div class="float-left chk" style="margin-left: 26.5px;">
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1">
+           <label for="op-1-1"><span></span></label>
+      </div>
+      <div class="float-left chk" style="width: 78px;"></div>
+      <div class="float-left chk">
+           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" checked="checked">
+         <label for="op-1-2"><span></span></label>
+      </div>
+      <div class="cearboth"></div>
+      <div class="space30"></div>
+     <div style="white-space:nowrap">
+       <label for="tcobertura">Tipo de cobertura</label>
+       <select id="tcobertura" name="tcobertura" class="selects">
+         <option value="0">Total</option>
+         <option value="1">Con deducible</option>
+       </select>
+     </div>
+     <div class="cearboth"></div>
+     <div class="space30"></div>
+       <p>¿Necesita taller móvil para mantenimiento?</p>
+        <div class="space30"></div>
+       <div class="inlines">
+           <div class="float-left chk" style="margin-left: 26.5px;">
+               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" >
+               <label for="op-2-1"><span></span></label>
+           </div>
+           <div class="float-left chk" style="width: 78px;"></div>
+           <div class="float-left chk">
+               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" checked="checked">
+               <label for="op-2-2"><span></span></label>
+           </div>
+           <div class="cearboth"></div>
+           <div class="space30"></div>
+       </div>
+       <div id="depsgar">
+         <div style="white-space:nowrap">
+           <label for="dgarantia">Depósito de garantía</label>
+           <select id="dgarantia" name="dgarantia" class="selects">
+             <option value="0">1 Depósito</option>
+             <option value="1">2 Depósitos</option>
+             <option value="2">3 Depósitos</option>
+             <option value="3">4 Depósitos o más</option>
+           </select>
+         </div>
+       </div>
+     </div>
+    </div>
+</div>
+</div>
+
 <div style="text-align: center; margin: 0 auto;">
     <div id="prebut2" class="prebut">
         <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
         <div class="space10"></div>
         <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
         <div class="space10"></div>
-        <button type="button" id="comparar" class="btt blue">Comparar</button>
-        <div class="space10"></div>
+        <div id="hidecomaparar"><button type="button" id="comparar" class="btt blue">Comparar</button>
+        <div class="space10"></div></div>
         <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
     </div>
   </div>
@@ -255,7 +592,7 @@
  <input type="hidden" id="12m" >
  <input type="hidden" id="24m_s" >
  <input type="hidden" id="12m_s" >
- <script>
+<script>
    $("#36m").val('<?php echo json_encode($array_36m); ?>');
    $("#24m").val('<?php echo json_encode($array_24m); ?>');
    $("#12m").val('<?php echo json_encode($array_12m); ?>');

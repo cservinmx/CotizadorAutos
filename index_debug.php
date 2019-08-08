@@ -114,7 +114,7 @@
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="precio">910</span></div>
+        <div class="price">$<span id="precio">1035</span></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -201,12 +201,12 @@
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" >
+               Sí <input type="checkbox" id="op-2-1" name="tmovil[]" value="1" >
                <label for="op-2-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" checked="checked">
+               No <input type="checkbox" id="op-2-2" name="tmovil[]" value="0" checked="checked">
                <label for="op-2-2"><span></span></label>
            </div>
            <div class="cearboth"></div>

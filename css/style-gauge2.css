@@ -19,7 +19,7 @@
   /*border: solid 1px red;*/
 }
 .speedometer::after {
-  background-color: #fff;
+  /*background-color: #fff;*/
   height: 10px;
   width: 130px;
   margin: 0 auto;
@@ -95,11 +95,11 @@
   z-index: 20;
 }
 .speedometer .half-circle-cover {
-  background-color: #fff;
+  /*background-color: #fff;*/
   height: 90px;
   width: 170px;
   border-radius: 180px 180px 0 0;
-  background: #fff;
+/*  background: #fff;*/
   margin: 0 auto;
   top: auto;
   bottom: 0;

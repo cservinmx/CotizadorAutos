@@ -11,7 +11,7 @@ var speed = {
 var numdiv=0;
 //$(document).on('ready', function () {
 $(document).ready(function(){
-
+$("#opcion3").hide();
 
   /* Carga los JSON de la matriz Google*/
     var m36=JSON.parse($("#36m").val());
@@ -159,24 +159,6 @@ $(document).ready(function(){
  }
   });
 
-  /*
-  $("input:checkbox").click( function(event) {
-  // in the handler, 'this' refers to the box clicked on
-  alert(this.id);
-  var $box = $(this);
-
-  if ($box.is(":checked")) {
-    // the name of the box is retrieved using the .attr() method
-    // as it is assumed and expected to be immutable
-    var group = "input:checkbox[name='" + $box.attr("name") + "']";
-    // the checked state of the group/box on the other hand will change
-    // and the current value is retrieved using .prop() method
-    $(group).prop("checked", false);
-    $box.prop("checked", true);
-  } else {
-    $box.prop("checked", false);
-  }
-});*/
   /* Fin si/no vehiculo sustituto */
   /* CAmbios vehiculo sustituto*/
 
@@ -321,6 +303,13 @@ $(document).ready(function(){
   });
 
   /*fin Cambio de transmisión*/
+
+  /* Boton comparar*/
+  $("#Butcomparar").click(function(event){
+      $("#opcion3").show();
+      $("#hidecomaparar").hide();
+  });
+  /* Fin botón comparar*/
 
 }); //Fin Document ready
 
