@@ -150,7 +150,7 @@
            <label for="transmision">Transmisión</label>
            <select id="transmision" name="transmision" class="selects">
              <option value="0">Manual</option>
-             <option value="0">Automática</option>
+             <option value="1">Automática</option>
            </select>
         </div>
         <div class="cearboth"></div>
@@ -178,13 +178,12 @@
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto[]" value="Si" >
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto[]" value="1" >
            <label for="op-1-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto[]" value="No">
+           No <input type="checkbox" id="op-1-2" name="vsustituto[]" value="0">
          <label for="op-1-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
@@ -202,12 +201,12 @@
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil[]" value="Si" >
+               Sí <input type="checkbox" id="op-2-1" name="tmovil[]" value="1" >
                <label for="op-2-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil[]" value="No" >
+               No <input type="checkbox" id="op-2-2" name="tmovil[]" value="0" >
                <label for="op-2-2"><span></span></label>
            </div>
            <div class="cearboth"></div>
@@ -217,9 +216,10 @@
          <div style="white-space:nowrap">
            <label for="dgarantia">Depósito de garantía</label>
            <select id="dgarantia" name="dgarantia" class="selects">
-             <option value="0">2 Depósitos</option>
-             <option value="1">3 Depósitos</option>
-             <option value="2">4 Depósitos o más</option>
+             <option value="0">1 Depósito</option>
+             <option value="1">2 Depósitos</option>
+             <option value="2">3 Depósitos</option>
+             <option value="3">4 Depósitos o más</option>
            </select>
          </div>
        </div>
@@ -231,7 +231,7 @@
         <div class="space10"></div>
         <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
         <div class="space10"></div>
-        <a  href="#" class="btt blue" style="text-decoration: none; color: #FFF;" title="">Comparar</a>
+        <button type="button" id="comparar" class="btt blue">Comparar</button>
         <div class="space10"></div>
         <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
     </div>
