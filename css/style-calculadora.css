@@ -80,6 +80,16 @@
   }
   .cgray{background: #f2f2f2;}
   .cwhite{background: #fff;}
+  .compareclose{
+    background: url('../img/opc3.png');
+    height: 49px;
+    width: 238px;
+    border: none;
+  /*  border: solid 1px purple;*/
+    margin-top: -1px;
+    float: right;
+    margin-right: 120px;
+  }
   #comparar{text-decoration: none; color: #FFF;}
   #tabs{display: none;}
   #divmodelo{

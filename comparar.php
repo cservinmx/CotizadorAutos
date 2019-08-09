@@ -466,7 +466,9 @@ switch($modelo){
 
 <div class="cearboth"></div>
 
-<div id="opcion3" ><div style="background-image: url('../img/opc3.png'); no-repeat right;"></div>
+<div><button id="compareclose" type="button"  class="compareclose"> </button></div>
+<div id="opcion3">
+
   <div class="cgray">
   <div class="main">
 
@@ -632,17 +634,6 @@ switch($modelo){
 </div>
 </div>
 
-<div style="text-align: center; margin: 0 auto;">
-    <div id="prebut2" class="prebut">
-        <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
-        <div class="space10"></div>
-        <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
-        <div class="space10"></div>
-        <div id="hidecomaparar"><button type="button" id="comparar" class="btt blue">Comparar</button>
-        <div class="space10"></div></div>
-        <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
-    </div>
-  </div>
 
     </div>
 

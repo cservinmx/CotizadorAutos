@@ -12,6 +12,7 @@ var numdiv=0;
 //$(document).on('ready', function () {
 $(document).ready(function(){
 $("#opcion3").hide();
+$("#compareclose").hide();
 $("#comparar").click();
 
   /* Carga los JSON de la matriz Google*/
@@ -309,10 +310,19 @@ $("#comparar").click();
   /*fin Cambio de transmisión*/
 
   /* Boton comparar*/
-  $("#Butcomparar").click(function(event){
+  $("#op2comparar").click(function(event){
       $("#opcion3").show();
-      $("#hidecomaparar").hide();
+      $("#compareclose").show();
+      $("#op2comparar").hide();
   });
   /* Fin botón comparar*/
+
+  $("#compareclose").click(function(event){
+
+      $("#opcion3").hide();
+      $("#compareclose").hide();
+      $("#op2comparar").show();
+  });
+
 
 }); //Fin Document ready
