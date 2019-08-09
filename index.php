@@ -60,8 +60,19 @@
        </div>
      </div>
    </div>
-   <div class="section">
 
+   <div id="tabs" class="tab">
+
+     <button class="active" >Opción 1</button>
+     <div id="newtab"></div>
+     <button class="tabnew">+</button>
+
+
+   </div>
+   <div class="cearboth"></div>
+
+   <div class="section">
+  <form action="comparar.php" method="get">
   <div class="main">
 
     <div class="title" id="title"><h1>Cotice su vehículo</h1></div>
@@ -127,9 +138,9 @@
               <div class="space10"></div>
               <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
               <div class="space10"></div>
-              <a  href="comparar.php" class="btt blue" style="text-decoration: none; color: #FFF;" title="">Comparar</a>
+              <button type="submit"  class="btt blue" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
               <div class="space10"></div>
-              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
+              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF; font-weight: bold;" class="btt blue">Reiniciar</a>
           </div>
 
     </div>
@@ -223,20 +234,21 @@
            </select>
          </div>
        </div>
+       </form>
      </div>
     </div>
+
 <div style="text-align: center; margin: 0 auto;">
     <div id="prebut2" class="prebut">
         <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
         <div class="space10"></div>
         <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
         <div class="space10"></div>
-        <button type="button" id="comparar" class="btt blue">Comparar</button>
+        <button type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
         <div class="space10"></div>
-        <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
+        <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
     </div>
   </div>
-
     </div>
 
 

@@ -12,6 +12,7 @@ var numdiv=0;
 //$(document).on('ready', function () {
 $(document).ready(function(){
 $("#opcion3").hide();
+$("#comparar").click();
 
   /* Carga los JSON de la matriz Google*/
     var m36=JSON.parse($("#36m").val());
@@ -215,12 +216,15 @@ $("#opcion3").hide();
   /*fin Cambio de cobertura*/
 
   /*  Agregar un nuevo auto para comparar*/
-  $('#comparar').click(function( event ) {
+  $('.tabnew').click(function( event ) {
       numdiv++;
+      if(numdiv==2){$(".tabnew").hide()}
       if(numdiv<3){
-        $('.main').append('<div class="cearboth"></div><div class="divBody">Nuevo div</div>');
+
+        $('#newtab').append('<button>Opción 2</button> ');
       }else{
-        alert("Comparar hasta 3");
+        //lert("Comparar hasta 3");
+        $(".tabnew").hide();
       }
   });
   /* Fin para agregar nuevo auto */
