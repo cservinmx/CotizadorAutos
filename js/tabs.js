@@ -1,3 +1,8 @@
+/*
+  Author: Carlos Servín Romero
+  email: carlos@servin.mx, cservinmx@gmail.com
+*/
+
 function open(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
