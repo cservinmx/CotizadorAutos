@@ -19,6 +19,7 @@
 <script type="text/javascript" src="js/jquery-gauge.min.js"></script>
 <script type="text/javascript" src="js/calculadora.js"></script>
 <script type="text/javascript" src="js/precios.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
 </head>
 
 <body>
@@ -63,18 +64,16 @@
    </div>
 
    <div id="tabs" class="tab">
-
      <button class="active" >Opción 1</button>
      <div id="newtab"></div>
      <button class="tabnew">+</button>
-
-
    </div>
+
    <div class="cearboth"></div>
 
    <div class="section">
   <form action="comparar.php" method="get">
-  <div class="main">
+  <div id="tab1" class="main">
 
     <div class="title" id="title"><h1>Cotice su vehículo</h1></div>
       <div>
@@ -239,23 +238,30 @@
      </div>
     </div>
 
-<div style="text-align: center; margin: 0 auto;">
-    <div id="prebut2" class="prebut">
-        <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
-        <div class="space10"></div>
-        <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
-        <div class="space10"></div>
-        <button type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
-        <div class="space10"></div>
-        <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
-    </div>
-  </div>
-    </div>
+      <div style="text-align: center; margin: 0 auto;">
+          <div id="prebut2" class="prebut">
+              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+              <div class="space10"></div>
+              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
+              <div class="space10"></div>
+              <button type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
+              <div class="space10"></div>
+              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
+          </div>
+        </div>
+   </div>
 
 
 
   </div>
 
+  <div id="tab2" class="tabcontent">
+    <h3>Opción 2</h3>
+  </div>
+
+  <div id="tab3" class="tabcontent">
+    <h3>Opción 2</h3>
+  </div>
   <div class="cearboth" style="height: 20px;"></div>
 
 

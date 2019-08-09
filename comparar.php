@@ -150,6 +150,7 @@ switch($modelo){
                 <option value="6" <?php if($modelo==6){echo "selected";} ?>>Corola</option>
                 <option value="7" <?php if($modelo==7){echo "selected";} ?>>Yaris</option>
                 <option value="8" <?php if($modelo==8){echo "selected";} ?>>Figo</option>
+                <option value="9" <?php if($modelo==9){echo "selected";} ?>>Bego</option>
               </select>
             </div>
             <div class="cearboth"></div>
@@ -305,8 +306,8 @@ switch($modelo){
       <div>
             <div id="divmodelo" style="white-space:nowrap;">
 
-              <label for="modelo">Modelo</label>
-              <select id="modelo" name="modelo" class="selects">
+              <label for="op2-modelo">Modelo</label>
+              <select id="op2-modelo" name="modelo2" class="selects">
                 <option value="0" selected>Hi-lux Doble Cabina 4X4</option>
                 <option value="1">Hi-lux Cabina Sencilla 4X2</option>
                 <option value="2">Prado</option>
@@ -323,7 +324,7 @@ switch($modelo){
 
     <div class="float-left fiz">
       <div class="dimg">
-        <img id="divimg" src="img/hilux.png">
+        <img id="op2-divimg" src="img/hilux.png">
       </div>
       <div style="text-align: center;">
         <div class="space20"></div>
@@ -331,7 +332,7 @@ switch($modelo){
         <div class="space20"></div>
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div id="clas-per" class="percent-80">
+            <div id="clas-per2" class="percent-80">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
@@ -351,7 +352,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="precio">910</span></div>
+        <div class="price">$<span id="op2-precio">910</span></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -375,8 +376,8 @@ switch($modelo){
       <div class="space30"></div>
         <div class="inner-right-floats">
           <div style="white-space:nowrap">
-            <label for="tvehiculo">Tipo de vehículo</label>
-            <select id="tvehiculo" name="tvehiculo" class="selects">
+            <label for="op2-tvehiculo">Tipo de vehículo</label>
+            <select id="op2-tvehiculo" name="tvehiculo" class="selects">
               <option value="0">Nuevo</option>
               <option value="1">Seminuevo</option>
             </select>
@@ -384,8 +385,8 @@ switch($modelo){
          <div class="cearboth"></div>
          <div class="space30"></div>
          <div style="white-space:nowrap">
-           <label for="transmision">Transmisión</label>
-           <select id="transmision" name="transmision" class="selects">
+           <label for="op2-transmision">Transmisión</label>
+           <select id="op2-transmision" name="transmision" class="selects">
              <option value="0">Manual</option>
              <option value="1">Automática</option>
            </select>
@@ -393,8 +394,8 @@ switch($modelo){
         <div class="cearboth"></div>
         <div class="space30"></div>
         <div style="white-space:nowrap">
-          <label for="pcontrato">Plazo del contrato</label>
-          <select id="pcontrato" name="pcontrato" class="selects">
+          <label for="op2-pcontrato">Plazo del contrato</label>
+          <select id="op2-pcontrato" name="pcontrato" class="selects">
             <option value="0">36 Meses</option>
             <option value="1">24 Meses</option>
             <option value="2">12 Meses</option>
@@ -403,8 +404,8 @@ switch($modelo){
        <div class="cearboth"></div>
         <div class="space30"></div>
        <div style="white-space:nowrap">
-         <label for="kilometraje">Kilometraje</label>
-         <select id="kilometraje" name="kilometraje" class="selects">
+         <label for="op2-kilometraje">Kilometraje</label>
+         <select id="op2-kilometraje" name="kilometraje" class="selects">
            <option value="0">3000</option>
            <option value="1">2500</option>
          </select>
@@ -415,19 +416,19 @@ switch($modelo){
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1">
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto2" value="1">
            <label for="op-1-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" checked="checked">
+           No <input type="checkbox" id="op-1-2" name="vsustituto2" value="0" checked="checked">
          <label for="op-1-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
       <div class="space30"></div>
      <div style="white-space:nowrap">
-       <label for="tcobertura">Tipo de cobertura</label>
-       <select id="tcobertura" name="tcobertura" class="selects">
+       <label for="op2-tcobertura">Tipo de cobertura</label>
+       <select id="op2-tcobertura" name="tcobertura" class="selects">
          <option value="0">Total</option>
          <option value="1">Con deducible</option>
        </select>
@@ -438,12 +439,12 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" >
+               Sí <input type="checkbox" id="op-2-1" name="tmovil2" value="1" >
                <label for="op-2-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" checked="checked">
+               No <input type="checkbox" id="op-2-2" name="tmovil2" value="0" checked="checked">
                <label for="op-2-2"><span></span></label>
            </div>
            <div class="cearboth"></div>
@@ -451,8 +452,8 @@ switch($modelo){
        </div>
        <div id="depsgar">
          <div style="white-space:nowrap">
-           <label for="dgarantia">Depósito de garantía</label>
-           <select id="dgarantia" name="dgarantia" class="selects">
+           <label for="op2-dgarantia">Depósito de garantía</label>
+           <select id="op2-dgarantia" name="dgarantia" class="selects">
              <option value="0">1 Depósito</option>
              <option value="1">2 Depósitos</option>
              <option value="2">3 Depósitos</option>
@@ -466,9 +467,10 @@ switch($modelo){
 
 <div class="cearboth"></div>
 
-<div><button id="compareclose" type="button"  class="compareclose"> </button></div>
 <div id="opcion3">
-
+  <div style="height: 39px; width:100%;">
+  <div><button id="compareclose" type="button"  class="compareclose"> </button></div>
+  </div>
   <div class="cgray">
   <div class="main">
 
@@ -476,8 +478,8 @@ switch($modelo){
       <div>
             <div id="divmodelo" style="white-space:nowrap;">
 
-              <label for="modelo">Modelo</label>
-              <select id="modelo" name="modelo" class="selects">
+              <label for="op3-modelo">Modelo</label>
+              <select id="op3-modelo" name="modelo" class="selects">
                 <option value="0" selected>Hi-lux Doble Cabina 4X4</option>
                 <option value="1">Hi-lux Cabina Sencilla 4X2</option>
                 <option value="2">Prado</option>
@@ -494,7 +496,7 @@ switch($modelo){
 
     <div class="float-left fiz">
       <div class="dimg">
-        <img id="divimg" src="img/hilux.png">
+        <img id="op3-divimg" src="img/hilux.png">
       </div>
       <div style="text-align: center;">
         <div class="space20"></div>
@@ -502,7 +504,7 @@ switch($modelo){
         <div class="space20"></div>
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div id="clas-per" class="percent-80">
+            <div id="clas-per3" class="percent-80">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
@@ -522,7 +524,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="precio">910</span></div>
+        <div class="price">$<span id="op3-precio">910</span></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -533,7 +535,7 @@ switch($modelo){
           <div id="prebut"  class="prebut">
               <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
               <div class="space10"></div>
-              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
+              <a id="lightbox-btn3" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF" title="">CONTÁCTENOS</a>
               <div class="space10"></div>
               <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
           </div>
@@ -544,8 +546,8 @@ switch($modelo){
       <div class="space30"></div>
         <div class="inner-right-floats">
           <div style="white-space:nowrap">
-            <label for="tvehiculo">Tipo de vehículo</label>
-            <select id="tvehiculo" name="tvehiculo" class="selects">
+            <label for="op3-tvehiculo">Tipo de vehículo</label>
+            <select id="op3-tvehiculo" name="tvehiculo" class="selects">
               <option value="0">Nuevo</option>
               <option value="1">Seminuevo</option>
             </select>
@@ -553,8 +555,8 @@ switch($modelo){
          <div class="cearboth"></div>
          <div class="space30"></div>
          <div style="white-space:nowrap">
-           <label for="transmision">Transmisión</label>
-           <select id="transmision" name="transmision" class="selects">
+           <label for="op3-transmision">Transmisión</label>
+           <select id="op3-transmision" name="transmision" class="selects">
              <option value="0">Manual</option>
              <option value="1">Automática</option>
            </select>
@@ -562,8 +564,8 @@ switch($modelo){
         <div class="cearboth"></div>
         <div class="space30"></div>
         <div style="white-space:nowrap">
-          <label for="pcontrato">Plazo del contrato</label>
-          <select id="pcontrato" name="pcontrato" class="selects">
+          <label for="op3-pcontrato">Plazo del contrato</label>
+          <select id="op3-pcontrato" name="pcontrato" class="selects">
             <option value="0">36 Meses</option>
             <option value="1">24 Meses</option>
             <option value="2">12 Meses</option>
@@ -572,8 +574,8 @@ switch($modelo){
        <div class="cearboth"></div>
         <div class="space30"></div>
        <div style="white-space:nowrap">
-         <label for="kilometraje">Kilometraje</label>
-         <select id="kilometraje" name="kilometraje" class="selects">
+         <label for="op3-kilometraje">Kilometraje</label>
+         <select id="op3-kilometraje" name="kilometraje" class="selects">
            <option value="0">3000</option>
            <option value="1">2500</option>
          </select>
@@ -584,19 +586,19 @@ switch($modelo){
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1">
-           <label for="op-1-1"><span></span></label>
+           Sí <input type="checkbox" id="op-3-1" name="vsustituto3" value="1">
+           <label for="op-3-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" checked="checked">
-         <label for="op-1-2"><span></span></label>
+           No <input type="checkbox" id="op-3-2" name="vsustituto3" value="0" checked="checked">
+         <label for="op-3-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
       <div class="space30"></div>
      <div style="white-space:nowrap">
-       <label for="tcobertura">Tipo de cobertura</label>
-       <select id="tcobertura" name="tcobertura" class="selects">
+       <label for="op3-tcobertura">Tipo de cobertura</label>
+       <select id="op3-tcobertura" name="tcobertura" class="selects">
          <option value="0">Total</option>
          <option value="1">Con deducible</option>
        </select>
@@ -607,13 +609,13 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" >
-               <label for="op-2-1"><span></span></label>
+               Sí <input type="checkbox" id="op-4-1" name="tmovil3" value="1" >
+               <label for="op-4-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" checked="checked">
-               <label for="op-2-2"><span></span></label>
+               No <input type="checkbox" id="op-5-2" name="tmovil3" value="0" checked="checked">
+               <label for="op-5-2"><span></span></label>
            </div>
            <div class="cearboth"></div>
            <div class="space30"></div>
@@ -621,7 +623,7 @@ switch($modelo){
        <div id="depsgar">
          <div style="white-space:nowrap">
            <label for="dgarantia">Depósito de garantía</label>
-           <select id="dgarantia" name="dgarantia" class="selects">
+           <select id="op3-dgarantia" name="dgarantia" class="selects">
              <option value="0">1 Depósito</option>
              <option value="1">2 Depósitos</option>
              <option value="2">3 Depósitos</option>
@@ -641,11 +643,11 @@ switch($modelo){
 
   </div>
 
-  <div class="cearboth" style="height: 20px;"></div>
+
 
 
  </div>
-
+<div class="cearboth" style="height: 20px;"></div>
 
  <?php include ('json_data.php'); ?>
  <input type="hidden" id="36m" >
