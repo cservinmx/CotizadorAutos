@@ -72,6 +72,7 @@ $vsustituto = isset($_GET['vsustituto']) ? $_GET['vsustituto'] : 0;
 $tcobertura= isset($_GET['tcobertura']) ? $_GET['tcobertura'] : 0;
 $tmovil = isset($_GET['tmovil']) ? $_GET['tmovil'] : 0;
 $dgarantia= isset($_GET['dgarantia']) ? $_GET['dgarantia'] : 0;
+$precio= isset($_GET['precio']) ? $_GET['precio'] : 390;
 
 /*
 echo "modelo ".$modelo;
@@ -140,14 +141,14 @@ switch($modelo){
             <div id="divmodelo" style="white-space:nowrap;">
 
               <label for="modelo">Modelo</label>
-              <select id="pre-modelo" name="modelo" class="selects" disabled>
+              <select id="modelo" name="modelo" class="selects">
                 <option value="0" <?php if($modelo==0){echo "selected";} ?>>Hi-lux Doble Cabina 4X4</option>
                 <option value="1" <?php if($modelo==1){echo "selected";} ?>>Hi-lux Cabina Sencilla 4X2</option>
                 <option value="2" <?php if($modelo==2){echo "selected";} ?>>Prado</option>
                 <option value="3" <?php if($modelo==3){echo "selected";} ?>>Fortuner</option>
                 <option value="4" <?php if($modelo==4){echo "selected";} ?>>Rav4</option>
                 <option value="5" <?php if($modelo==5){echo "selected";} ?>>Rush</option>
-                <option value="6" <?php if($modelo==6){echo "selected";} ?>>Corola</option>
+                <option value="6" <?php if($modelo==6){echo "selected";} ?>>Corolla</option>
                 <option value="7" <?php if($modelo==7){echo "selected";} ?>>Yaris</option>
                 <option value="8" <?php if($modelo==8){echo "selected";} ?>>Figo</option>
                 <option value="9" <?php if($modelo==9){echo "selected";} ?>>Bego</option>
@@ -158,7 +159,7 @@ switch($modelo){
 
     <div class="float-left fiz">
       <div class="dimg">
-        <img id="pre-divimg" src="<?= $img; ?>">
+        <img id="divimg" src="<?= $img; ?>">
       </div>
       <div style="text-align: center;">
         <div class="space20"></div>
@@ -186,7 +187,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="pre-precio">910</span></div>
+        <div class="price">$<span id="precio"><?= $precio; ?></span></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -209,7 +210,7 @@ switch($modelo){
         <div class="inner-right-floats">
           <div style="white-space:nowrap">
             <label for="tvehiculo">Tipo de vehículo</label>
-            <select id="pre-tvehiculo" name="tvehiculo" class="selects" disabled>
+            <select id="tvehiculo" name="tvehiculo" class="selects">
               <option value="0" <?php if($tvehiculo==0){echo "selected";} ?>>Nuevo</option>
               <option value="1" <?php if($tvehiculo==1){echo "selected";} ?>>Seminuevo</option>
             </select>
@@ -218,7 +219,7 @@ switch($modelo){
          <div class="space30"></div>
          <div style="white-space:nowrap">
            <label for="transmision">Transmisión</label>
-           <select id="transmision" name="transmision" class="selects" disabled>
+           <select id="transmision" name="transmision" class="selects">
              <option value="0" <?php if($transmision==0){echo "selected";} ?>>Manual</option>
              <option value="1" <?php if($transmision==1){echo "selected";} ?>>Automática</option>
            </select>
@@ -227,7 +228,7 @@ switch($modelo){
         <div class="space30"></div>
         <div style="white-space:nowrap">
           <label for="pcontrato">Plazo del contrato</label>
-          <select id="pcontrato" name="pcontrato" class="selects" disabled>
+          <select id="pcontrato" name="pcontrato" class="selects">
             <option value="0" <?php if($pcontrato==0){echo "selected";} ?>>36 Meses</option>
             <option value="1" <?php if($pcontrato==1){echo "selected";} ?>>24 Meses</option>
             <option value="2" <?php if($pcontrato==2){echo "selected";} ?>>12 Meses</option>
@@ -237,7 +238,7 @@ switch($modelo){
         <div class="space30"></div>
        <div style="white-space:nowrap">
          <label for="kilometraje">Kilometraje</label>
-         <select id="kilometraje" name="kilometraje" class="selects" disabled>
+         <select id="kilometraje" name="kilometraje" class="selects">
            <option value="0" <?php if($kilometraje==0){echo "selected";} ?>>3000</option>
            <option value="1" <?php if($kilometraje==1){echo "selected";} ?>>2500</option>
          </select>
@@ -248,19 +249,19 @@ switch($modelo){
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1" disabled <?php if($vsustituto==1){echo "checked='checked'";} ?>>
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1" <?php if($vsustituto==1){echo "checked='checked'";} ?>>
            <label for="op-1-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" disabled <?php if($vsustituto==0){echo "checked='checked'";} ?>>
+           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" <?php if($vsustituto==0){echo "checked='checked'";} ?>>
          <label for="op-1-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
       <div class="space30"></div>
      <div style="white-space:nowrap">
        <label for="tcobertura">Tipo de cobertura</label>
-       <select id="tcobertura" name="tcobertura" class="selects" disabled>
+       <select id="tcobertura" name="tcobertura" class="selects">
          <option value="0" <?php if($tcobertura==0){echo "selected";} ?>>Total</option>
          <option value="1" <?php if($tcobertura==1){echo "selected";} ?>>Con deducible</option>
        </select>
@@ -271,12 +272,12 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" disabled <?php if($tmovil==1){echo "checked='checked'";} ?>>
+               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" <?php if($tmovil==1){echo "checked='checked'";} ?>>
                <label for="op-2-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" disabled <?php if($tmovil==0){echo "checked='checked'";} ?>>
+               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" <?php if($tmovil==0){echo "checked='checked'";} ?>>
                <label for="op-2-2"><span></span></label>
            </div>
            <div class="cearboth"></div>
@@ -285,7 +286,7 @@ switch($modelo){
        <div id="depsgar">
          <div style="white-space:nowrap">
            <label for="dgarantia">Depósito de garantía</label>
-           <select id="dgarantia" name="dgarantia" class="selects" disabled>
+           <select id="dgarantia" name="dgarantia" class="selects">
              <option value="0" <?php if($dgarantia==0){echo "selected";} ?>>1 Depósito</option>
              <option value="1" <?php if($dgarantia==1){echo "selected";} ?>>2 Depósitos</option>
              <option value="2" <?php if($dgarantia==2){echo "selected";} ?>>3 Depósitos</option>
@@ -314,7 +315,7 @@ switch($modelo){
                 <option value="3">Fortuner</option>
                 <option value="4">Rav4</option>
                 <option value="5">Rush</option>
-                <option value="6">Corola</option>
+                <option value="6">Corolla</option>
                 <option value="7">Yaris</option>
                 <option value="8">Figo</option>
               </select>
@@ -416,12 +417,12 @@ switch($modelo){
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto2" value="1">
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto2" value="1" checked="checked">
            <label for="op-1-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto2" value="0" checked="checked">
+           No <input type="checkbox" id="op-1-2" name="vsustituto2" value="0">
          <label for="op-1-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
@@ -439,12 +440,12 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil2" value="1" >
+               Sí <input type="checkbox" id="op-2-1" name="tmovil2" value="1" checked="checked">
                <label for="op-2-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil2" value="0" checked="checked">
+               No <input type="checkbox" id="op-2-2" name="tmovil2" value="0">
                <label for="op-2-2"><span></span></label>
            </div>
            <div class="cearboth"></div>
@@ -486,7 +487,7 @@ switch($modelo){
                 <option value="3">Fortuner</option>
                 <option value="4">Rav4</option>
                 <option value="5">Rush</option>
-                <option value="6">Corola</option>
+                <option value="6">Corolla</option>
                 <option value="7">Yaris</option>
                 <option value="8">Figo</option>
               </select>
@@ -586,12 +587,12 @@ switch($modelo){
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-3-1" name="vsustituto3" value="1">
+           Sí <input type="checkbox" id="op-3-1" name="vsustituto3" value="1" checked="checked">
            <label for="op-3-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-3-2" name="vsustituto3" value="0" checked="checked">
+           No <input type="checkbox" id="op-3-2" name="vsustituto3" value="0">
          <label for="op-3-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
@@ -609,12 +610,12 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-4-1" name="tmovil3" value="1" >
+               Sí <input type="checkbox" id="op-4-1" name="tmovil3" value="1" checked="checked">
                <label for="op-4-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-5-2" name="tmovil3" value="0" checked="checked">
+               No <input type="checkbox" id="op-5-2" name="tmovil3" value="0">
                <label for="op-5-2"><span></span></label>
            </div>
            <div class="cearboth"></div>

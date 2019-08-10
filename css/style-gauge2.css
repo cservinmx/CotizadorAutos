@@ -167,6 +167,7 @@
   height: 9px;
   width: 117px;
 }
+
 .scaled-90 .speedometer .dial {
   padding-top: 18px;
 }
@@ -357,10 +358,62 @@
 .percent-100-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  -webkit-transform: rotate(-14deg);
+          transform: rotate(-14deg);
 }
 
+.percent-99 .speedometer.play .animated,
+.percent-99-sm .speedometer.play .animated {
+  -webkit-animation-name: to-99;
+          animation-name: to-99;
+}
+
+.percent-99-static .animated,
+.percent-99-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-15.52deg);
+          transform: rotate(-15.52deg);
+}
+.percent-98 .speedometer.play .animated,
+.percent-98-sm .speedometer.play .animated {
+  -webkit-animation-name: to-98;
+          animation-name: to-98;
+}
+
+.percent-98-static .animated,
+.percent-98-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-17.04deg);
+          transform: rotate(-17.04deg);
+}
+.percent-97 .speedometer.play .animated,
+.percent-97-sm .speedometer.play .animated {
+  -webkit-animation-name: to-97;
+          animation-name: to-97;
+}
+
+.percent-97-static .animated,
+.percent-97-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-18.56deg);
+          transform: rotate(-18.56deg);
+}
+.percent-96 .speedometer.play .animated,
+.percent-96-sm .speedometer.play .animated {
+  -webkit-animation-name: to-96;
+          animation-name: to-96;
+}
+
+.percent-96-static .animated,
+.percent-96-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-20.08deg);
+          transform: rotate(-20.08deg);
+}
 .percent-95 .speedometer.play .animated,
 .percent-95-sm .speedometer.play .animated {
   -webkit-animation-name: to-95;
@@ -371,8 +424,198 @@
 .percent-95-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-9deg);
-          transform: rotate(-9deg);
+  -webkit-transform: rotate(-21.6deg);
+          transform: rotate(-21.6deg);
+}
+
+.percent-94 .speedometer.play .animated,
+.percent-94-sm .speedometer.play .animated {
+  -webkit-animation-name: to-94;
+          animation-name: to-94;
+}
+
+.percent-94-static .animated,
+.percent-94-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-23.12deg);
+          transform: rotate(-23.12deg);
+}
+
+.percent-93 .speedometer.play .animated,
+.percent-93-sm .speedometer.play .animated {
+  -webkit-animation-name: to-93;
+          animation-name: to-93;
+}
+
+.percent-93-static .animated,
+.percent-93-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-24.64deg);
+          transform: rotate(-24.64deg);
+}
+.percent-92 .speedometer.play .animated,
+.percent-92-sm .speedometer.play .animated {
+  -webkit-animation-name: to-92;
+          animation-name: to-92;
+}
+
+.percent-92-static .animated,
+.percent-92-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-26.16deg);
+          transform: rotate(-26.16deg);
+}
+
+.percent-91 .speedometer.play .animated,
+.percent-91-sm .speedometer.play .animated {
+  -webkit-animation-name: to-91;
+          animation-name: to-91;
+}
+
+.percent-91-static .animated,
+.percent-91-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-27.68deg);
+          transform: rotate(-27.68deg);
+}
+
+.percent-90 .speedometer.play .animated,
+.percent-90-sm .speedometer.play .animated {
+  -webkit-animation-name: to-90;
+          animation-name: to-90;
+}
+
+.percent-90-static .animated,
+.percent-90-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-29.2deg);
+          transform: rotate(-29.2deg);
+}
+
+.percent-89 .speedometer.play .animated,
+.percent-89-sm .speedometer.play .animated {
+  -webkit-animation-name: to-89;
+          animation-name: to-89;
+}
+
+.percent-89-static .animated,
+.percent-89-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-30.72deg);
+          transform: rotate(-30.72deg);
+}
+.percent-88 .speedometer.play .animated,
+.percent-88-sm .speedometer.play .animated {
+  -webkit-animation-name: to-88;
+          animation-name: to-88;
+}
+
+.percent-88-static .animated,
+.percent-88-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-32.24deg);
+          transform: rotate(-32.24deg);
+}
+.percent-87 .speedometer.play .animated,
+.percent-87-sm .speedometer.play .animated {
+  -webkit-animation-name: to-87;
+          animation-name: to-87;
+}
+
+.percent-87-static .animated,
+.percent-87-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-33.76deg);
+          transform: rotate(-33.76deg);
+}
+.percent-86 .speedometer.play .animated,
+.percent-86-sm .speedometer.play .animated {
+  -webkit-animation-name: to-86;
+          animation-name: to-86;
+}
+
+.percent-86-static .animated,
+.percent-86-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-35.28deg);
+          transform: rotate(-35.28deg);
+}
+
+.percent-85 .speedometer.play .animated,
+.percent-85-sm .speedometer.play .animated {
+  -webkit-animation-name: to-85;
+          animation-name: to-85;
+}
+
+.percent-85-static .animated,
+.percent-85-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-36.8deg);
+          transform: rotate(-36.8deg);
+}
+.percent-84 .speedometer.play .animated,
+.percent-84-sm .speedometer.play .animated {
+  -webkit-animation-name: to-84;
+          animation-name: to-84;
+}
+
+.percent-84-static .animated,
+.percent-84-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-38.32deg);
+          transform: rotate(-38.32deg);
+}
+
+.percent-83 .speedometer.play .animated,
+.percent-83-sm .speedometer.play .animated {
+  -webkit-animation-name: to-83;
+          animation-name: to-83;
+}
+
+.percent-83-static .animated,
+.percent-83-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-39.84deg);
+          transform: rotate(-39.84deg);
+}
+.percent-82 .speedometer.play .animated,
+.percent-82-sm .speedometer.play .animated {
+  -webkit-animation-name: to-82;
+          animation-name: to-82;
+}
+
+.percent-82-static .animated,
+.percent-82-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-41.63deg);
+          transform: rotate(-41.63deg);
+}
+
+.percent-81 .speedometer.play .animated,
+.percent-81-sm .speedometer.play .animated {
+  -webkit-animation-name: to-81;
+          animation-name: to-81;
+}
+
+.percent-81-static .animated,
+.percent-81-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-42.88deg);
+          transform: rotate(-42.88deg);
 }
 .percent-80 .speedometer.play .animated,
 .percent-80-sm .speedometer.play .animated {
@@ -384,8 +627,130 @@
 .percent-80-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-36deg);
-          transform: rotate(-36deg);
+  -webkit-transform: rotate(-44.4deg);
+          transform: rotate(-44.4deg);
+}
+
+.percent-79 .speedometer.play .animated,
+.percent-79-sm .speedometer.play .animated {
+  -webkit-animation-name: to-79;
+          animation-name: to-79;
+}
+
+.percent-79-static .animated,
+.percent-79-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-45.92deg);
+          transform: rotate(-45.92deg);
+}
+.percent-78 .speedometer.play .animated,
+.percent-78-sm .speedometer.play .animated {
+  -webkit-animation-name: to-78;
+          animation-name: to-78;
+}
+
+.percent-78-static .animated,
+.percent-78-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-47.44deg);
+          transform: rotate(-47.44deg);
+}
+.percent-77 .speedometer.play .animated,
+.percent-77-sm .speedometer.play .animated {
+  -webkit-animation-name: to-87;
+          animation-name: to-87;
+}
+
+.percent-77-static .animated,
+.percent-77-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-48.96deg);
+          transform: rotate(-48.96deg);
+}
+.percent-76 .speedometer.play .animated,
+.percent-76-sm .speedometer.play .animated {
+  -webkit-animation-name: to-76;
+          animation-name: to-76;
+}
+
+.percent-76-static .animated,
+.percent-76-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-50.48deg);
+          transform: rotate(-50.48deg);
+}
+
+
+.percent-75 .speedometer.play .animated,
+.percent-75-sm .speedometer.play .animated {
+  -webkit-animation-name: to-75;
+          animation-name: to-75;
+}
+
+.percent-75-static .animated,
+.percent-75-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-52deg);
+          transform: rotate(-52deg);
+}
+.percent-74 .speedometer.play .animated,
+.percent-74-sm .speedometer.play .animated {
+  -webkit-animation-name: to-74;
+          animation-name: to-74;
+}
+
+.percent-74-static .animated,
+.percent-74-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-53.52deg);
+          transform: rotate(-53.52deg);
+}
+
+.percent-73 .speedometer.play .animated,
+.percent-73-sm .speedometer.play .animated {
+  -webkit-animation-name: to-73;
+          animation-name: to-73;
+}
+
+.percent-73-static .animated,
+.percent-73-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-55.04deg);
+          transform: rotate(-55.04deg);
+}
+.percent-72 .speedometer.play .animated,
+.percent-72-sm .speedometer.play .animated {
+  -webkit-animation-name: to-72;
+          animation-name: to-72;
+}
+
+.percent-72-static .animated,
+.percent-72-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-56.56deg);
+          transform: rotate(-56.56deg);
+}
+
+.percent-71 .speedometer.play .animated,
+.percent-71-sm .speedometer.play .animated {
+  -webkit-animation-name: to-71;
+          animation-name: to-71;
+}
+
+.percent-71-static .animated,
+.percent-71-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-58.08deg);
+          transform: rotate(-58.08deg);
 }
 
 .percent-70 .speedometer.play .animated,
@@ -398,10 +763,133 @@
 .percent-70-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-54deg);
-          transform: rotate(-54deg);
+  -webkit-transform: rotate(-59.6deg);
+          transform: rotate(-59.6deg);
 }
-/*
+
+.percent-69 .speedometer.play .animated,
+.percent-69-sm .speedometer.play .animated {
+  -webkit-animation-name: to-69;
+          animation-name: to-69;
+}
+
+.percent-69-static .animated,
+.percent-69-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-61.12deg);
+          transform: rotate(-61.12deg);
+}
+.percent-68 .speedometer.play .animated,
+.percent-68-sm .speedometer.play .animated {
+  -webkit-animation-name: to-68;
+          animation-name: to-68;
+}
+
+.percent-68-static .animated,
+.percent-68-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-62.64deg);
+          transform: rotate(-62.64deg);
+}
+.percent-67 .speedometer.play .animated,
+.percent-67-sm .speedometer.play .animated {
+  -webkit-animation-name: to-67;
+          animation-name: to-67;
+}
+
+.percent-67-static .animated,
+.percent-67-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-64.16deg);
+          transform: rotate(-64.16deg);
+}
+.percent-66 .speedometer.play .animated,
+.percent-66-sm .speedometer.play .animated {
+  -webkit-animation-name: to-66;
+          animation-name: to-66;
+}
+
+.percent-66-static .animated,
+.percent-66-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-65.68deg);
+          transform: rotate(-65.68deg);
+}
+
+.percent-65 .speedometer.play .animated,
+.percent-65-sm .speedometer.play .animated {
+  -webkit-animation-name: to-65;
+          animation-name: to-65;
+}
+
+.percent-65-static .animated,
+.percent-65-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-67.2deg);
+          transform: rotate(-67.2deg);
+}
+
+.percent-64 .speedometer.play .animated,
+.percent-64-sm .speedometer.play .animated {
+  -webkit-animation-name: to-64;
+          animation-name: to-64;
+}
+
+.percent-64-static .animated,
+.percent-64-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-68.72deg);
+          transform: rotate(-68.72deg);
+}
+
+.percent-63 .speedometer.play .animated,
+.percent-63-sm .speedometer.play .animated {
+  -webkit-animation-name: to-63;
+          animation-name: to-63;
+}
+
+.percent-63-static .animated,
+.percent-63-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-70.24deg);
+          transform: rotate(-70.24deg);
+}
+.percent-62 .speedometer.play .animated,
+.percent-62-sm .speedometer.play .animated {
+  -webkit-animation-name: to-62;
+          animation-name: to-62;
+}
+
+.percent-62-static .animated,
+.percent-62-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-71.76deg);
+          transform: rotate(-71.76deg);
+}
+
+.percent-61 .speedometer.play .animated,
+.percent-61-sm .speedometer.play .animated {
+  -webkit-animation-name: to-61;
+          animation-name: to-61;
+}
+
+.percent-61-static .animated,
+.percent-61-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-73.28deg);
+          transform: rotate(-73.28deg);
+}
+
+
 .percent-60 .speedometer.play .animated,
 .percent-60-sm .speedometer.play .animated {
   -webkit-animation-name: to-60;
@@ -412,9 +900,63 @@
 .percent-60-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-72deg);
-          transform: rotate(-72deg);
-}*/
+  -webkit-transform: rotate(-74.8deg);
+          transform: rotate(-74.8deg);
+}
+
+.percent-59 .speedometer.play .animated,
+.percent-59-sm .speedometer.play .animated {
+  -webkit-animation-name: to-59;
+          animation-name: to-59;
+}
+
+.percent-59-static .animated,
+.percent-59-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-76.32deg);
+          transform: rotate(-76.32deg);
+}
+.percent-58 .speedometer.play .animated,
+.percent-58-sm .speedometer.play .animated {
+  -webkit-animation-name: to-58;
+          animation-name: to-58;
+}
+
+.percent-58-static .animated,
+.percent-58-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-77.84deg);
+          transform: rotate(-77.84deg);
+}
+.percent-57 .speedometer.play .animated,
+.percent-57-sm .speedometer.play .animated {
+  -webkit-animation-name: to-57;
+          animation-name: to-57;
+}
+
+.percent-57-static .animated,
+.percent-57-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-79.36deg);
+          transform: rotate(-79.36deg);
+}
+.percent-56 .speedometer.play .animated,
+.percent-56-sm .speedometer.play .animated {
+  -webkit-animation-name: to-56;
+          animation-name: to-56;
+}
+
+.percent-56-static .animated,
+.percent-56-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-80.88deg);
+          transform: rotate(-80.88deg);
+}
+
 .percent-55 .speedometer.play .animated,
 .percent-55-sm .speedometer.play .animated {
   -webkit-animation-name: to-55;
@@ -425,16 +967,196 @@
 .percent-55-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-81deg);
-          transform: rotate(-81deg);
+  -webkit-transform: rotate(-82.4deg);
+          transform: rotate(-82.4deg);
 }
+
+.percent-54 .speedometer.play .animated,
+.percent-54-sm .speedometer.play .animated {
+  -webkit-animation-name: to-54;
+          animation-name: to-54;
+}
+
+.percent-54-static .animated,
+.percent-54-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-83.92deg);
+          transform: rotate(-83.92deg);
+}
+
+.percent-53 .speedometer.play .animated,
+.percent-53-sm .speedometer.play .animated {
+  -webkit-animation-name: to-53;
+          animation-name: to-53;
+}
+
+.percent-53-static .animated,
+.percent-53-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-85.44deg);
+          transform: rotate(-85.44deg);
+}
+.percent-52 .speedometer.play .animated,
+.percent-52-sm .speedometer.play .animated {
+  -webkit-animation-name: to-52;
+          animation-name: to-52;
+}
+
+.percent-52-static .animated,
+.percent-52-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-86.96deg);
+          transform: rotate(-86.96deg);
+}
+
+.percent-51 .speedometer.play .animated,
+.percent-51-sm .speedometer.play .animated {
+  -webkit-animation-name: to-51;
+          animation-name: to-51;
+}
+
+.percent-51-static .animated,
+.percent-51-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-88.48deg);
+          transform: rotate(-88.48deg);
+}
+
 
 .percent-50 .speedometer.play .animated,
 .percent-50-sm .speedometer.play .animated {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
-/*
+
+
+.percent-49 .speedometer.play .animated,
+.percent-49-sm .speedometer.play .animated {
+  -webkit-animation-name: to-49;
+          animation-name: to-49;
+}
+
+.percent-49-static .animated,
+.percent-49-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-91.52deg);
+          transform: rotate(-91.52deg);
+}
+.percent-48 .speedometer.play .animated,
+.percent-48-sm .speedometer.play .animated {
+  -webkit-animation-name: to-48;
+          animation-name: to-48;
+}
+
+.percent-48-static .animated,
+.percent-48-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-93.04deg);
+          transform: rotate(-93.04deg);
+}
+.percent-47 .speedometer.play .animated,
+.percent-47-sm .speedometer.play .animated {
+  -webkit-animation-name: to-47;
+          animation-name: to-47;
+}
+
+.percent-47-static .animated,
+.percent-47-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-94.56deg);
+          transform: rotate(-94.56deg);
+}
+.percent-46 .speedometer.play .animated,
+.percent-46-sm .speedometer.play .animated {
+  -webkit-animation-name: to-46;
+          animation-name: to-46;
+}
+
+.percent-46-static .animated,
+.percent-46-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-96.08deg);
+          transform: rotate(-96.08deg);
+}
+
+.percent-45 .speedometer.play .animated,
+.percent-45-sm .speedometer.play .animated {
+  -webkit-animation-name: to-45;
+          animation-name: to-45;
+}
+
+.percent-45-static .animated,
+.percent-45-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-97.6deg);
+          transform: rotate(-97.6deg);
+}
+
+.percent-44 .speedometer.play .animated,
+.percent-44-sm .speedometer.play .animated {
+  -webkit-animation-name: to-44;
+          animation-name: to-44;
+}
+
+.percent-44-static .animated,
+.percent-44-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-99.12deg);
+          transform: rotate(-99.12deg);
+}
+
+.percent-43 .speedometer.play .animated,
+.percent-43-sm .speedometer.play .animated {
+  -webkit-animation-name: to-43;
+          animation-name: to-43;
+}
+
+.percent-43-static .animated,
+.percent-43-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-100.64deg);
+          transform: rotate(-100.64deg);
+}
+.percent-42 .speedometer.play .animated,
+.percent-42-sm .speedometer.play .animated {
+  -webkit-animation-name: to-42;
+          animation-name: to-42;
+}
+
+.percent-42-static .animated,
+.percent-42-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-102.16deg);
+          transform: rotate(-102.16deg);
+}
+
+.percent-41 .speedometer.play .animated,
+.percent-41-sm .speedometer.play .animated {
+  -webkit-animation-name: to-41;
+          animation-name: to-41;
+}
+
+.percent-41-static .animated,
+.percent-41-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-103.68deg);
+          transform: rotate(-103.68deg);
+}
+
+
 .percent-40 .speedometer.play .animated,
 .percent-40-sm .speedometer.play .animated {
   -webkit-animation-name: to-40;
@@ -445,9 +1167,62 @@
 .percent-40-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-108deg);
-          transform: rotate(-108deg);
-}*/
+  -webkit-transform: rotate(-105.2deg);
+          transform: rotate(-105.2deg);
+}
+
+.percent-39 .speedometer.play .animated,
+.percent-39-sm .speedometer.play .animated {
+  -webkit-animation-name: to-39;
+          animation-name: to-39;
+}
+
+.percent-39-static .animated,
+.percent-39-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-106.72deg);
+          transform: rotate(-106.72deg);
+}
+.percent-38 .speedometer.play .animated,
+.percent-38-sm .speedometer.play .animated {
+  -webkit-animation-name: to-38;
+          animation-name: to-38;
+}
+
+.percent-38-static .animated,
+.percent-38-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-108.24deg);
+          transform: rotate(-108.24deg);
+}
+.percent-37 .speedometer.play .animated,
+.percent-37-sm .speedometer.play .animated {
+  -webkit-animation-name: to-37;
+          animation-name: to-37;
+}
+
+.percent-37-static .animated,
+.percent-37-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-109.76deg);
+          transform: rotate(-109.76deg);
+}
+.percent-36 .speedometer.play .animated,
+.percent-36-sm .speedometer.play .animated {
+  -webkit-animation-name: to-36;
+          animation-name: to-36;
+}
+
+.percent-36-static .animated,
+.percent-36-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-111.28deg);
+          transform: rotate(-111.28deg);
+}
 
 .percent-35 .speedometer.play .animated,
 .percent-35-sm .speedometer.play .animated {
@@ -459,8 +1234,201 @@
 .percent-35-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-117deg);
-          transform: rotate(-117deg);
+  -webkit-transform: rotate(-112.8deg);
+          transform: rotate(-112.8deg);
+}
+
+
+.percent-34 .speedometer.play .animated,
+.percent-34-sm .speedometer.play .animated {
+  -webkit-animation-name: to-34;
+          animation-name: to-34;
+}
+
+.percent-34-static .animated,
+.percent-34-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-114.32deg);
+          transform: rotate(-114.32deg);
+}
+
+.percent-33 .speedometer.play .animated,
+.percent-33-sm .speedometer.play .animated {
+  -webkit-animation-name: to-33;
+          animation-name: to-33;
+}
+
+.percent-33-static .animated,
+.percent-33-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-115.84deg);
+          transform: rotate(-115.84deg);
+}
+.percent-32 .speedometer.play .animated,
+.percent-32-sm .speedometer.play .animated {
+  -webkit-animation-name: to-32;
+          animation-name: to-32;
+}
+
+.percent-32-static .animated,
+.percent-32-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-117.36deg);
+          transform: rotate(-117.36deg);
+}
+
+.percent-31 .speedometer.play .animated,
+.percent-31-sm .speedometer.play .animated {
+  -webkit-animation-name: to-31;
+          animation-name: to-31;
+}
+
+.percent-31-static .animated,
+.percent-31-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-118.88deg);
+          transform: rotate(-118.88deg);
+}
+
+.percent-30 .speedometer.play .animated,
+.percent-30-sm .speedometer.play .animated {
+  -webkit-animation-name: to-30;
+          animation-name: to-30;
+}
+
+.percent-30-static .animated,
+.percent-30-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-120.4deg);
+          transform: rotate(-120.4deg);
+}
+
+
+.percent-29 .speedometer.play .animated,
+.percent-29-sm .speedometer.play .animated {
+  -webkit-animation-name: to-29;
+          animation-name: to-29;
+}
+
+.percent-29-static .animated,
+.percent-29-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-121.92deg);
+          transform: rotate(-121.92deg);
+}
+.percent-28 .speedometer.play .animated,
+.percent-28-sm .speedometer.play .animated {
+  -webkit-animation-name: to-28;
+          animation-name: to-28;
+}
+
+.percent-28-static .animated,
+.percent-28-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-123.44deg);
+          transform: rotate(-123.44deg);
+}
+.percent-27 .speedometer.play .animated,
+.percent-27-sm .speedometer.play .animated {
+  -webkit-animation-name: to-27;
+          animation-name: to-27;
+}
+
+.percent-27-static .animated,
+.percent-27-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-124.96deg);
+          transform: rotate(-124.96deg);
+}
+.percent-26 .speedometer.play .animated,
+.percent-26-sm .speedometer.play .animated {
+  -webkit-animation-name: to-26;
+          animation-name: to-26;
+}
+
+.percent-26-static .animated,
+.percent-26-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-126.48deg);
+          transform: rotate(-126.48deg);
+}
+
+
+.percent-25 .speedometer.play .animated,
+.percent-25-sm .speedometer.play .animated {
+  -webkit-animation-name: to-25;
+          animation-name: to-25;
+}
+
+.percent-25-static .animated,
+.percent-25-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-128deg);
+          transform: rotate(-128deg);
+}
+
+
+.percent-24 .speedometer.play .animated,
+.percent-24-sm .speedometer.play .animated {
+  -webkit-animation-name: to-24;
+          animation-name: to-24;
+}
+
+.percent-24-static .animated,
+.percent-24-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-129.52deg);
+          transform: rotate(-129.52deg);
+}
+.percent-23 .speedometer.play .animated,
+.percent-23-sm .speedometer.play .animated {
+  -webkit-animation-name: to-23;
+          animation-name: to-23;
+}
+
+.percent-23-static .animated,
+.percent-23-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-131.04deg);
+          transform: rotate(-131.04deg);
+}
+.percent-22 .speedometer.play .animated,
+.percent-22-sm .speedometer.play .animated {
+  -webkit-animation-name: to-22;
+          animation-name: to-22;
+}
+
+.percent-22-static .animated,
+.percent-22-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-132.56deg);
+          transform: rotate(-132.56deg);
+}
+.percent-21 .speedometer.play .animated,
+.percent-21-sm .speedometer.play .animated {
+  -webkit-animation-name: to-21;
+          animation-name: to-21;
+}
+
+.percent-21-static .animated,
+.percent-21-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-134.08deg);
+          transform: rotate(-134.08deg);
 }
 
 .percent-20 .speedometer.play .animated,
@@ -473,9 +1441,133 @@
 .percent-20-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-144deg);
-          transform: rotate(-144deg);
+  -webkit-transform: rotate(-135.6deg);
+          transform: rotate(-135.6deg);
 }
+
+
+.percent-19 .speedometer.play .animated,
+.percent-19-sm .speedometer.play .animated {
+  -webkit-animation-name: to-19;
+          animation-name: to-19;
+}
+
+.percent-19-static .animated,
+.percent-19-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-137.12deg);
+          transform: rotate(-137.12deg);
+}
+.percent-18 .speedometer.play .animated,
+.percent-18-sm .speedometer.play .animated {
+  -webkit-animation-name: to-18;
+          animation-name: to-18;
+}
+
+.percent-18-static .animated,
+.percent-18-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-138.64deg);
+          transform: rotate(-138.64deg);
+}
+.percent-17 .speedometer.play .animated,
+.percent-17-sm .speedometer.play .animated {
+  -webkit-animation-name: to-17;
+          animation-name: to-17;
+}
+
+.percent-17-static .animated,
+.percent-17-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-140.16deg);
+          transform: rotate(-140.16deg);
+}
+.percent-16 .speedometer.play .animated,
+.percent-16-sm .speedometer.play .animated {
+  -webkit-animation-name: to-16;
+          animation-name: to-16;
+}
+
+.percent-16-static .animated,
+.percent-16-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-141.68deg);
+          transform: rotate(-141.68deg);
+}
+
+
+.percent-15 .speedometer.play .animated,
+.percent-15-sm .speedometer.play .animated {
+  -webkit-animation-name: to-15;
+          animation-name: to-15;
+}
+
+.percent-15-static .animated,
+.percent-15-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-143.2deg);
+          transform: rotate(-143.2deg);
+}
+
+
+.percent-14 .speedometer.play .animated,
+.percent-14-sm .speedometer.play .animated {
+  -webkit-animation-name: to-14;
+          animation-name: to-14;
+}
+
+.percent-14-static .animated,
+.percent-14-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-144.72deg);
+          transform: rotate(-144.72deg);
+}
+.percent-13 .speedometer.play .animated,
+.percent-13-sm .speedometer.play .animated {
+  -webkit-animation-name: to-13;
+          animation-name: to-13;
+}
+
+.percent-13-static .animated,
+.percent-13-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-146.24deg);
+          transform: rotate(-146.24deg);
+}
+.percent-12 .speedometer.play .animated,
+.percent-12-sm .speedometer.play .animated {
+  -webkit-animation-name: to-12;
+          animation-name: to-12;
+}
+
+.percent-12-static .animated,
+.percent-12-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-147.76deg);
+          transform: rotate(-147.76deg);
+}
+.percent-11 .speedometer.play .animated,
+.percent-11-sm .speedometer.play .animated {
+  -webkit-animation-name: to-11;
+          animation-name: to-11;
+}
+
+.percent-11-static .animated,
+.percent-11-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-149.28deg);
+          transform: rotate(-149.28deg);
+}
+
 
 .percent-10 .speedometer.play .animated,
 .percent-10-sm .speedometer.play .animated {
@@ -483,20 +1575,142 @@
           animation-name: to-10;
 }
 
-.percent-16-static .animated,
-.percent-16-static-sm .animated {
+.percent-10-static .animated,
+.percent-10-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-162deg);
-          transform: rotate(-162deg);
+  -webkit-transform: rotate(-150.8deg);
+          transform: rotate(-150.8deg);
+}
+
+.percent-9 .speedometer.play .animated,
+.percent-9-sm .speedometer.play .animated {
+  -webkit-animation-name: to-9;
+          animation-name: to-9;
+}
+
+.percent-9-static .animated,
+.percent-9-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-152.32deg);
+          transform: rotate(-152.32deg);
+}
+.percent-8 .speedometer.play .animated,
+.percent-8-sm .speedometer.play .animated {
+  -webkit-animation-name: to-8;
+          animation-name: to-8;
+}
+
+.percent-8-static .animated,
+.percent-8-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-153.84deg);
+          transform: rotate(-153.84deg);
+}
+.percent-7 .speedometer.play .animated,
+.percent-7-sm .speedometer.play .animated {
+  -webkit-animation-name: to-7;
+          animation-name: to-7;
+}
+
+.percent-7-static .animated,
+.percent-7-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-155.36deg);
+          transform: rotate(-155.36deg);
+}
+.percent-6 .speedometer.play .animated,
+.percent-6-sm .speedometer.play .animated {
+  -webkit-animation-name: to-6;
+          animation-name: to-6;
+}
+
+.percent-6-static .animated,
+.percent-6-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-156.88deg);
+          transform: rotate(-156.88deg);
+}
+
+
+.percent-5 .speedometer.play .animated,
+.percent-5-sm .speedometer.play .animated {
+  -webkit-animation-name: to-5;
+          animation-name: to-5;
+}
+
+.percent-5-static .animated,
+.percent-5-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-158.4deg);
+          transform: rotate(-158.4deg);
+}
+
+
+.percent-4 .speedometer.play .animated,
+.percent-4-sm .speedometer.play .animated {
+  -webkit-animation-name: to-4;
+          animation-name: to-4;
+}
+
+.percent-4-static .animated,
+.percent-4-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-159.92deg);
+          transform: rotate(-159.92deg);
+}
+.percent-3 .speedometer.play .animated,
+.percent-3-sm .speedometer.play .animated {
+  -webkit-animation-name: to-3;
+          animation-name: to-3;
+}
+
+.percent-3-static .animated,
+.percent-3-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-161.44deg);
+          transform: rotate(-161.44deg);
+}
+.percent-2 .speedometer.play .animated,
+.percent-2-sm .speedometer.play .animated {
+  -webkit-animation-name: to-2;
+          animation-name: to-2;
+}
+
+.percent-2-static .animated,
+.percent-2-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-162.96deg);
+          transform: rotate(-162.96deg);
+}
+.percent-1 .speedometer.play .animated,
+.percent-1-sm .speedometer.play .animated {
+  -webkit-animation-name: to-1;
+          animation-name: to-1;
+}
+
+.percent-1-static .animated,
+.percent-1-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-164.48deg);
+          transform: rotate(-164.48deg);
 }
 
 .percent-0-static .animated,
 .percent-0-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-150.12deg);
-          transform: rotate(-150.12deg);
+  -webkit-transform: rotate(-166deg);
+          transform: rotate(-166deg);
 }
 
 @-webkit-keyframes to-100 {
@@ -505,39 +1719,302 @@
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(-14deg);
+            transform: rotate(-14deg);
+  }
+}
+@-webkit-keyframes to-99 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15.52deg);
+            transform: rotate(-15.52deg);
+  }
+}
+@-webkit-keyframes to-98 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-17.04deg);
+            transform: rotate(-17.04deg);
+  }
+}
+@-webkit-keyframes to-97 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-18.56deg);
+            transform: rotate(-18.56deg);
+  }
+}
+@-webkit-keyframes to-96 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20.08deg);
+            transform: rotate(-20.08deg);
   }
 }
 
-@keyframes to-100 {
+@keyframes to-95 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(-21.6deg);
+            transform: rotate(-21.6deg);
   }
 }
-@-webkit-keyframes to-95 {
+@-webkit-keyframes to-94 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-9deg);
-            transform: rotate(-9deg);
+    -webkit-transform: rotate(-23.12deg);
+            transform: rotate(-23.12deg);
   }
 }
-@keyframes to-80 {
+@-webkit-keyframes to-93 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-36deg);
-            transform: rotate(-36deg);
+    -webkit-transform: rotate(-24.64deg);
+            transform: rotate(-24.64deg);
+  }
+}
+@-webkit-keyframes to-92 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-26.16deg);
+            transform: rotate(-26.16deg);
+  }
+}
+
+@-webkit-keyframes to-91 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-27.68deg);
+            transform: rotate(-27.68deg);
+  }
+}
+
+@-webkit-keyframes to-90 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-29.2deg);
+            transform: rotate(-29.2deg);
+  }
+}
+@-webkit-keyframes to-89 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30.72deg);
+            transform: rotate(-30.72deg);
+  }
+}
+@-webkit-keyframes to-88 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-32.24deg);
+            transform: rotate(-32.24deg);
+  }
+}
+@-webkit-keyframes to-87 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-33.76deg);
+            transform: rotate(-33.76deg);
+  }
+}
+@-webkit-keyframes to-86 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-35.28deg);
+            transform: rotate(-35.28deg);
+  }
+}
+@keyframes to-85 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-36.8deg);
+            transform: rotate(-36.8deg);
+  }
+}
+@-webkit-keyframes to-84 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-38.32deg);
+            transform: rotate(-38.32deg);
+  }
+}
+@-webkit-keyframes to-83 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-39.84deg);
+            transform: rotate(-39.84deg);
+  }
+}
+@-webkit-keyframes to-82 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-41.36deg);
+            transform: rotate(-41.36deg);
+  }
+}
+@-webkit-keyframes to-81 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-42.88deg);
+            transform: rotate(-42.88deg);
+  }
+}
+@-webkit-keyframes to-80 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-44.4deg);
+            transform: rotate(-44.4deg);
+  }
+}
+
+@-webkit-keyframes to-79 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-45.92deg);
+            transform: rotate(-45.92eg);
+  }
+}
+@-webkit-keyframes to-78 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-47.44deg);
+            transform: rotate(-47.44deg);
+  }
+}
+@-webkit-keyframes to-77 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-48.96deg);
+            transform: rotate(-48.96deg);
+  }
+}
+@-webkit-keyframes to-76 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-50.48deg);
+            transform: rotate(-50.48deg);
+  }
+}
+@-webkit-keyframes to-75 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-52deg);
+            transform: rotate(-52deg);
+  }
+}
+@-webkit-keyframes to-74 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-53.52deg);
+            transform: rotate(-53.52deg);
+  }
+}
+@-webkit-keyframes to-73 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-55.04deg);
+            transform: rotate(-55.04deg);
+  }
+}
+@-webkit-keyframes to-72 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-56.56deg);
+            transform: rotate(-56.56deg);
+  }
+}
+@-webkit-keyframes to-71 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-58.08deg);
+            transform: rotate(-58.08deg);
   }
 }
 @-webkit-keyframes to-70 {
@@ -546,20 +2023,202 @@
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-54deg);
-            transform: rotate(-54deg);
+    -webkit-transform: rotate(-59.6deg);
+            transform: rotate(-59.6deg);
   }
 }
+@-webkit-keyframes to-69 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-61.12deg);
+            transform: rotate(-61.12deg);
+  }
+}
+@-webkit-keyframes to-68 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-62.64deg);
+            transform: rotate(-62.64deg);
+  }
+}
+@-webkit-keyframes to-67 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-64.16deg);
+            transform: rotate(-64.16deg);
+  }
+}
+@-webkit-keyframes to-66 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-65.68deg);
+            transform: rotate(-65.68deg);
+  }
+}
+@-webkit-keyframes to-65 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-67.2deg);
+            transform: rotate(-67.2deg);
+  }
+}
+@-webkit-keyframes to-64 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-68.72deg);
+            transform: rotate(-68.72deg);
+  }
+}
+@-webkit-keyframes to-63 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-70.24deg);
+            transform: rotate(-70.24deg);
+  }
+}
+@-webkit-keyframes to-62 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-71.76deg);
+            transform: rotate(-71.76deg);
+  }
+}
+@-webkit-keyframes to-61 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-73.28deg);
+            transform: rotate(-73.28deg);
+  }
+}
+@-webkit-keyframes to-60 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-74.8deg);
+            transform: rotate(-74.8deg);
+  }
+}
+@-webkit-keyframes to-59 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-76.32deg);
+            transform: rotate(-76.32deg);
+  }
+}
+@-webkit-keyframes to-58 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-77.84deg);
+            transform: rotate(-77.84deg);
+  }
+}
+@-webkit-keyframes to-57 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-79.36deg);
+            transform: rotate(-79.36deg);
+  }
+}
+@-webkit-keyframes to-56 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-80.88deg);
+            transform: rotate(-80.88deg);
+  }
+}
+
 @keyframes to-55 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-81deg);
-            transform: rotate(-81deg);
+    -webkit-transform: rotate(-82.4deg);
+            transform: rotate(-82.4deg);
   }
 }
+@-webkit-keyframes to-54 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-83.92deg);
+            transform: rotate(-83.926deg);
+  }
+}
+@-webkit-keyframes to-53 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-85.44deg);
+            transform: rotate(-85.44deg);
+  }
+}
+@-webkit-keyframes to-52 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-86.96deg);
+            transform: rotate(-86.96deg);
+  }
+}
+@-webkit-keyframes to-51 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-88.48deg);
+            transform: rotate(-88.48deg);
+  }
+}
+
 @keyframes to-50 {
   0% {
     -webkit-transform: rotate(-180deg);
@@ -570,44 +2229,194 @@
             transform: rotate(-90deg);
   }
 }
+@-webkit-keyframes to-49 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-91.52deg);
+            transform: rotate(-91.52deg);
+  }
+}
+@-webkit-keyframes to-48 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-93.04deg);
+            transform: rotate(-93.04deg);
+  }
+}
+@-webkit-keyframes to-47 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-94.56deg);
+            transform: rotate(-94.56deg);
+  }
+}
+@-webkit-keyframes to-46 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-96.08deg);
+            transform: rotate(-96.08deg);
+  }
+}
+@-webkit-keyframes to-45 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-97.6deg);
+            transform: rotate(-97.6deg);
+  }
+}
+@-webkit-keyframes to-44 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-99.12deg);
+            transform: rotate(-99.12deg);
+  }
+}
+@-webkit-keyframes to-43 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-100.64deg);
+            transform: rotate(-100.64deg);
+  }
+}
+@-webkit-keyframes to-42 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-102.16deg);
+            transform: rotate(-102.16deg);
+  }
+}
+@-webkit-keyframes to-41 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-103.68deg);
+            transform: rotate(-103.68deg);
+  }
+}
+@-webkit-keyframes to-40 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-105.2deg);
+            transform: rotate(-105.2deg);
+  }
+}
+@-webkit-keyframes to-39 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-106.72deg);
+            transform: rotate(-106.72deg);
+  }
+}
+@-webkit-keyframes to-38 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-108.24deg);
+            transform: rotate(-108.24deg);
+  }
+}
+@-webkit-keyframes to-37 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-109.76deg);
+            transform: rotate(-109.76deg);
+  }
+}
+@-webkit-keyframes to-36 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-111.28deg);
+            transform: rotate(-111.28deg);
+  }
+}
 @-webkit-keyframes to-35 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-117deg);
-            transform: rotate(-117deg);
+    -webkit-transform: rotate(-112.8deg);
+            transform: rotate(-112.8deg);
   }
 }
-@keyframes to-20 {
+@-webkit-keyframes to-34 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-144deg);
-            transform: rotate(-144deg);
+    -webkit-transform: rotate(-114.32deg);
+            transform: rotate(-114.32deg);
   }
 }
-@-webkit-keyframes to-10 {
+@-webkit-keyframes to-33 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-162deg);
-            transform: rotate(-162deg);
+    -webkit-transform: rotate(-115.84deg);
+            transform: rotate(-115.84deg);
   }
 }
-@keyframes to-33 {
+@-webkit-keyframes to-32 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-120.06deg);
-            transform: rotate(-120.06deg);
+    -webkit-transform: rotate(-117.36deg);
+            transform: rotate(-117.36deg);
+  }
+}
+@-webkit-keyframes to-31 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-118.88deg);
+            transform: rotate(-118.88deg);
   }
 }
 @-webkit-keyframes to-30 {
@@ -616,18 +2425,138 @@
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-126deg);
-            transform: rotate(-126deg);
+    -webkit-transform: rotate(-120.4deg);
+            transform: rotate(-120.4deg);
   }
 }
-@keyframes to-30 {
+@-webkit-keyframes to-29 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-126deg);
-            transform: rotate(-126deg);
+    -webkit-transform: rotate(-121.92deg);
+            transform: rotate(-121.92deg);
+  }
+}
+@-webkit-keyframes to-28 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-123.44deg);
+            transform: rotate(-123.44deg);
+  }
+}
+@-webkit-keyframes to-27 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-124.96deg);
+            transform: rotate(-124.96deg);
+  }
+}
+@-webkit-keyframes to-26 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-126.48deg);
+            transform: rotate(-126.48deg);
+  }
+}
+@-webkit-keyframes to-25 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-128deg);
+            transform: rotate(-128deg);
+  }
+}
+@-webkit-keyframes to-24 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-129.52deg);
+            transform: rotate(-129.52deg);
+  }
+}
+@-webkit-keyframes to-23 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-131.04deg);
+            transform: rotate(-131.04deg);
+  }
+}
+@-webkit-keyframes to-22 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-132.56deg);
+            transform: rotate(-132.56deg);
+  }
+}
+@-webkit-keyframes to-21 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-134.08deg);
+            transform: rotate(-134.08deg);
+  }
+}
+@keyframes to-20 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-135.6deg);
+            transform: rotate(-135.6deg);
+  }
+}
+@-webkit-keyframes to-19 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-137.12deg);
+            transform: rotate(-137.12deg);
+  }
+}
+@-webkit-keyframes to-18 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-138.64deg);
+            transform: rotate(-138.64deg);
+  }
+}
+@-webkit-keyframes to-17 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-140.16deg);
+            transform: rotate(-140.16deg);
   }
 }
 @-webkit-keyframes to-16 {
@@ -636,175 +2565,158 @@
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-150.12deg);
-            transform: rotate(-150.12deg);
+    -webkit-transform: rotate(-141.68deg);
+            transform: rotate(-141.68deg);
   }
 }
-@keyframes to-16 {
+@-webkit-keyframes to-15 {
   0% {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
   100% {
-    -webkit-transform: rotate(-150.12deg);
-            transform: rotate(-150.12deg);
+    -webkit-transform: rotate(-143.2deg);
+            transform: rotate(-143.2deg);
   }
 }
-/*
-@media (max-width: 71.875em) {
-  .speedometer {
-    width: 189px;
-    height: 108px;
-    position: relative;
-    margin: 20px auto;
+@-webkit-keyframes to-14 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
-  .speedometer::after {
-    height: 9px;
-    width: 117px;
-  }
-  .speedometer .dial {
-    padding-top: 18px;
-  }
-  .speedometer .bar {
-    position: relative;
-    overflow: hidden;
-    height: 85.5px;
-  }
-  .speedometer .half-circle {
-    height: 85.5px;
-    width: 171px;
-    border-radius: 171px 171px 0 0;
-    -webkit-transform-origin: bottom center;
-            transform-origin: bottom center;
-  }
-  .speedometer .half-circle-cover {
-    height: 58.5px;
-    width: 117px;
-    border-radius: 171px 171px 0 0;
-  }
-  .speedometer .needle {
-    width: 10.8px;
-  }
-  .speedometer .needle .inner {
-    height: 100.8px;
-    width: 10.8px;
+  100% {
+    -webkit-transform: rotate(-144.72deg);
+            transform: rotate(-144.72deg);
   }
 }
-@media (max-width: 64.0625em) {
-  .speedometer {
-    width: 168px;
-    height: 96px;
-    position: relative;
-    margin: 20px auto;
+@-webkit-keyframes to-13 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
-  .speedometer::after {
-    height: 8px;
-    width: 104px;
-  }
-  .speedometer .dial {
-    padding-top: 16px;
-  }
-  .speedometer .bar {
-    position: relative;
-    overflow: hidden;
-    height: 76px;
-  }
-  .speedometer .half-circle {
-    height: 76px;
-    width: 152px;
-    border-radius: 152px 152px 0 0;
-    -webkit-transform-origin: bottom center;
-            transform-origin: bottom center;
-  }
-  .speedometer .half-circle-cover {
-    height: 52px;
-    width: 104px;
-    border-radius: 152px 152px 0 0;
-  }
-  .speedometer .needle {
-    width: 9.6px;
-  }
-  .speedometer .needle .inner {
-    height: 89.6px;
-    width: 9.6px;
+  100% {
+    -webkit-transform: rotate(-146.24deg);
+            transform: rotate(-146.24deg);
   }
 }
-@media (max-width: 56.25em) {
-  .speedometer {
-    width: 147px;
-    height: 84px;
-    position: relative;
-    margin: 20px auto;
+@-webkit-keyframes to-12 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
-  .speedometer::after {
-    height: 7px;
-    width: 91px;
-  }
-  .speedometer .dial {
-    padding-top: 14px;
-  }
-  .speedometer .bar {
-    position: relative;
-    overflow: hidden;
-    height: 66.5px;
-  }
-  .speedometer .half-circle {
-    height: 66.5px;
-    width: 133px;
-    border-radius: 133px 133px 0 0;
-    -webkit-transform-origin: bottom center;
-            transform-origin: bottom center;
-  }
-  .speedometer .half-circle-cover {
-    height: 45.5px;
-    width: 91px;
-    border-radius: 133px 133px 0 0;
-  }
-  .speedometer .needle {
-    width: 8.4px;
-  }
-  .speedometer .needle .inner {
-    height: 78.4px;
-    width: 8.4px;
+  100% {
+    -webkit-transform: rotate(-147.76deg);
+            transform: rotate(-147.76deg);
   }
 }
-@media (max-width: 51.5625em) {
-  .speedometer {
-    width: 126px;
-    height: 72px;
-    position: relative;
-    margin: 20px auto;
+@-webkit-keyframes to-11 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
-  .speedometer::after {
-    height: 6px;
-    width: 78px;
-  }
-  .speedometer .dial {
-    padding-top: 12px;
-  }
-  .speedometer .bar {
-    position: relative;
-    overflow: hidden;
-    height: 57px;
-  }
-  .speedometer .half-circle {
-    height: 57px;
-    width: 114px;
-    border-radius: 114px 114px 0 0;
-    -webkit-transform-origin: bottom center;
-            transform-origin: bottom center;
-  }
-  .speedometer .half-circle-cover {
-    height: 39px;
-    width: 78px;
-    border-radius: 114px 114px 0 0;
-  }
-  .speedometer .needle {
-    width: 7.2px;
-  }
-  .speedometer .needle .inner {
-    height: 67.2px;
-    width: 7.2px;
+  100% {
+    -webkit-transform: rotate(-149.28deg);
+            transform: rotate(-149.286deg);
   }
 }
-*/
+@-webkit-keyframes to-10 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-150.8deg);
+            transform: rotate(-150.8deg);
+  }
+}
+@-webkit-keyframes to-9 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-152.32deg);
+            transform: rotate(-152.32deg);
+  }
+}
+@-webkit-keyframes to-8 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-153.84deg);
+            transform: rotate(-153.84deg);
+  }
+}
+@-webkit-keyframes to-7 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-155.36deg);
+            transform: rotate(-155.36deg);
+  }
+}
+@-webkit-keyframes to-6 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-156.886deg);
+            transform: rotate(-156.88deg);
+  }
+}
+@keyframes to-5 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-158.4deg);
+            transform: rotate(-158.4deg);
+  }
+}
+
+@-webkit-keyframes to-4 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-159.92deg);
+            transform: rotate(-159.92deg);
+  }
+}
+@-webkit-keyframes to-3 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-161.44deg);
+            transform: rotate(-161.44deg);
+  }
+}
+@-webkit-keyframes to-2 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-162.96deg);
+            transform: rotate(-162.96deg);
+  }
+}
+@-webkit-keyframes to-1 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-164.48deg);
+            transform: rotate(-164.48deg);
+  }
+}

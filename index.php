@@ -73,7 +73,8 @@
 
    <div class="section">
   <form action="comparar.php" method="get">
-  <div id="tab1" class="main">
+
+  <div class="main">
 
     <div class="title" id="title"><h1>Cotice su vehículo</h1></div>
       <div>
@@ -87,7 +88,7 @@
                 <option value="3">Fortuner</option>
                 <option value="4">Rav4</option>
                 <option value="5">Rush</option>
-                <option value="6">Corola</option>
+                <option value="6">Corolla</option>
                 <option value="7">Yaris</option>
                 <option value="8">Figo</option>
               </select>
@@ -125,7 +126,7 @@
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="precio">910</span></div>
+        <div class="price">$<span id="precio">910</span><input type="hidden" id="hprecio" name="precio"></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -189,12 +190,12 @@
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1">
+           Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1" checked="checked">
            <label for="op-1-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" checked="checked">
+           No <input type="checkbox" id="op-1-2" name="vsustituto" value="0">
          <label for="op-1-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
@@ -212,12 +213,12 @@
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" >
+               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" checked="checked">
                <label for="op-2-1"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" checked="checked">
+               No <input type="checkbox" id="op-2-2" name="tmovil" value="0">
                <label for="op-2-2"><span></span></label>
            </div>
            <div class="cearboth"></div>
@@ -252,9 +253,9 @@
    </div>
 
 
-
+<div id="tab1" class="tabcontent">
   </div>
-
+  </div>
   <div id="tab2" class="tabcontent">
     <h3>Opción 2</h3>
   </div>

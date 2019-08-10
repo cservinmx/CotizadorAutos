@@ -5,8 +5,8 @@
 
 /* Tranforma el precio a porecentaje tacómetro*/
 function thepercent(precio){
-  var min=450;
-  var max=2022;
+  var min=351; //351 Valor real se agrega un margen para que no salga del tacometro
+  var max=2150; // 2022 Valor real se agrega un margen para que no salga del tacometro
   if(precio==min){
     percent=0;
   }else if(precio==max){
@@ -19,25 +19,310 @@ function thepercent(precio){
     case 0:
       var clas="percent-0";
       break;
+    case 1:
+      var clas="percent-1";
+      break;
+    case 2:
+      var clas="percent-2";
+      break;
+    case 3:
+      var clas="percent-3";
+      break;
+    case 4:
+      var clas="percent-4";
+      break;
+    case 5:
+      var clas="percent-5";
+      break;
+    case 6:
+      var clas="percent-6";
+      break;
+    case 7:
+      var clas="percent-7";
+      break;
+    case 8:
+      var clas="percent-8";
+      break;
+    case 9:
+      var clas="percent-9";
+      break;
+    case 10:
+      var clas="percent-10";
+      break;
+    case 11:
+      var clas="percent-11";
+      break;
+    case 12:
+      var clas="percent-12";
+      break;
+    case 13:
+      var clas="percent-13";
+      break;
+    case 14:
+      var clas="percent-14";
+      break;
+    case 15:
+      var clas="percent-15";
+      break;
+    case 16:
+      var clas="percent-16";
+      break;
+    case 17:
+      var clas="percent-17";
+      break;
+    case 18:
+      var clas="percent-18";
+      break;
+    case 19:
+      var clas="percent-19";
+      break;
+    case 20:
+      var clas="percent-20";
+      break;
+    case 21:
+      var clas="percent-21";
+      break;
+    case 22:
+      var clas="percent-22";
+      break;
+    case 23:
+      var clas="percent-23";
+      break;
+    case 24:
+      var clas="percent-24";
+      break;
+    case 25:
+      var clas="percent-25";
+      break;
+    case 26:
+      var clas="percent-26";
+      break;
+    case 27:
+      var clas="percent-27";
+      break;
+    case 28:
+      var clas="percent-28";
+      break;
+    case 29:
+      var clas="percent-29";
+      break;
+    case 30:
+      var clas="percent-30";
+      break;
+    case 31:
+      var clas="percent-31";
+      break;
+    case 32:
+      var clas="percent-32";
+      break;
+    case 33:
+      var clas="percent-33";
+      break;
+    case 34:
+      var clas="percent-34";
+      break;
+    case 35:
+      var clas="percent-35";
+      break;
+    case 36:
+      var clas="percent-36";
+      break;
+    case 37:
+      var clas="percent-37";
+      break;
+    case 38:
+      var clas="percent-38";
+      break;
+    case 39:
+      var clas="percent-39";
+      break;
+    case 40:
+      var clas="percent-40";
+      break;
+    case 41:
+      var clas="percent-41";
+      break;
+    case 42:
+      var clas="percent-42";
+      break;
+    case 43:
+      var clas="percent-43";
+      break;
+    case 44:
+      var clas="percent-44";
+      break;
+    case 45:
+      var clas="percent-45";
+      break;
+    case 46:
+      var clas="percent-46";
+      break;
+    case 47:
+      var clas="percent-47";
+      break;
+    case 48:
+      var clas="percent-48";
+      break;
+    case 49:
+      var clas="percent-49";
+      break;
+    case 50:
+      var clas="percent-50";
+      break;
+    case 51:
+      var clas="percent-51";
+      break;
+    case 52:
+      var clas="percent-52";
+      break;
+    case 52:
+      var clas="percent-52";
+      break;
+    case 53:
+      var clas="percent-53";
+      break;
+    case 54:
+      var clas="percent-54";
+      break;
+    case 55:
+      var clas="percent-55";
+      break;
+    case 56:
+      var clas="percent-56";
+      break;
+    case 57:
+      var clas="percent-57";
+      break;
+    case 58:
+      var clas="percent-58";
+      break;
+    case 59:
+      var clas="percent-59";
+      break;
+    case 60:
+      var clas="percent-60";
+      break;
+    case 61:
+      var clas="percent-61";
+      break;
+    case 62:
+      var clas="percent-62";
+      break;
+    case 63:
+      var clas="percent-63";
+      break;
+    case 64:
+      var clas="percent-64";
+      break;
+    case 65:
+      var clas="percent-65";
+      break;
+    case 66:
+          var clas="percent-66";
+          break;
+        case 67:
+          var clas="percent-67";
+          break;
+        case 68:
+          var clas="percent-68";
+          break;
+        case 69:
+          var clas="percent-69";
+          break;
+        case 70:
+          var clas="percent-70";
+          break;
+        case 71:
+          var clas="percent-71";
+          break;
+        case 72:
+          var clas="percent-72";
+          break;
+        case 73:
+          var clas="percent-73";
+          break;
+        case 74:
+          var clas="percent-74";
+          break;
+        case 75:
+          var clas="percent-75";
+          break;
+        case 76:
+          var clas="percent-76";
+          break;
+        case 77:
+          var clas="percent-77";
+          break;
+        case 78:
+          var clas="percent-78";
+          break;
+        case 79:
+          var clas="percent-79";
+          break;
+        case 80:
+          var clas="percent-80";
+          break;
+        case 81:
+          var clas="percent-81";
+          break;
+        case 82:
+          var clas="percent-82";
+          break;
+        case 83:
+          var clas="percent-83";
+          break;
+        case 84:
+          var clas="percent-84";
+          break;
+        case 85:
+          var clas="percent-85";
+          break;
+        case 86:
+          var clas="percent-86";
+          break;
+        case 87:
+          var clas="percent-87";
+          break;
+        case 88:
+          var clas="percent-88";
+          break;
+        case 89:
+          var clas="percent-89";
+          break;
+        case 90:
+          var clas="percent-90";
+          break;
+        case 91:
+          var clas="percent-91";
+          break;
+        case 92:
+          var clas="percent-92";
+          break;
+        case 93:
+          var clas="percent-93";
+          break;
+        case 94:
+            var clas="percent-94";
+            break;
+    case 95:
+      var clas="percent-95";
+      break;
+    case 96:
+      var clas="percent-96";
+      break;
+    case 97:
+      var clas="percent-97";
+      break;
+    case 98:
+            var clas="percent-98";
+            break;
+    case 99:
+      var clas="percent-99";
+      break;
+
     case 100:
       var clas="percent-100";
       break;
-    default:
-      if(percent>0 && percent<15){
-        var clas="percent-10";
-      }else if(percent>=15 && percent<30){
-        var clas="percent-20";
-      }else if(percent>=30 && percent<45){
-        var clas="percent-35";
-      }else if(percent>=45 && percent<60){
-        var clas="percent-55";
-      }else if(percent>=60 && percent<75){
-        var clas="percent-70";
-      }else if(percent>=75 && percent<90){
-        var clas="percent-80";
-      }else if(percent>=90 && percent<100){
-        var clas="percent-95";
-      }
   }
 
   return clas;

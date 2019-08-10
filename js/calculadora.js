@@ -15,12 +15,12 @@ $("#opcion3").hide();
 $("#compareclose").hide();
 $("#comparar").click();
 
-  /* Carga los JSON de la matriz Google
+  /* Carga los JSON de la matriz Google*/
     var m36=JSON.parse($("#36m").val());
     var m24=JSON.parse($("#24m").val());
     var m12=JSON.parse($("#12m").val());
     var m24_s=JSON.parse($("#24m_s").val());
-    var m12_s=JSON.parse($("#12m_s").val());*/
+    var m12_s=JSON.parse($("#12m_s").val());
   /* Fin carga JSON*/
 
   $(speed.trigger).on('click', function () {
@@ -99,6 +99,7 @@ $("#comparar").click();
     $("#lightbox-btn").attr("href", href);
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
+    $("#hprecio").val(precio);
   });
   /* Fin cambiar modelo del auto*/
 
@@ -118,6 +119,7 @@ $("#comparar").click();
     console.log(precio);
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
+    $("#hprecio").val(precio);
   });
   /* Fin para agregar nuevo auto */
 
@@ -137,6 +139,7 @@ $("#comparar").click();
     console.log(precio);
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
+    $("#hprecio").val(precio);
   });
   /*fin Cambio de transmisión*/
 
@@ -156,7 +159,23 @@ $("#comparar").click();
   /* Fin si/no vehiculo sustituto */
 
   /* CAmbios vehiculo sustituto*/
-
+    $("input[name*='vsustituto']").click(function(){
+      modelo=$("#modelo").val();
+      tvehiculo=$("#tvehiculo").val();
+      transmision=$("#transmision").val();
+      pcontrato=$("#pcontrato").val();
+      kilometraje=$("#kilometraje").val();
+      vsustituto=$("input[name*='vsustituto']:checked").val();
+      tcobertura=$("#tcobertura").val();
+      tmovil=$("input[name*='tmovil']:checked").val();
+      dgarantia=$("#dgarantia").val();
+      console.log("Cambio en vehiculosustituto");
+      precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+      console.log(precio);
+      $("#clas-per").attr("class",thepercent(precio));
+      $("#precio").html(precio);
+      $("#hprecio").val(precio);
+    });
   /* Fin cambios vehiculo sustituto*/
 
   /* Cambio de cobertura */
@@ -175,8 +194,29 @@ $("#comparar").click();
     console.log(precio);
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
+    $("#hprecio").val(precio);
   });
   /*fin Cambio de cobertura*/
+
+  /* CAmbios tallermovil*/
+    $("input[name*='tmovil']").click(function(){
+      modelo=$("#modelo").val();
+      tvehiculo=$("#tvehiculo").val();
+      transmision=$("#transmision").val();
+      pcontrato=$("#pcontrato").val();
+      kilometraje=$("#kilometraje").val();
+      vsustituto=$("input[name*='vsustituto']:checked").val();
+      tcobertura=$("#tcobertura").val();
+      tmovil=$("input[name*='tmovil']:checked").val();
+      dgarantia=$("#dgarantia").val();
+      console.log("Cambio en taller movil");
+      precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+      console.log(precio);
+      $("#clas-per").attr("class",thepercent(precio));
+      $("#precio").html(precio);
+      $("#hprecio").val(precio);
+    });
+  /* Fin cambios taller*/
 
   /* Cambio de deposito garantia */
   $('#dgarantia').change(function( event ) {
@@ -206,6 +246,7 @@ $("#comparar").click();
     console.log(precio);
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
+    $("#hprecio").val(precio);
   });
   /*fin Cambio de cobertura*/
 
@@ -256,6 +297,7 @@ $("#comparar").click();
       console.log(precio);
       $("#clas-per").attr("class",thepercent(precio));
       $("#precio").html(precio);
+      $("#hprecio").val(precio);
     }
   });
 
@@ -278,6 +320,7 @@ $("#comparar").click();
     console.log(precio);
     $("#clas-per").attr("class",thepercent(precio));
     $("#precio").html(precio);
+    $("#hprecio").val(precio);
   });
   /*fin Cambio de transmisión*/
 
@@ -432,6 +475,25 @@ $("#compareclose").click(function(event){
   });
   /*fin Cambio de transmisión*/
 
+  /* CAmbios vehiculo sustituto*/
+    $("input[name*='vsustituto2']").click(function(){
+      modelo=$("#op2-modelo").val();
+      tvehiculo=$("#op2-tvehiculo").val();
+      transmision=$("#op2-transmision").val();
+      pcontrato=$("#op2-pcontrato").val();
+      kilometraje=$("#op2-kilometraje").val();
+      vsustituto=$("input[name*='vsustituto2']:checked").val();
+      tcobertura=$("#op2-tcobertura").val();
+      tmovil=$("input[name*='tmovil2']:checked").val();
+      dgarantia=$("#op2-dgarantia").val();
+      console.log("Cambio en vehiculosustituto");
+      precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+      console.log(precio);
+      $("#clas-per2").attr("class",thepercent(precio));
+      $("#op2-precio").html(precio);
+    });
+  /* Fin cambios vehiculo sustituto*/
+
   /* Cambio de cobertura */
   $('#op2-tcobertura').change(function( event ) {
     modelo=$("#op2-modelo").val();
@@ -450,6 +512,25 @@ $("#compareclose").click(function(event){
     $("#op2-precio").html(precio);
   });
   /*fin Cambio de cobertura*/
+
+  /* CAmbios tallermovil*/
+    $("input[name*='tmovil2']").click(function(){
+      modelo=$("#op2-modelo").val();
+      tvehiculo=$("#op2-tvehiculo").val();
+      transmision=$("#op2-transmision").val();
+      pcontrato=$("#op2-pcontrato").val();
+      kilometraje=$("#op2-kilometraje").val();
+      vsustituto=$("input[name*='vsustituto2']:checked").val();
+      tcobertura=$("#op2-tcobertura").val();
+      tmovil=$("input[name*='tmovil2']:checked").val();
+      dgarantia=$("#op2-dgarantia").val();
+      console.log("Cambio en taller movil");
+      precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
+      console.log(precio);
+      $("#clas-per2").attr("class",thepercent(precio));
+      $("#op2-precio").html(precio);      
+    });
+  /* Fin cambios taller*/
 
   /* Cambio de deposito garantia */
   $('#op2-dgarantia').change(function( event ) {
@@ -535,7 +616,7 @@ $("#compareclose").click(function(event){
   /* Fin Muestra los nuevos y oculta los seminuevos viceversa*/
 
   /* Cambio de transmisión */
-  $('#transmision').change(function( event ) {
+  $('#op2-transmision').change(function( event ) {
     console.log("Cambio en la transmision");
     modelo=$("#op2-modelo").val();
     tvehiculo=$("#op2-tvehiculo").val();
@@ -612,7 +693,7 @@ $("#compareclose").click(function(event){
     modelo=$("#op3-modelo").val();
     transmision=$("#op3-transmision").val();
     pcontrato=$("#op3-pcontrato").val();
-    kilometraje=$("op3-#kilometraje").val();
+    kilometraje=$("#op3-kilometraje").val();
     vsustituto=$("input[name*='vsustituto3']").val();
     tcobertura=$("#op3-tcobertura").val();
     tmovil=$("input[name*='tmovil3']").val();
@@ -624,44 +705,45 @@ $("#compareclose").click(function(event){
     $("#lightbox-btn3").attr("href", href);
     $("#clas-per3").attr("class",thepercent(precio));
     $("#op3-precio").html(precio);
+
   });
   /* Fin cambiar modelo del auto*/
 
   /*  Cambiar mensualidades*/
   $('#op3-pcontrato').change(function( event ) {
-    modelo=$("#modelo").val();
-    tvehiculo=$("#tvehiculo").val();
-    transmision=$("#transmision").val();
-    pcontrato=$("#pcontrato").val();
-    kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
-    tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
-    dgarantia=$("#dgarantia").val();
+    modelo=$("#op3-modelo").val();
+    tvehiculo=$("#op3-tvehiculo").val();
+    transmision=$("#op3-transmision").val();
+    pcontrato=$("#op3-pcontrato").val();
+    kilometraje=$("#op3-kilometraje").val();
+    vsustituto=$("input[name*='vsustituto3']").val();
+    tcobertura=$("#op3-tcobertura").val();
+    tmovil=$("input[name*='tmovil3']").val();
+    dgarantia=$("#op3-dgarantia").val();
     console.log("Cambio en mensualidades");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
     console.log(precio);
-    $("#clas-per").attr("class",thepercent(precio));
-    $("#precio").html(precio);
+    $("#clas-per3").attr("class",thepercent(precio));
+    $("#op3-precio").html(precio);
   });
   /* Fin para agregar nuevo auto */
 
   /* Cambio de kilometraje */
   $('#op3-kilometraje').change(function( event ) {
-    modelo=$("#modelo").val();
-    tvehiculo=$("#tvehiculo").val();
-    transmision=$("#transmision").val();
-    pcontrato=$("#pcontrato").val();
-    kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
-    tcobertura=$("#tcobertura").val();
+    modelo=$("#op3-modelo").val();
+    tvehiculo=$("#op3-tvehiculo").val();
+    transmision=$("#op3-transmision").val();
+    pcontrato=$("#op3-pcontrato").val();
+    kilometraje=$("#op3-kilometraje").val();
+    vsustituto=$("input[name*='vsustituto3']").val();
+    tcobertura=$("#op3-tcobertura").val();
     tmovil=$("input[name*='tmovil']").val();
-    dgarantia=$("#dgarantia").val();
+    dgarantia=$("#op3-dgarantia").val();
     console.log("cambio kilometraje");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
     console.log(precio);
-    $("#clas-per").attr("class",thepercent(precio));
-    $("#precio").html(precio);
+    $("#clas-per3").attr("class",thepercent(precio));
+    $("#op3-precio").html(precio);
   });
   /*fin Cambio de transmisión*/
 }); //Fin Document ready

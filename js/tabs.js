@@ -3,7 +3,7 @@
   email: carlos@servin.mx, cservinmx@gmail.com
 */
 
-function open(evt, tabName) {
+function opentab(evt, tabName) {
   // Declare all variables
   alert("evt "+evt+" tabName "+tabName);
   var i, tabcontent, tablinks;
