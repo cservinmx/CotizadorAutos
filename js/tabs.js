@@ -15,6 +15,10 @@ $(document).ready(function(){
   $("#tab3").hide();
 
 
+$("#backbutton").click(function (event){
+
+  $("#backform").submit();
+})
 
 /**** Botones comparar *********/
 /* Boton comparar*/

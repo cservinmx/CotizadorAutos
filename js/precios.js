@@ -4228,8 +4228,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
     }
   }else if(tvehiculo==1){ //Seminuevo
     switch(modelo){
-      case '2': //Prado
-      if(transmision==0){//Man
+      case '2': //Prado  
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
             if(tcobertura==1 && tmovil==0 && vsustituto==0){
@@ -4427,7 +4426,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
               }
             }
         }
-      }
+
       break;
       case '4': //Rav4 m24_s[2]
       if(transmision==0){//Man

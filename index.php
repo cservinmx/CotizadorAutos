@@ -62,7 +62,75 @@
        </div>
      </div>
    </div>
+   <?php
+   //?modelo=1&tvehiculo=1&transmision=1&pcontrato=1&kilometraje=1&vsustituto=1&tcobertura=1&tmovil=1&dgarantia=1
+   $modelo = isset($_GET['modelo']) ? $_GET['modelo'] : 0;
+   $tvehiculo = isset($_GET['tvehiculo']) ? $_GET['tvehiculo'] : 0;
+   $transmision = isset($_GET['transmision']) ? $_GET['transmision'] : 0;
+   $pcontrato = isset($_GET['pcontrato']) ? $_GET['pcontrato'] : 0;
+   $kilometraje = isset($_GET['kilometraje']) ? $_GET['kilometraje'] : 0;
+   $vsustituto = isset($_GET['vsustituto']) ? $_GET['vsustituto'] : 1;
+   $tcobertura= isset($_GET['tcobertura']) ? $_GET['tcobertura'] : 0;
+   $tmovil = isset($_GET['tmovil']) ? $_GET['tmovil'] : 1;
+   $dgarantia= isset($_GET['dgarantia']) ? $_GET['dgarantia'] : 0;
+   $precio= isset($_GET['hprecio']) ? $_GET['hprecio'] : 1035;
 
+   /*
+   echo "modelo ".$modelo;
+   echo "tvehiculo ".$tvehiculo;
+   echo "transmision ".$transmision;
+   echo "pcontrato ".$pcontrato;
+   echo "kilometraje ".$kilometraje;
+   echo "vsustituto ".$vsustituto;
+   echo "tcobertura ".$tcobertura;
+   echo "tmovil ".$tmovil;
+   echo "dgarantia ".$dgarantia;*/
+
+   switch($modelo){
+     case 1:
+     $img="img/hiluxsencilla.png";
+     $link="toyota-hilux-single";
+     break;
+     case 2:
+     $img="img/Prado.png";
+     $link="toyota-prado";
+     break;
+     case 3:
+     $img="img/Fortuner.png";
+     $link="toyota-fortuner";
+     break;
+     case 4:
+     $img="img/Rav4.png";
+     $link="toyota-rav4";
+     break;
+     case 5:
+     $img="img/Rush.png";
+     $link="toyota-hilux-single";
+     break;
+     case 6:
+     $img="img/Corolla.png";
+     $link="toyota-corolla";
+     break;
+     case 7:
+     $img="img/Yaris.png";
+     $link="toyota-yaris";
+     break;
+     case 8:
+     $img="img/Figo.png";
+     $link="ford-figo";
+     break;
+     case 9:
+     $img="img/bego.png";
+     $link="ford-bego";
+     break;
+     default:
+     $img="img/hilux.png";
+     $link="toyota-hilux";
+     break;
+   }
+
+
+   ?>
 
    <div id="tabs" class="tab">
      <div id="op1" class="active">
@@ -96,15 +164,16 @@
 
              <label for="modelo">Modelo</label>
              <select id="modelo" name="modelo" class="selects">
-               <option value="0" selected>Hi-lux Doble Cabina 4X4</option>
-               <option value="1">Hi-lux Cabina Sencilla 4X2</option>
-               <option value="2">Prado</option>
-               <option value="3">Fortuner</option>
-               <option value="4">Rav4</option>
-               <option value="5">Rush</option>
-               <option value="6">Corolla</option>
-               <option value="7">Yaris</option>
-               <option value="8">Figo</option>
+               <option value="0" <?php if($modelo==0){echo "selected";} ?>>Hi-lux Doble Cabina 4X4</option>
+               <option value="1" <?php if($modelo==1){echo "selected";} ?>>Hi-lux Cabina Sencilla 4X2</option>
+               <option value="2" <?php if($modelo==2){echo "selected";} ?>>Prado</option>
+               <option value="3" <?php if($modelo==3){echo "selected";} ?>>Fortuner</option>
+               <option value="4" <?php if($modelo==4){echo "selected";} ?>>Rav4</option>
+               <option value="5" <?php if($modelo==5){echo "selected";} ?>>Rush</option>
+               <option value="6" <?php if($modelo==6){echo "selected";} ?>>Corolla</option>
+               <option value="7" <?php if($modelo==7){echo "selected";} ?>>Yaris</option>
+               <option value="8" <?php if($modelo==8){echo "selected";} ?>>Figo</option>
+               <option value="9" <?php if($modelo==9){echo "selected";} ?>>Bego</option>
              </select>
            </div>
            <div class="cearboth"></div>
@@ -112,7 +181,7 @@
 
    <div class="float-left fiz">
      <div class="dimg">
-       <img id="divimg" src="img/hilux.png">
+       <img id="divimg" src="<?= $img; ?>">
      </div>
      <div style="text-align: center;">
        <div class="space20"></div>
@@ -140,7 +209,7 @@
          </div>
        </div>
        <div class="space20"></div>
-       <div class="price">$<span id="precio">1035</span><input type="hidden" id="hprecio" name="precio"></div>
+       <div class="price">$<span id="precio"><?= $precio; ?></span><input type="hidden" id="hprecio" name="hprecio" value="<?= $precio; ?>"></div>
        <div class="space30"></div>
        <div class="price_iva">* Precio no incluye I.V.A.</div>
        <div class="cearboth"></div>
@@ -166,8 +235,8 @@
          <div style="white-space:nowrap">
            <label for="tvehiculo">Tipo de vehículo</label>
            <select id="tvehiculo" name="tvehiculo" class="selects">
-             <option value="0">Nuevo</option>
-             <option value="1">Seminuevo</option>
+             <option value="0" <?php if($tvehiculo==0){echo "selected";} ?>>Nuevo</option>
+             <option value="1" <?php if($tvehiculo==1){echo "selected";} ?>>Seminuevo</option>
            </select>
         </div>
         <div class="cearboth"></div>
@@ -175,8 +244,8 @@
         <div style="white-space:nowrap">
           <label for="transmision">Transmisión</label>
           <select id="transmision" name="transmision" class="selects">
-            <option value="0">Manual</option>
-            <option value="1">Automática</option>
+            <option value="0" <?php if($transmision==0){echo "selected";} ?>>Manual</option>
+            <option value="1" <?php if($transmision==1){echo "selected";} ?>>Automática</option>
           </select>
        </div>
        <div class="cearboth"></div>
@@ -184,9 +253,9 @@
        <div style="white-space:nowrap">
          <label for="pcontrato">Plazo del contrato</label>
          <select id="pcontrato" name="pcontrato" class="selects">
-           <option value="0">36 Meses</option>
-           <option value="1">24 Meses</option>
-           <option value="2">12 Meses</option>
+           <option value="0" <?php if($pcontrato==0){echo "selected";} ?>>36 Meses</option>
+           <option value="1" <?php if($pcontrato==1){echo "selected";} ?>>24 Meses</option>
+           <option value="2" <?php if($pcontrato==2){echo "selected";} ?>>12 Meses</option>
          </select>
       </div>
       <div class="cearboth"></div>
@@ -194,8 +263,8 @@
       <div style="white-space:nowrap">
         <label for="kilometraje">Kilometraje</label>
         <select id="kilometraje" name="kilometraje" class="selects">
-          <option value="0">3000</option>
-          <option value="1">2500</option>
+          <option value="0" <?php if($kilometraje==0){echo "selected";} ?>>3000</option>
+          <option value="1" <?php if($kilometraje==1){echo "selected";} ?>>2500</option>
         </select>
       </div>
       <div class="cearboth"></div>
@@ -204,12 +273,12 @@
     <div class="space30"></div>
     <div class="space10"></div>
       <div class="float-left chk" style="margin-left: 26.5px;">
-          Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1" checked="checked">
+          Sí <input type="checkbox" id="op-1-1" name="vsustituto" value="1" <?php if($vsustituto==1){echo "checked='checked'";} ?> >
           <label for="op-1-1"><span></span></label>
      </div>
      <div class="float-left chk" style="width: 78px;"></div>
      <div class="float-left chk">
-          No <input type="checkbox" id="op-1-2" name="vsustituto" value="0">
+          No <input type="checkbox" id="op-1-2" name="vsustituto" value="0" <?php if($vsustituto==0){echo "checked='checked'";} ?> >
         <label for="op-1-2"><span></span></label>
      </div>
      <div class="cearboth"></div>
@@ -217,8 +286,8 @@
     <div style="white-space:nowrap">
       <label for="tcobertura">Tipo de cobertura</label>
       <select id="tcobertura" name="tcobertura" class="selects">
-        <option value="0">Total</option>
-        <option value="1">Con deducible</option>
+        <option value="0" <?php if($tcobertura==0){echo "selected";} ?>>Total</option>
+        <option value="1" <?php if($tcobertura==1){echo "selected";} ?>>Con deducible</option>
       </select>
     </div>
     <div class="cearboth"></div>
@@ -227,13 +296,13 @@
        <div class="space30"></div>
       <div class="inlines">
           <div class="float-left chk" style="margin-left: 26.5px;">
-              Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" checked="checked">
-              <label for="op-2-1"><span></span></label>
+              Sí <input type="checkbox" id="op-1-3" name="tmovil" value="1" <?php if($tmovil==1){echo "checked='checked'";} ?>>
+              <label for="op-1-3"><span></span></label>
           </div>
           <div class="float-left chk" style="width: 78px;"></div>
           <div class="float-left chk">
-              No <input type="checkbox" id="op-2-2" name="tmovil" value="0">
-              <label for="op-2-2"><span></span></label>
+              No <input type="checkbox" id="op-1-4" name="tmovil" value="0" <?php if($tmovil==0){echo "checked='checked'";} ?>>
+              <label for="op-1-4"><span></span></label>
           </div>
           <div class="cearboth"></div>
           <div class="space30"></div>
@@ -242,10 +311,10 @@
         <div style="white-space:nowrap">
           <label for="dgarantia">Depósito de garantía</label>
           <select id="dgarantia" name="dgarantia" class="selects">
-            <option value="0">1 Depósito</option>
-            <option value="1">2 Depósitos</option>
-            <option value="2">3 Depósitos</option>
-            <option value="3">4 Depósitos o más</option>
+            <option value="0" <?php if($dgarantia==0){echo "selected";} ?>>1 Depósito</option>
+            <option value="1" <?php if($dgarantia==1){echo "selected";} ?>>2 Depósitos</option>
+            <option value="2" <?php if($dgarantia==2){echo "selected";} ?>>3 Depósitos</option>
+            <option value="3" <?php if($dgarantia==3){echo "selected";} ?>>4 Depósitos o más</option>
           </select>
         </div>
       </div>
@@ -334,7 +403,7 @@
           <div id="prebut"  class="prebut">
               <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
               <div class="space10"></div>
-              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold; " title="">CONTÁCTENOS</a>
+              <a id="lightbox-btn2" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold; " title="">CONTÁCTENOS</a>
               <div class="space10"></div>
               <button type="button"  id="op2comparar" class="btt blue" style="border: none; color: #FFF;" title="">Comparar</button>
               <div class="space10"></div>
@@ -387,13 +456,13 @@
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto2" value="1" checked="checked">
-           <label for="op-1-1"><span></span></label>
+           Sí <input type="checkbox" id="op-2-1" name="vsustituto2" value="1" checked="checked">
+           <label for="op-2-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto2" value="0">
-         <label for="op-1-2"><span></span></label>
+           No <input type="checkbox" id="op-2-2" name="vsustituto2" value="0">
+         <label for="op-2-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
       <div class="space30"></div>
@@ -410,13 +479,13 @@
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil2" value="1" checked="checked">
-               <label for="op-2-1"><span></span></label>
+               Sí <input type="checkbox" id="op-2-3" name="tmovil2" value="1" checked="checked">
+               <label for="op-2-3"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil2" value="0">
-               <label for="op-2-2"><span></span></label>
+               No <input type="checkbox" id="op-2-4" name="tmovil2" value="0">
+               <label for="op-2-4"><span></span></label>
            </div>
            <div class="cearboth"></div>
            <div class="space30"></div>
@@ -576,13 +645,13 @@
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-4-1" name="tmovil3" value="1" checked="checked">
-               <label for="op-4-1"><span></span></label>
+               Sí <input type="checkbox" id="op-3-3" name="tmovil3" value="1" checked="checked">
+               <label for="op-3-3"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-5-2" name="tmovil3" value="0">
-               <label for="op-5-2"><span></span></label>
+               No <input type="checkbox" id="op-3-4" name="tmovil3" value="0">
+               <label for="op-3-4"><span></span></label>
            </div>
            <div class="cearboth"></div>
            <div class="space30"></div>

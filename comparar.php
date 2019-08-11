@@ -73,7 +73,7 @@ $vsustituto = isset($_GET['vsustituto']) ? $_GET['vsustituto'] : 0;
 $tcobertura= isset($_GET['tcobertura']) ? $_GET['tcobertura'] : 0;
 $tmovil = isset($_GET['tmovil']) ? $_GET['tmovil'] : 0;
 $dgarantia= isset($_GET['dgarantia']) ? $_GET['dgarantia'] : 0;
-$precio= isset($_GET['precio']) ? $_GET['precio'] : 390;
+$precio= isset($_GET['hprecio']) ? $_GET['hprecio'] : 390;
 
 /*
 echo "modelo ".$modelo;
@@ -133,10 +133,10 @@ switch($modelo){
 ?>
 
    <div id="opcion1" class="section cgray" >
-<div><a href="index.php" class="backbutton"> < Volver</a></div>
+<div><a href="#" id="backbutton" class="backbutton"> < Volver</a></div>
 <div class="cgray">
   <div class="main">
-
+    <form action="index.php" method="get" id="backform">
     <div class="title" id="title"><h1>Opción 1</h1></div>
       <div>
             <div id="divmodelo" style="white-space:nowrap;">
@@ -188,7 +188,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="precio"><?= $precio; ?></span></div>
+        <div class="price">$<span id="precio"><?= $precio; ?></span><input type="hidden" id="hprecio" name="hprecio" value="<?= $precio; ?>"></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -273,13 +273,13 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil" value="1" <?php if($tmovil==1){echo "checked='checked'";} ?>>
-               <label for="op-2-1"><span></span></label>
+               Sí <input type="checkbox" id="op-1-3" name="tmovil" value="1" <?php if($tmovil==1){echo "checked='checked'";} ?>>
+               <label for="op-1-3"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil" value="0" <?php if($tmovil==0){echo "checked='checked'";} ?>>
-               <label for="op-2-2"><span></span></label>
+               No <input type="checkbox" id="op-1-4" name="tmovil" value="0" <?php if($tmovil==0){echo "checked='checked'";} ?>>
+               <label for="op-1-4"><span></span></label>
            </div>
            <div class="cearboth"></div>
            <div class="space30"></div>
@@ -297,6 +297,7 @@ switch($modelo){
        </div>
      </div>
     </div>
+  </form>
 </div>
 
 <div class="cearboth"></div>
@@ -334,7 +335,7 @@ switch($modelo){
         <div class="space20"></div>
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div id="clas-per2" class="percent-80">
+            <div id="clas-per2" class="percent-40">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
@@ -354,7 +355,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="op2-precio">910</span></div>
+        <div class="price">$<span id="op2-precio">1035</span></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -418,13 +419,13 @@ switch($modelo){
      <div class="space30"></div>
      <div class="space10"></div>
        <div class="float-left chk" style="margin-left: 26.5px;">
-           Sí <input type="checkbox" id="op-1-1" name="vsustituto2" value="1" checked="checked">
-           <label for="op-1-1"><span></span></label>
+           Sí <input type="checkbox" id="op-2-1" name="vsustituto2" value="1" checked="checked">
+           <label for="op-2-1"><span></span></label>
       </div>
       <div class="float-left chk" style="width: 78px;"></div>
       <div class="float-left chk">
-           No <input type="checkbox" id="op-1-2" name="vsustituto2" value="0">
-         <label for="op-1-2"><span></span></label>
+           No <input type="checkbox" id="op-2-2" name="vsustituto2" value="0">
+         <label for="op-2-2"><span></span></label>
       </div>
       <div class="cearboth"></div>
       <div class="space30"></div>
@@ -441,13 +442,13 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-2-1" name="tmovil2" value="1" checked="checked">
-               <label for="op-2-1"><span></span></label>
+               Sí <input type="checkbox" id="op-2-3" name="tmovil2" value="1" checked="checked">
+               <label for="op-2-3"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-2-2" name="tmovil2" value="0">
-               <label for="op-2-2"><span></span></label>
+               No <input type="checkbox" id="op-2-4" name="tmovil2" value="0">
+               <label for="op-2-4"><span></span></label>
            </div>
            <div class="cearboth"></div>
            <div class="space30"></div>
@@ -506,7 +507,7 @@ switch($modelo){
         <div class="space20"></div>
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div id="clas-per3" class="percent-80">
+            <div id="clas-per3" class="percent-40">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
@@ -526,7 +527,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="op3-precio">910</span></div>
+        <div class="price">$<span id="op3-precio">1035</span></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -611,13 +612,13 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-4-1" name="tmovil3" value="1" checked="checked">
-               <label for="op-4-1"><span></span></label>
+               Sí <input type="checkbox" id="op-3-4" name="tmovil3" value="1" checked="checked">
+               <label for="op-3-4"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-5-2" name="tmovil3" value="0">
-               <label for="op-5-2"><span></span></label>
+               No <input type="checkbox" id="op-3-5" name="tmovil3" value="0">
+               <label for="op-3-5"><span></span></label>
            </div>
            <div class="cearboth"></div>
            <div class="space30"></div>
