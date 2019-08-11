@@ -160,6 +160,9 @@
     appearance:none;
      background: url(../img/selectbutton.jpg) no-repeat right #f2f2f2;
   }
+  .selects:focus{  outline: none !important;
+    border-color: #fdfdfd; box-shadow: 0 0 1px #fdfdfd;}
+
   .cearboth{clear: both;}
   .chk input[type="checkbox"] { display: none; }
   .chk input[type="checkbox"] + label span {
@@ -327,38 +330,55 @@
 .tab {
   width: 100%
  overflow: hidden;
- /*border: 1px solid #ccc;
- background-color: #1d2e5e;
- color: #FFF;
- height: 70px;*/
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
- /*background: url('../img/pestana2.png');*/
- border: solid 2px #1d2e5e;
- border-radius: 10px 10px 0 0;
- float: left;
- cursor: pointer;
- /*padding: 14px 16px;*/
- height: 70px;
- color: #1d2e5e;
- font-family: Verdana,sans-serif;
- font-size: 18px;
- margin: 1px 1px 1px 1px;
+.tab div.noactive{
+  float: left;
+  background: url('../img/pestana2.png');
+  cursor: pointer;
+  width: 177px;
+  height:71px;
+  font-family: Verdana,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  size: 17px;
+  border: none;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
- background-color: #ddd;
-  border: solid 1px #1d2e5e;
-}
+
+
 
 /* Create an active/current tablink class */
-.tab button.active {
- background-color: #1d2e5e;
+.tab div.active{
+  float: left;
+  background: url('../img/pestana1.png');
+  width: 174px;
+  height:71px;
+  font-family: Verdana,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  size: 17px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+.btitle{margin: 25px 25px;}
 
- color: #FFF;
+.closebutt{
+  width: 26px;
+  height:26px;
+  background: url('../img/close.png');
+  margin: 5px 5px 5px 0;
+  float: right;
+  cursor: pointer;
+}
+
+.tab button.active {
+background: url('../img/pestana1.png');
+width: 174px;
+height:71px;
+border: none;
+color: #FFF;
 }
 
 /* Style the tab content */
@@ -370,18 +390,9 @@
 }
 
 button.tabnew{
-  border: solid 1px #1d2e5e;
-  border-radius: 10px 10px 10px 0;
-  background-color: #1d2e5e;
-  float: left;
-  cursor: pointer;
-  padding: 14px 16px;
-  height: 70px;
-  width: 66px;
-  size: 44px;
-  color: #FFF;
-  font-family: Verdana,sans-serif;
-  font-weight: bold;
-  text-align: center;
+  background: url('../img/pestana3.png');
+  width: 70px;
+  height:71px;
+  border: none;
 }
 /***** *********/

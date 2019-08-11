@@ -11,9 +11,7 @@ var speed = {
 var numdiv=0;
 //$(document).on('ready', function () {
 $(document).ready(function(){
-$("#opcion3").hide();
-$("#compareclose").hide();
-$("#comparar").click();
+
 
   /* Carga los JSON de la matriz Google*/
     var m36=JSON.parse($("#36m").val());
@@ -32,7 +30,6 @@ $("#comparar").click();
   });
 
 
-
   /* Cambiar el modelo de auto */
   $("#modelo").change(function(event){
     var precio="";
@@ -40,11 +37,12 @@ $("#comparar").click();
       case '1':
         $("#divimg").attr("src","img/hiluxsencilla.png");
         link="toyota-hilux-single";
-        //$('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
+        ocultaropciones(this.value);
         break;
       case '2':
         $("#divimg").attr("src","img/Prado.png");
         link="toyota-prado";
+        ocultaropciones(this.value);
       //  $('select[name="transmision"] option[value="0"]').remove();
         //precios(tvehiculo, modelo, transmision, meses)
         break;
@@ -52,30 +50,37 @@ $("#comparar").click();
         $("#divimg").attr("src","img/Fortuner.png");
         //$('select[name="transmision"] option[value="0"]').remove();
         link="toyota-fortuner";
+        ocultaropciones(this.value);
         break;
       case '4':
         $("#divimg").attr("src","img/Rav4.png");
         link="toyota-rav4";
+        ocultaropciones(this.value);
         break;
       case '5':
         $("#divimg").attr("src","img/Rush.png");
         link="toyota-hilux-single";
+        ocultaropciones(this.value);
         break;
       case '6':
         $("#divimg").attr("src","img/Corolla.png");
         //$('select[name="transmision"] option[value="0"]').remove(); //Remueve manual
         link="toyota-corolla";
+        ocultaropciones(this.value);
         break;
       case '7':
         $("#divimg").attr("src","img/Yaris.png");
+        ocultaropciones(this.value);
         link="toyota-yaris";
         break;
       case '8':
         $("#divimg").attr("src","img/Figo.png");
+        ocultaropciones(this.value);
         link="ford-figo";
         break;
       case '9':
         $("#divimg").attr("src","img/bego.png");
+        ocultaropciones(this.value);
         link="ford-bego";
         break;
       default:
@@ -290,9 +295,10 @@ $("#comparar").click();
       $('#modelo').append('<option value="3">Fortuner</option>');
       $('#modelo').append('<option value="4">Rav4</option>');
       $('#modelo').append('<option value="5">Rush</option>');
-      $('#modelo').append('<option value="6">Corola</option>');
+      $('#modelo').append('<option value="6">Corolla</option>');
       $('#modelo').append('<option value="7">Yaris</option>');
       $('#modelo').append('<option value="8">Figo</option>');
+      $('#pcontrato').append('<option value="0">36 Meses</option>');
       precio=precios(0, 0, 0, 0, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
       console.log(precio);
       $("#clas-per").attr("class",thepercent(precio));
@@ -325,44 +331,10 @@ $("#comparar").click();
   /*fin Cambio de transmisión*/
 
 
-/**** Botones comparar *********/
-/*  Agregar un nuevo auto para comparar*/
-$('.tabnew').click(function( event ) {
-    numdiv++;
-    suma=parseInt(numdiv)+parseInt('1');
-    tab="tab"+suma;
-    if(numdiv==2){$(".tabnew").hide()}
-    if(numdiv<3){
-      $('#newtab').append('<button class="tablinks" onclick="open(event, '+tab+')">Opción '+suma+'</button> ');
-    }else{
-      //lert("Comparar hasta 3");
-      $(".tabnew").hide();
-    }
-});
-/* Fin para agregar nuevo auto */
-
-
 $("#breiniciar").click(function( event ) {
   //alert("Reiniciar");
   location.reload();
 });
-
-/* Boton comparar*/
-$("#op2comparar").click(function(event){
-    $("#opcion3").show();
-    $("#compareclose").show();
-    $("#op2comparar").hide();
-});
-/* Fin botón comparar*/
-$("#compareclose").click(function(event){
-
-    $("#opcion3").hide();
-    $("#compareclose").hide();
-    $("#op2comparar").show();
-});
-/*** Fin Botones comparar*******/
-
-
 
 
 
@@ -528,7 +500,7 @@ $("#compareclose").click(function(event){
       precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
       console.log(precio);
       $("#clas-per2").attr("class",thepercent(precio));
-      $("#op2-precio").html(precio);      
+      $("#op2-precio").html(precio);
     });
   /* Fin cambios taller*/
 
@@ -603,9 +575,10 @@ $("#compareclose").click(function(event){
       $('#op2-modelo').append('<option value="3">Fortuner</option>');
       $('#op2-modelo').append('<option value="4">Rav4</option>');
       $('#op2-modelo').append('<option value="5">Rush</option>');
-      $('#op2-modelo').append('<option value="6">Corola</option>');
+      $('#op2-modelo').append('<option value="6">Corolla</option>');
       $('#op2-modelo').append('<option value="7">Yaris</option>');
       $('#op2-modelo').append('<option value="8">Figo</option>');
+      $('#op2-pcontrato').append('<option value="0">36 Meses</option>');
       precio=precios(0, 0, 0, 0, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
       console.log(precio);
       $("#clas-per").attr("class",thepercent(precio));
@@ -646,17 +619,15 @@ $("#compareclose").click(function(event){
       case '1':
         $("#op3-divimg").attr("src","img/hiluxsencilla.png");
         link="toyota-hilux-single";
-        //$('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
+
         break;
       case '2':
         $("#op3-divimg").attr("src","img/Prado.png");
         link="toyota-prado";
-      //  $('select[name="transmision"] option[value="0"]').remove();
-        //precios(tvehiculo, modelo, transmision, meses)
+
         break;
       case '3':
         $("#op3-divimg").attr("src","img/Fortuner.png");
-        //$('select[name="transmision"] option[value="0"]').remove();
         link="toyota-fortuner";
         break;
       case '4':
@@ -669,7 +640,6 @@ $("#compareclose").click(function(event){
         break;
       case '6':
         $("#op3-divimg").attr("src","img/Corolla.png");
-        //$('select[name="transmision"] option[value="0"]').remove(); //Remueve manual
         link="toyota-corolla";
         break;
       case '7':
@@ -686,7 +656,6 @@ $("#compareclose").click(function(event){
         break;
       default:
       $("#op3-divimg").attr("src","img/hilux.png");
-      //$('select[name="transmision"] option[value="0"]').remove();
       link="toyota-hilux";
     }
     tvehiculo=$("#op3-tvehiculo").val();
@@ -747,3 +716,38 @@ $("#compareclose").click(function(event){
   });
   /*fin Cambio de transmisión*/
 }); //Fin Document ready
+
+
+function ocultaropciones(modelo){
+console.log("oculta opciones del modelo: "+modelo);
+    switch(modelo){
+      case '0':
+        $('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
+      break;
+      case '1':
+        $('select[name="transmision"] option[value="1"]').remove();//Remueve automatica
+      break;
+      case '2':
+        $('select[name="transmision"] option[value="0"]').remove();//Remueve manual
+      break;
+      case '3':
+        $('select[name="transmision"] option[value="0"]').remove();//Remueve manual
+      break;
+      case '4':
+        //$('#transmision').append('<option value="1">Automática</option>');
+      break;
+      case '5':
+      break;
+      case '6':
+        $('select[name="transmision"] option[value="0"]').remove();//Remueve manual
+      break;
+      case '7':
+      break;
+      case '8':
+      break;
+      case '9':
+      break;
+
+    }
+
+}
