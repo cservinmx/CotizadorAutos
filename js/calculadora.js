@@ -943,10 +943,18 @@ function ocultaropciones(modelo){
       case '0': //Hilux doble
         $("#transmision option[value='1']").hide(); //Oculta automatica
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op2-transmision option[value='1']").hide(); //Oculta automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op3-transmision option[value='1']").hide(); //Oculta automatica
+        $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '1': //Hilux sencilla
         $("#transmision option[value='1']").hide(); //Oculta automatica
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op2-transmision option[value='1']").hide(); //Oculta automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op3-transmision option[value='1']").hide(); //Oculta automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '2'://Prado
         $("#transmision option[value='0']").hide(); //Oculta Manual
@@ -954,49 +962,110 @@ function ocultaropciones(modelo){
         $("#transmision").val('1').change(); //DEfautl automatica
         $("#tvehiculo option[value='0']").show();// muestra nuevos
         $("#tvehiculo option[value='1']").show(); //muestra seminuevos
-      //  $("#tvehiculo").val('0').change(); //DEfautl nuevos
-        //$('select[name="transmision"] option[value="0"]').remove();//Remueve manual
-        //$('#transmision').append('<option transmision="1">Automática</option>'); //Agrego Automática
-        //$('#tvehiculo').append('<option tvehiculo="1">Seminuevo</option>'); //Agrego Seminuevo
+
+        $("#op2-transmision option[value='0']").hide(); //Oculta Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $("#op2-transmision").val('1').change(); //DEfautl automatica
+        $("#op2-tvehiculo option[value='0']").show();// muestra nuevos
+        $("#op2-tvehiculo option[value='1']").show(); //muestra seminuevos
+
+        $("#op3-transmision option[value='0']").hide(); //Oculta Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $("#op3-transmision").val('1').change(); //DEfautl automatica
+        $("#op3-tvehiculo option[value='0']").show();// muestra nuevos
+        $("#op3-tvehiculo option[value='1']").show(); //muestra seminuevos
+
       break;
       case '3': //Fortuner
         $("#transmision option[value='0']").hide(); //Oculta Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change(); //DEfautl automatica
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
+
+        $("#op2-transmision option[value='0']").hide(); //Oculta Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change(); //DEfautl automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+
+        $("#op3-transmision option[value='0']").hide(); //Oculta Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change(); //DEfautl automatica
+        $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '4': //Rav 4
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change();
         $("#tvehiculo option[value='1']").show(); //oculta seminuevos
-        //$('#tvehiculo').val('0').change();
+        $("#op2-transmision option[value='0']").show(); //muestra Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change();
+        $("#op2-tvehiculo option[value='1']").show(); //oculta seminuevos
+        $("#op3-transmision option[value='0']").show(); //muestra Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change();
+        $("#op3-tvehiculo option[value='1']").show(); //oculta seminuevos
       break;
       case '5': //Rush
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change(); //DEfautl automatica
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
-      //  $('#tvehiculo').val('0').change();
+
+        $("#op2-transmision option[value='0']").show(); //muestra Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change(); //DEfautl automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+
+        $("#op3-transmision option[value='0']").show(); //muestra Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change(); //DEfautl automatica
+        $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '6': //Corolla
         $("#transmision option[value='0']").hide(); //Oculta Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change(); //Default automatico
+
+        $("#op2-transmision option[value='0']").hide(); //Oculta Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change(); //Default automatico
+
+        $("#op3-transmision option[value='0']").hide(); //Oculta Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change(); //Default automatico
       break;
       case '7': //Yaris
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change();
         $("#tvehiculo option[value='1']").show(); //oculta seminuevos
-        //$('#tvehiculo').val('0').change();
+
+        $("#op2-transmision option[value='0']").show(); //muestra Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change();
+        $("#op2-tvehiculo option[value='1']").show(); //oculta seminuevos
+
+        $("#op3-transmision option[value='0']").show(); //muestra Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change();
+        $("#op3-tvehiculo option[value='1']").show(); //oculta seminuevos
       break;
       case '8': //Figo
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change(); //DEfautl automatica
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
-        //$('#tvehiculo').val('0').change();
+
+        $("#op2-transmision option[value='0']").show(); //muestra Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change(); //DEfautl automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+
+        $("#op3-transmision option[value='0']").show(); //muestra Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change(); //DEfautl automatica
+        $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '9':
         $("#transmision option[value='0']").show(); //muestra Manual
@@ -1004,6 +1073,16 @@ function ocultaropciones(modelo){
         $('#transmision').val('1').change();
         $("#tvehiculo option[value='0']").show(); //oculta nuevos
       //  $('#tvehiculo').val('1').change();
+
+        $("#op2-transmision option[value='0']").show(); //muestra Manual
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change();
+        $("#op2-tvehiculo option[value='0']").show(); //oculta nuevos
+
+        $("#op3-transmision option[value='0']").show(); //muestra Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change();
+        $("#op3-tvehiculo option[value='0']").show(); //oculta nuevos
       break;
 
     }

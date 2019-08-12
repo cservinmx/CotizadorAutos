@@ -342,6 +342,7 @@
 </div><!-- Fin tab 1-->
 <!-- Tab 2-->
 <div id="tab2">
+  <div class="main">
     <div class="title" id="title"><h1>Opción 2</h1></div>
       <div>
         <div id="divmodelo" style="white-space:nowrap;">
@@ -400,16 +401,6 @@
 
         <div class="space20"></div>
         <div class="space20"></div>
-          <div id="prebut"  class="prebut">
-              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
-              <div class="space10"></div>
-              <a id="lightbox-btn2" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold; " title="">CONTÁCTENOS</a>
-              <div class="space10"></div>
-              <button type="button"  id="op2comparar" class="btt blue" style="border: none; color: #FFF;" title="">Comparar</button>
-              <div class="space10"></div>
-              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
-          </div>
-
     </div>
     <div class="float-left fcen"></div>
     <div  id="rightbutt" class="float-left fder">
@@ -502,10 +493,22 @@
          </div>
        </div>
      </div>
+     <div style="text-align: center; margin: 0 auto;">
+         <div id="op2-prebut2" class="prebut">
+             <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+             <div class="space10"></div>
+             <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
+             <div class="space10"></div>
+             <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
+             <div class="space10"></div>
+             <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
+         </div>
+       </div>
     </div>
+</div>
 
 </div>
- <div class="cearboth" style="height: 20px;"></div>
+
 <!-- Fin tab2 -->
 <div id="tab3">
   <div class="main">
@@ -568,13 +571,7 @@
 
         <div class="space20"></div>
         <div class="space20"></div>
-          <div id="prebut"  class="prebut">
-              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
-              <div class="space10"></div>
-              <a id="lightbox-btn3" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
-              <div class="space10"></div>
-              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
-          </div>
+
 
     </div>
     <div class="float-left fcen"></div>
@@ -669,6 +666,17 @@
        </div>
      </div>
     </div>
+    <div style="text-align: center; margin: 0 auto;">
+        <div id="op3-prebut2" class="prebut">
+            <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+            <div class="space10"></div>
+            <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
+            <div class="space10"></div>
+            <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
+            <div class="space10"></div>
+            <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
+        </div>
+      </div>
 </div>
 </div>
 <div class="cearboth" style="height: 20px;"></div>

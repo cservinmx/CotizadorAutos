@@ -218,9 +218,9 @@ function thepercent(precio){
       var clas="percent-65";
       break;
     case 66:
-          var clas="percent-66";
-          break;
-        case 67:
+      var clas="percent-66";
+      break;
+    case 67:
           var clas="percent-67";
           break;
         case 68:
@@ -413,11 +413,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
               if(tcobertura==0 && tmovil==1 && vsustituto==0){
                 if(kilometraje==1){
-                  var prec=m36[3].p4;
+                  var prec=m36[3].p3;
                   precio=limparprecio(prec);
                   return precio;
                 }else{
-                  var prec=m36[3].p3;
+                  var prec=m36[3].p4;
                   precio=limparprecio(prec);
                   return precio;
                 }
@@ -4228,7 +4228,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
     }
   }else if(tvehiculo==1){ //Seminuevo
     switch(modelo){
-      case '2': //Prado  
+      case '2': //Prado
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
             if(tcobertura==1 && tmovil==0 && vsustituto==0){

@@ -225,7 +225,7 @@
   }
   #tabs{display: inline;}
   #prebut{display:none;}
-  #prebut2{display: inline;}
+  #prebut2, #op2-prebut2, #op3-prebut2{display: inline;}
   #divmodelo{width: 100%; margin: 0 auto; text-align: center;}
   #botones_end{clear: both; width: 370px; margin: auto;}
   #divmodelo{
@@ -262,7 +262,7 @@
   .selects{text-align: left;width:150px; }
   .fcen2{display: none;}
   #prebut{display:none;}
-  #prebut2{display: inline;}
+  #prebut2, #op2-prebut2, #op3-prebut2{display: inline;}
   #divmodelo{
         width: 100%;
         margin: 0 auto;
@@ -301,7 +301,7 @@
   .selects{text-align: left;width:150px; }
   .fcen2{display: none;}
   #prebut{display:none;}
-  #prebut2{display: inline;}
+  #prebut2, #op2-prebut2, #op3-prebut2{display: inline;}
   #divmodelo{
         width: 100%;
         margin: 0 auto;
