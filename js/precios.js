@@ -333,20 +333,20 @@ function precios(tvehiculo, modelo, transmision, meses, kilometraje, vsustituto,
 console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+meses+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
   if(tvehiculo==0) { // Nuevo
     switch(modelo){
-      case '1': //Hilux Sencilla
+      case '1': //Hilux Sencilla m36[3] Fila 11 excel
       //console.log("Entra al case1 precios");
           //Solo Transmisión manual
           if(meses==0){ //36meses
-              /*con cobertura con deducible*/
+              /*con cobertura con deducible Fila 11 del AA (p9) AH (p16) */
               if(tcobertura==1 && tmovil==0 && vsustituto==0){
                 if(kilometraje==1){
                   var prec=m36[3].p16;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m36[3].p15;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
@@ -354,35 +354,35 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 if(kilometraje==1){
                   var prec=m36[3].p14;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m36[3].p13;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validada
                 }
               }
 
               if(tcobertura==1 && tmovil==1 && vsustituto==0){
-                if(kilometraje==1){
+                if(kilometraje==1){ //2500
                   var prec=m36[3].p12;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m36[3].p11;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
               if(tcobertura==1 && tmovil==1 && vsustituto==1){
-                if(kilometraje==1){
+                if(kilometraje==1){ //2500
                   var prec=m36[3].p10;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m36[3].p9;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
@@ -435,17 +435,17 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 }
               }
 
-          }else if(meses==1){ //24meses
+          }else if(meses==1){ //24meses  m24[3] fila 30 excel
             /*con cobertura con deducible*/
               if(tcobertura==1 && tmovil==0 && vsustituto==0){
-                if(kilometraje==1){
+                if(kilometraje==1){//2500
                   var prec=m24[3].p16;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m24[3].p15;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
@@ -453,11 +453,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 if(kilometraje==1){
                   var prec=m24[3].p14;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m24[3].p13;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
@@ -465,11 +465,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 if(kilometraje==1){
                   var prec=m24[3].p12;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m24[3].p11;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
@@ -477,24 +477,24 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 if(kilometraje==1){
                   var prec=m24[3].p10;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m24[3].p9;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
                 /* Con cobertura total*/
               if(tcobertura==0 && tmovil==0 && vsustituto==0){
                 if(kilometraje==1){
-                  var prec=m24[3].p8;
+                  var prec=m24[3].p8; //validado
                   precio=limparprecio(prec);
                   return precio;
                 }else{
                   var prec=m24[3].p7;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
@@ -502,11 +502,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 if(kilometraje==1){
                   var prec=m24[3].p6;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m24[3].p5;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //Validado
                 }
               }
 
@@ -514,23 +514,23 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 if(kilometraje==1){
                   var prec=m24[3].p4;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m24[3].p3;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
               if(tcobertura==0 && tmovil==1 && vsustituto==1){
-                if(kilometraje==1){
+                if(kilometraje==1){//2500
                   var prec=m24[3].p2;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }else{
                   var prec=m24[3].p1;
                   precio=limparprecio(prec);
-                  return precio;
+                  return precio; //validado
                 }
               }
 
@@ -635,7 +635,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
               }
           }
       break;
-      case '2'://Prado
+      case '2'://Prado validado
         console.log("Prado Solo Transmisión Automatica");
           //Solo Transmisión Automatica
           if(meses==0){ //36meses
@@ -939,9 +939,9 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
               }
           }
       break;
-      case '3': //Fortuner
+      case '3': //Fortuner validado
           //Solo Transmisión Automatica
-          if(meses==0){ //36meses
+          if(meses==0){ //36meses  m36[1] fila  9 excel
             /*con cobertura con deducible*/
             if(tcobertura==1 && tmovil==0 && vsustituto==0){
               if(kilometraje==1){
@@ -1039,20 +1039,16 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
                 return precio;
               }
             }
-/*
-            var prec=m36[0].p16;
-            precio=limparprecio(prec);
-            //console.log(precio);
-            return precio;*/
+
           }else if(meses==1){ //24meses
             /*con cobertura con deducible*/
               if(tcobertura==1 && tmovil==0 && vsustituto==0){
                 if(kilometraje==1){
-                  var prec=m24[0].p16;
+                  var prec=m24[1].p16;
                   precio=limparprecio(prec);
                   return precio;
                 }else{
-                  var prec=m24[0].p15;
+                  var prec=m24[1].p15;
                   precio=limparprecio(prec);
                   return precio;
                 }
@@ -1060,11 +1056,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
               if(tcobertura==1 && tmovil==0 && vsustituto==1){
                 if(kilometraje==1){
-                  var prec=m24[0].p14;
+                  var prec=m24[1].p14;
                   precio=limparprecio(prec);
                   return precio;
                 }else{
-                  var prec=m24[0].p13;
+                  var prec=m24[1].p13;
                   precio=limparprecio(prec);
                   return precio;
                 }
@@ -1242,7 +1238,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
               }
           }
       break;
-      case '4'://Rav4
+      case '4'://Rav4 validado
         if(transmision==0){//Man
           if(meses==0){ //36meses m36[5].p16;
             /*con cobertura con deducible*/
@@ -1838,7 +1834,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }
       break;
-      case '5':  // Rush
+      case '5':  // Rush validado
       if(transmision==0){//Man
         if(meses==0){ //36meses m36[7].p16;
           /*con cobertura con deducible*/
@@ -2230,7 +2226,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
               precio=limparprecio(prec);
               return precio;
             }else{
-              var prec=m36[4].p1;
+              var prec=m36[6].p1;
               precio=limparprecio(prec);
               return precio;
             }
@@ -2435,7 +2431,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
         }
       }
       break;
-      case '6': //Corolla
+      case '6': //Corolla validado
           //Solo automatica  m36[8].p16;
           if(meses==0){ //36meses
             /*con cobertura con deducible*/
@@ -2733,7 +2729,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
               }
           }
       break;
-      case '7'://yaris
+      case '7'://yaris validado
         if(transmision==0){//Man m36[10].p16;
           if(meses==0){ //36meses
             /*con cobertura con deducible*/
@@ -3330,7 +3326,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }
       break;
-      case '8'://Figo  12 y 11
+      case '8'://Figo  12 y 11 validado
         if(transmision==0){//Man
           if(meses==0){ //36meses
             /*con cobertura con deducible*/
@@ -3927,7 +3923,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           }
         }
       break;
-      default:
+      default: //validado
         //Manual
         if(meses==0){ //36meses
           /*con cobertura con deducible*/
@@ -3994,11 +3990,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
           if(tcobertura==0 && tmovil==0 && vsustituto==1){
             if(kilometraje==1){
-              var prec=m36[8].p6;
+              var prec=m36[2].p6;
               precio=limparprecio(prec);
               return precio;
             }else{
-              var prec=m36[8].p5;
+              var prec=m36[2].p5;
               precio=limparprecio(prec);
               return precio;
             }
@@ -4018,11 +4014,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
           if(tcobertura==0 && tmovil==1 && vsustituto==1){
             if(kilometraje==1){
-              var prec=m36[8].p2;
+              var prec=m36[2].p2;
               precio=limparprecio(prec);
               return precio;
             }else{
-              var prec=m36[8].p1;
+              var prec=m36[2].p1;
               precio=limparprecio(prec);
               return precio;
             }
@@ -4228,7 +4224,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
     }
   }else if(tvehiculo==1){ //Seminuevo
     switch(modelo){
-      case '2': //Prado
+      case '2': //Prado validado
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
             if(tcobertura==1 && tmovil==0 && vsustituto==0){
@@ -4428,7 +4424,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
         }
 
       break;
-      case '4': //Rav4 m24_s[2]
+      case '4': //Rav4 m24_s[2] validado
       if(transmision==0){//Man
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
@@ -4827,7 +4823,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
         }
       }
       break;
-      case '6': //Corolla
+      case '6': //Corolla validado
       if(transmision==0){//Man
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
@@ -5028,7 +5024,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
         }
       }
       break;
-      case '7'://Yaris
+      case '7'://Yaris validado
       if(transmision==0){//Man
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
@@ -5427,7 +5423,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
         }
       }
       break;
-      case '9': //Bego
+      case '9': //Bego validado
       if(transmision==0){//Man
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
@@ -5531,11 +5527,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
           /*con cobertura con deducible*/
             if(tcobertura==1 && tmovil==0 && vsustituto==0){
               if(kilometraje==1){
-                var prec=m12_s[4].p16;
+                var prec=m12_s[3].p16;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p15;
+                var prec=m12_s[3].p15;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5543,11 +5539,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
             if(tcobertura==1 && tmovil==0 && vsustituto==1){
               if(kilometraje==1){
-                var prec=m12_s[4].p14;
+                var prec=m12_s[3].p14;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p13;
+                var prec=m12_s[3].p13;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5555,11 +5551,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
             if(tcobertura==1 && tmovil==1 && vsustituto==0){
               if(kilometraje==1){
-                var prec=m12_s[4].p12;
+                var prec=m12_s[3].p12;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p11;
+                var prec=m12_s[3].p11;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5567,11 +5563,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
             if(tcobertura==1 && tmovil==1 && vsustituto==1){
               if(kilometraje==1){
-                var prec=m12_s[4].p10;
+                var prec=m12_s[3].p10;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p9;
+                var prec=m12_s[3].p9;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5580,11 +5576,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
               /* Con cobertura total*/
             if(tcobertura==0 && tmovil==0 && vsustituto==0){
               if(kilometraje==1){
-                var prec=m12_s[4].p8;
+                var prec=m12_s[3].p8;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p7;
+                var prec=m12_s[3].p7;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5592,11 +5588,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
             if(tcobertura==0 && tmovil==0 && vsustituto==1){
               if(kilometraje==1){
-                var prec=m12_s[4].p6;
+                var prec=m12_s[3].p6;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p5;
+                var prec=m12_s[3].p5;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5604,11 +5600,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
             if(tcobertura==0 && tmovil==1 && vsustituto==0){
               if(kilometraje==1){
-                var prec=m12_s[4].p4;
+                var prec=m12_s[3].p4;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p3;
+                var prec=m12_s[3].p3;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5616,11 +5612,11 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
 
             if(tcobertura==0 && tmovil==1 && vsustituto==1){
               if(kilometraje==1){
-                var prec=m12_s[4].p2;
+                var prec=m12_s[3].p2;
                 precio=limparprecio(prec);
                 return precio;
               }else{
-                var prec=m12_s[4].p1;
+                var prec=m12_s[3].p1;
                 precio=limparprecio(prec);
                 return precio;
               }
@@ -5826,7 +5822,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
         }
       }
       break;
-      default:
+      default: validado
       if(transmision==0){//Man
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
