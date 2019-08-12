@@ -935,7 +935,13 @@ $('#op3-dgarantia').change(function( event ) {
 /******* Fin opcion 3 ******/
 
 }); //Fin Document ready
+function moreinicia(){
+  window.location.assign("../index.php")
+}
 
+function boreinicia(){
+  window.location.assign("../index.php")
+}
 
 function ocultaropciones(modelo){
     console.log("oculta opciones del modelo: "+modelo);

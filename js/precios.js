@@ -221,89 +221,89 @@ function thepercent(precio){
       var clas="percent-66";
       break;
     case 67:
-          var clas="percent-67";
+      var clas="percent-67";
+      break;
+    case 68:
+      var clas="percent-68";
+      break;
+    case 69:
+      var clas="percent-69";
+      break;
+    case 70:
+      var clas="percent-70";
+      break;
+    case 71:
+      var clas="percent-71";
+      break;
+    case 72:
+      var clas="percent-72";
+      break;
+    case 73:
+      var clas="percent-73";
+      break;
+    case 74:
+      var clas="percent-74";
+      break;
+    case 75:
+      var clas="percent-75";
+      break;
+    case 76:
+      var clas="percent-76";
+      break;
+    case 77:
+      var clas="percent-77";
+      break;
+    case 78:
+      var clas="percent-78";
+      break;
+    case 79:
+      var clas="percent-79";
+      break;
+    case 80:
+      var clas="percent-80";
           break;
-        case 68:
-          var clas="percent-68";
-          break;
-        case 69:
-          var clas="percent-69";
-          break;
-        case 70:
-          var clas="percent-70";
-          break;
-        case 71:
-          var clas="percent-71";
-          break;
-        case 72:
-          var clas="percent-72";
-          break;
-        case 73:
-          var clas="percent-73";
-          break;
-        case 74:
-          var clas="percent-74";
-          break;
-        case 75:
-          var clas="percent-75";
-          break;
-        case 76:
-          var clas="percent-76";
-          break;
-        case 77:
-          var clas="percent-77";
-          break;
-        case 78:
-          var clas="percent-78";
-          break;
-        case 79:
-          var clas="percent-79";
-          break;
-        case 80:
-          var clas="percent-80";
-          break;
-        case 81:
-          var clas="percent-81";
-          break;
-        case 82:
-          var clas="percent-82";
-          break;
-        case 83:
-          var clas="percent-83";
-          break;
-        case 84:
-          var clas="percent-84";
-          break;
-        case 85:
-          var clas="percent-85";
-          break;
-        case 86:
-          var clas="percent-86";
-          break;
-        case 87:
-          var clas="percent-87";
-          break;
-        case 88:
-          var clas="percent-88";
-          break;
-        case 89:
-          var clas="percent-89";
-          break;
-        case 90:
-          var clas="percent-90";
-          break;
-        case 91:
-          var clas="percent-91";
-          break;
-        case 92:
-          var clas="percent-92";
-          break;
-        case 93:
-          var clas="percent-93";
-          break;
-        case 94:
-            var clas="percent-94";
-            break;
+    case 81:
+      var clas="percent-81";
+      break;
+    case 82:
+      var clas="percent-82";
+      break;
+    case 83:
+      var clas="percent-83";
+      break;
+    case 84:
+      var clas="percent-84";
+      break;
+    case 85:
+      var clas="percent-85";
+      break;
+    case 86:
+      var clas="percent-86";
+      break;
+    case 87:
+      var clas="percent-87";
+      break;
+    case 88:
+      var clas="percent-88";
+      break;
+    case 89:
+      var clas="percent-89";
+      break;
+    case 90:
+      var clas="percent-90";
+      break;
+    case 91:
+      var clas="percent-91";
+      break;
+    case 92:
+      var clas="percent-92";
+      break;
+    case 93:
+      var clas="percent-93";
+      break;
+    case 94:
+      var clas="percent-94";
+      break;
     case 95:
       var clas="percent-95";
       break;
@@ -314,8 +314,8 @@ function thepercent(precio){
       var clas="percent-97";
       break;
     case 98:
-            var clas="percent-98";
-            break;
+      var clas="percent-98";
+      break;
     case 99:
       var clas="percent-99";
       break;
