@@ -358,8 +358,8 @@
 .percent-100-static-sm .animated {
   -webkit-animation: none;
           animation: none;
-  -webkit-transform: rotate(-14deg);
-          transform: rotate(-14deg);
+  -webkit-transform: rotate(-11deg);
+          transform: rotate(-11deg);
 }
 
 .percent-99 .speedometer.play .animated,

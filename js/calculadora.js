@@ -96,9 +96,19 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
+    //vsustituto=$("input[name*='vsustituto']").val();
+    if($("#op-1-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
+    //tmovil=$("input[name*='tmovil']").val();
+    if($("#op-1-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#dgarantia").val();
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
     var dir="https://www.renting.cr/planes-renting.php?vehicle=";
@@ -119,9 +129,19 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
+    //vsustituto=$("input[name*='vsustituto']").val();
+    if($("#op-1-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
+    //tmovil=$("input[name*='tmovil']").val();
+    if($("#op-1-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#dgarantia").val();
     if(this.value==1){//Seminuevo
         $('#modelo').val(modelo).change();
@@ -175,9 +195,19 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
+    //vsustituto=$("input[name*='vsustituto']").val();
+    if($("#op-1-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
+    //tmovil=$("input[name*='tmovil']").val();
+    if($("#op-1-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#dgarantia").val();
     console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -195,9 +225,19 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
+    //vsustituto=$("input[name*='vsustituto']").val();
+    if($("#op-1-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
+    //tmovil=$("input[name*='tmovil']").val();
+    if($("#op-1-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#dgarantia").val();
     console.log("Cambio en mensualidades");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -215,9 +255,19 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
+    //vsustituto=$("input[name*='vsustituto']").val();
+    if($("#op-1-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
+    //tmovil=$("input[name*='tmovil']").val();
+    if($("#op-1-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#dgarantia").val();
     console.log("cambio kilometraje");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -250,9 +300,19 @@ $(document).ready(function(){
       transmision=$("#transmision").val();
       pcontrato=$("#pcontrato").val();
       kilometraje=$("#kilometraje").val();
-      vsustituto=$("input[name*='vsustituto']:checked").val();
+      //vsustituto=$("input[name*='vsustituto']:checked").val();
+      if($("#op-1-1:checked").val()==1){
+        vsustituto=1;
+      }else{
+        vsustituto=0;
+      }
       tcobertura=$("#tcobertura").val();
-      tmovil=$("input[name*='tmovil']:checked").val();
+      //tmovil=$("input[name*='tmovil']:checked").val();
+      if($("#op-1-3:checked").val()==1){
+        tmovil=1;
+      }else{
+        tmovil=0;
+      }
       dgarantia=$("#dgarantia").val();
       console.log("Cambio en vehiculosustituto");
       precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -270,9 +330,19 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
+    //vsustituto=$("input[name*='vsustituto']").val();
+    if($("#op-1-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
+    //tmovil=$("input[name*='tmovil']").val();
+    if($("#op-1-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#dgarantia").val();
     console.log("Con deducible");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -290,9 +360,19 @@ $(document).ready(function(){
       transmision=$("#transmision").val();
       pcontrato=$("#pcontrato").val();
       kilometraje=$("#kilometraje").val();
-      vsustituto=$("input[name*='vsustituto']:checked").val();
+      //vsustituto=$("input[name*='vsustituto']:checked").val();
+      if($("#op-1-1:checked").val()==1){
+        vsustituto=1;
+      }else{
+        vsustituto=0;
+      }
       tcobertura=$("#tcobertura").val();
-      tmovil=$("input[name*='tmovil']:checked").val();
+      //tmovil=$("input[name*='tmovil']:checked").val();
+      if($("#op-1-3:checked").val()==1){
+        tmovil=1;
+      }else{
+        tmovil=0;
+      }
       dgarantia=$("#dgarantia").val();
       console.log("Cambio en taller movil");
       precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -310,9 +390,19 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    vsustituto=$("input[name*='vsustituto']").val();
+    //vsustituto=$("input[name*='vsustituto']").val();
+    if($("#op-1-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#tcobertura").val();
-    tmovil=$("input[name*='tmovil']").val();
+    //tmovil=$("input[name*='tmovil']").val();
+    if($("#op-1-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#dgarantia").val();
     console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -406,9 +496,19 @@ $("#op2-modelo").change(function(event){
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op2-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op2-dgarantia").val();
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
   var dir="https://www.renting.cr/planes-renting.php?vehicle=";
@@ -428,9 +528,19 @@ $("#op2-tvehiculo").change(function(event) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op2-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op2-dgarantia").val();
   if(this.value==1){//Seminuevo
       $('#op2-modelo').val(modelo).change();
@@ -483,9 +593,19 @@ $('#op2-transmision').change(function( event ) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op2-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op2-dgarantia").val();
   console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -502,9 +622,19 @@ $('#op2-pcontrato').change(function( event ) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op2-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op2-dgarantia").val();
   console.log("Cambio en mensualidades");
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -521,9 +651,19 @@ $('#op2-kilometraje').change(function( event ) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op2-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op2-dgarantia").val();
   console.log("cambio kilometraje");
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -555,9 +695,19 @@ $('input[type="checkbox"]').click(function(){
     transmision=$("#op2-transmision").val();
     pcontrato=$("#op2-pcontrato").val();
     kilometraje=$("#op2-kilometraje").val();
-    vsustituto=$("input[name*='vsustituto2']:checked").val();
+    //vsustituto=$("input[name*='vsustituto2']:checked").val();
+    if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#op2-tcobertura").val();
-    tmovil=$("input[name*='tmovil2']:checked").val();
+    //tmovil=$("input[name*='tmovil2']:checked").val();
+    if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#op2-dgarantia").val();
     console.log("Cambio en vehiculosustituto");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -574,9 +724,19 @@ $('#op2-tcobertura').change(function( event ) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op2-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op2-dgarantia").val();
   console.log("Con deducible");
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -593,9 +753,19 @@ $('#op2-tcobertura').change(function( event ) {
     transmision=$("#op2-transmision").val();
     pcontrato=$("#op2-pcontrato").val();
     kilometraje=$("#op2-kilometraje").val();
-    vsustituto=$("input[name*='vsustituto2']:checked").val();
+    //vsustituto=$("input[name*='vsustituto2']:checked").val();
+    if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#op2-tcobertura").val();
-    tmovil=$("input[name*='tmovil2']:checked").val();
+    //tmovil=$("input[name*='tmovil2']:checked").val();
+    if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#op2-dgarantia").val();
     console.log("Cambio en taller movil");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -612,9 +782,19 @@ $('#op2-dgarantia').change(function( event ) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-2-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op2-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-2-3:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op2-dgarantia").val();
   console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -701,9 +881,19 @@ $("#op3-modelo").change(function(event){
   transmision=$("#op3-transmision").val();
   pcontrato=$("#op3-pcontrato").val();
   kilometraje=$("#op3-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto3']").val();
+  //vsustituto=$("input[name*='vsustituto3']").val();
+  if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op3-tcobertura").val();
-  tmovil=$("input[name*='tmovil3']").val();
+  //tmovil=$("input[name*='tmovil3']").val();
+  if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op3-dgarantia").val();
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
   var dir="https://www.renting.cr/planes-renting.php?vehicle=";
@@ -723,9 +913,19 @@ $("#op3-tvehiculo").change(function(event) {
   transmision=$("#op3-transmision").val();
   pcontrato=$("#op3-pcontrato").val();
   kilometraje=$("#op3-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto3']").val();
+  //vsustituto=$("input[name*='vsustituto3']").val();
+  if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op3-tcobertura").val();
-  tmovil=$("input[name*='tmovil3']").val();
+  //tmovil=$("input[name*='tmovil3']").val();
+  if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op3-dgarantia").val();
   if(this.value==1){//Seminuevo
       $('#op3-modelo').val(modelo).change();
@@ -778,9 +978,19 @@ $('#op3-transmision').change(function( event ) {
   transmision=$("#op3-transmision").val();
   pcontrato=$("#op3-pcontrato").val();
   kilometraje=$("#op3-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto3']").val();
+  //vsustituto=$("input[name*='vsustituto3']").val();
+  if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op3-tcobertura").val();
-  tmovil=$("input[name*='tmovil3']").val();
+  //tmovil=$("input[name*='tmovil3']").val();
+  if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op3-dgarantia").val();
   console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -797,9 +1007,19 @@ $('#op3-pcontrato').change(function( event ) {
   transmision=$("#op3-transmision").val();
   pcontrato=$("#op3-pcontrato").val();
   kilometraje=$("#op3-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto3']").val();
+  //vsustituto=$("input[name*='vsustituto3']").val();
+  if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op3-tcobertura").val();
-  tmovil=$("input[name*='tmovil3']").val();
+  //tmovil=$("input[name*='tmovil3']").val();
+  if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op3-dgarantia").val();
   console.log("Cambio en mensualidades");
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -816,9 +1036,19 @@ $('#op3-kilometraje').change(function( event ) {
   transmision=$("#op3-transmision").val();
   pcontrato=$("#op3-pcontrato").val();
   kilometraje=$("#op3-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto3']").val();
+  //vsustituto=$("input[name*='vsustituto3']").val();
+  if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op3-tcobertura").val();
-  tmovil=$("input[name*='tmovil3']").val();
+  //tmovil=$("input[name*='tmovil3']").val();
+  if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op3-dgarantia").val();
   console.log("cambio kilometraje");
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -850,9 +1080,19 @@ $('input[type="checkbox"]').click(function(){
     transmision=$("#op3-transmision").val();
     pcontrato=$("#op3-pcontrato").val();
     kilometraje=$("#op3-kilometraje").val();
-    vsustituto=$("input[name*='vsustituto3']:checked").val();
+    //vsustituto=$("input[name*='vsustituto3']:checked").val();
+    if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#op3-tcobertura").val();
-    tmovil=$("input[name*='tmovil3']:checked").val();
+    //tmovil=$("input[name*='tmovil3']:checked").val();
+    if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#op3-dgarantia").val();
     console.log("Cambio en vehiculosustituto");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -869,9 +1109,19 @@ $('#op3-tcobertura').change(function( event ) {
   transmision=$("#op3-transmision").val();
   pcontrato=$("#op3-pcontrato").val();
   kilometraje=$("#op3-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto2']").val();
+  //vsustituto=$("input[name*='vsustituto2']").val();
+  if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op3-tcobertura").val();
-  tmovil=$("input[name*='tmovil2']").val();
+  //tmovil=$("input[name*='tmovil2']").val();
+  if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op3-dgarantia").val();
   console.log("Con deducible");
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -888,9 +1138,19 @@ $('#op3-tcobertura').change(function( event ) {
     transmision=$("#op3-transmision").val();
     pcontrato=$("#op3-pcontrato").val();
     kilometraje=$("#op3-kilometraje").val();
-    vsustituto=$("input[name*='vsustituto3']:checked").val();
+    //vsustituto=$("input[name*='vsustituto3']:checked").val();
+    if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
     tcobertura=$("#op3-tcobertura").val();
-    tmovil=$("input[name*='tmovil3']:checked").val();
+    //tmovil=$("input[name*='tmovil3']:checked").val();
+    if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
     dgarantia=$("#op3-dgarantia").val();
     console.log("Cambio en taller movil");
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
@@ -907,9 +1167,19 @@ $('#op3-dgarantia').change(function( event ) {
   transmision=$("#op3-transmision").val();
   pcontrato=$("#op3-pcontrato").val();
   kilometraje=$("#op3-kilometraje").val();
-  vsustituto=$("input[name*='vsustituto3']").val();
+  //vsustituto=$("input[name*='vsustituto3']").val();
+  if($("#op-3-1:checked").val()==1){
+      vsustituto=1;
+    }else{
+      vsustituto=0;
+    }
   tcobertura=$("#op3-tcobertura").val();
-  tmovil=$("input[name*='tmovil3']").val();
+  //tmovil=$("input[name*='tmovil3']").val();
+  if($("#op-3-4:checked").val()==1){
+      tmovil=1;
+    }else{
+      tmovil=0;
+    }
   dgarantia=$("#op3-dgarantia").val();
   console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision "+transmision+" meses "+pcontrato+" kilometraje "+kilometraje+" vsustituto "+ vsustituto+" tcobertura"+tcobertura+" tmovil "+tmovil+" dgarantia "+dgarantia );
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);

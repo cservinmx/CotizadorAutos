@@ -6,7 +6,7 @@
 /* Tranforma el precio a porecentaje tacómetro*/
 function thepercent(precio){
   var min=351; //351 Valor real se agrega un margen para que no salga del tacometro
-  var max=2150; // 2022 Valor real se agrega un margen para que no salga del tacometro
+  var max=2022; // 2022 Valor real se agrega un margen para que no salga del tacometro
   if(precio==min){
     percent=0;
   }else if(precio==max){
@@ -17,7 +17,7 @@ function thepercent(precio){
 
   switch(percent){
     case 0:
-      var clas="percent-0";
+      var clas="percent-1";
       break;
     case 1:
       var clas="percent-1";
@@ -5822,7 +5822,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
         }
       }
       break;
-      default: validado
+      default: //validado
       if(transmision==0){//Man
         if(meses==1){ //24meses
           /*con cobertura con deducible*/

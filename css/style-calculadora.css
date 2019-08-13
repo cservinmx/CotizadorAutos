@@ -161,7 +161,7 @@
      background: url(../img/selectbutton.jpg) no-repeat right #f2f2f2;
   }
   .selects:focus{  outline: none !important;
-    border-color: #fdfdfd; box-shadow: 0 0 1px #fdfdfd;}
+    border-color: #1c325c; box-shadow: 0 0 1px #1c325c;}
 
   .cearboth{clear: both;}
   .chk input[type="checkbox"] { display: none; }

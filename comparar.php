@@ -75,16 +75,327 @@ $tmovil = isset($_GET['tmovil']) ? $_GET['tmovil'] : 0;
 $dgarantia= isset($_GET['dgarantia']) ? $_GET['dgarantia'] : 0;
 $precio= isset($_GET['hprecio']) ? $_GET['hprecio'] : 390;
 
-/*
-echo "modelo ".$modelo;
-echo "tvehiculo ".$tvehiculo;
-echo "transmision ".$transmision;
-echo "pcontrato ".$pcontrato;
-echo "kilometraje ".$kilometraje;
-echo "vsustituto ".$vsustituto;
-echo "tcobertura ".$tcobertura;
-echo "tmovil ".$tmovil;
-echo "dgarantia ".$dgarantia;*/
+$min=351; //351 Valor real se agrega un margen para que no salga del tacometro
+$max=2022; // 2022 Valor real se agrega un margen para que no salga del tacometro
+if($precio==$min){
+  $percent=0;
+}else if($precio==$max){
+  $percent=100;
+}else{
+    $percent=round(($precio*100)/$max);
+}
+
+switch($percent){
+  case 0:
+    $clas="percent-0";
+    break;
+  case 1:
+    $clas="percent-1";
+    break;
+  case 2:
+    $clas="percent-2";
+    break;
+  case 3:
+    $clas="percent-3";
+    break;
+  case 4:
+    $clas="percent-4";
+    break;
+  case 5:
+    $clas="percent-5";
+    break;
+  case 6:
+    $clas="percent-6";
+    break;
+  case 7:
+    $clas="percent-7";
+    break;
+  case 8:
+    $clas="percent-8";
+    break;
+  case 9:
+    $clas="percent-9";
+    break;
+  case 10:
+    $clas="percent-10";
+    break;
+  case 11:
+    $clas="percent-11";
+    break;
+  case 12:
+    $clas="percent-12";
+    break;
+  case 13:
+    $clas="percent-13";
+    break;
+  case 14:
+    $clas="percent-14";
+    break;
+  case 15:
+    $clas="percent-15";
+    break;
+  case 16:
+    $clas="percent-16";
+    break;
+  case 17:
+    $clas="percent-17";
+    break;
+  case 18:
+    $clas="percent-18";
+    break;
+  case 19:
+    $clas="percent-19";
+    break;
+  case 20:
+    $clas="percent-20";
+    break;
+  case 21:
+    $clas="percent-21";
+    break;
+  case 22:
+    $clas="percent-22";
+    break;
+  case 23:
+    $clas="percent-23";
+    break;
+  case 24:
+    $clas="percent-24";
+    break;
+  case 25:
+    $clas="percent-25";
+    break;
+  case 26:
+    $clas="percent-26";
+    break;
+  case 27:
+    $clas="percent-27";
+    break;
+  case 28:
+    $clas="percent-28";
+    break;
+  case 29:
+    $clas="percent-29";
+    break;
+  case 30:
+    $clas="percent-30";
+    break;
+  case 31:
+    $clas="percent-31";
+    break;
+  case 32:
+    $clas="percent-32";
+    break;
+  case 33:
+    $clas="percent-33";
+    break;
+  case 34:
+    $clas="percent-34";
+    break;
+  case 35:
+    $clas="percent-35";
+    break;
+  case 36:
+    $clas="percent-36";
+    break;
+  case 37:
+    $clas="percent-37";
+    break;
+  case 38:
+    $clas="percent-38";
+    break;
+  case 39:
+    $clas="percent-39";
+    break;
+  case 40:
+    $clas="percent-40";
+    break;
+  case 41:
+    $clas="percent-41";
+    break;
+  case 42:
+    $clas="percent-42";
+    break;
+  case 43:
+    $clas="percent-43";
+    break;
+  case 44:
+    $clas="percent-44";
+    break;
+  case 45:
+    $clas="percent-45";
+    break;
+  case 46:
+    $clas="percent-46";
+    break;
+  case 47:
+    $clas="percent-47";
+    break;
+  case 48:
+    $clas="percent-48";
+    break;
+  case 49:
+    $clas="percent-49";
+    break;
+  case 50:
+    $clas="percent-50";
+    break;
+  case 51:
+    $clas="percent-51";
+    break;
+  case 52:
+    $clas="percent-52";
+    break;
+  case 52:
+    $clas="percent-52";
+    break;
+  case 53:
+    $clas="percent-53";
+    break;
+  case 54:
+    $clas="percent-54";
+    break;
+  case 55:
+    $clas="percent-55";
+    break;
+  case 56:
+    $clas="percent-56";
+    break;
+  case 57:
+    $clas="percent-57";
+    break;
+  case 58:
+    $clas="percent-58";
+    break;
+  case 59:
+    $clas="percent-59";
+    break;
+  case 60:
+    $clas="percent-60";
+    break;
+  case 61:
+    $clas="percent-61";
+    break;
+  case 62:
+    $clas="percent-62";
+    break;
+  case 63:
+    $clas="percent-63";
+    break;
+  case 64:
+    $clas="percent-64";
+    break;
+  case 65:
+    $clas="percent-65";
+    break;
+  case 66:
+    $clas="percent-66";
+    break;
+  case 67:
+    $clas="percent-67";
+    break;
+  case 68:
+    $clas="percent-68";
+    break;
+  case 69:
+    $clas="percent-69";
+    break;
+  case 70:
+    $clas="percent-70";
+    break;
+  case 71:
+    $clas="percent-71";
+    break;
+  case 72:
+    $clas="percent-72";
+    break;
+  case 73:
+    $clas="percent-73";
+    break;
+  case 74:
+    $clas="percent-74";
+    break;
+  case 75:
+    $clas="percent-75";
+    break;
+  case 76:
+    $clas="percent-76";
+    break;
+  case 77:
+    $clas="percent-77";
+    break;
+  case 78:
+    $clas="percent-78";
+    break;
+  case 79:
+    $clas="percent-79";
+    break;
+  case 80:
+    $clas="percent-80";
+        break;
+  case 81:
+    $clas="percent-81";
+    break;
+  case 82:
+    $clas="percent-82";
+    break;
+  case 83:
+    $clas="percent-83";
+    break;
+  case 84:
+    $clas="percent-84";
+    break;
+  case 85:
+    $clas="percent-85";
+    break;
+  case 86:
+    $clas="percent-86";
+    break;
+  case 87:
+    $clas="percent-87";
+    break;
+  case 88:
+    $clas="percent-88";
+    break;
+  case 89:
+    $clas="percent-89";
+    break;
+  case 90:
+    $clas="percent-90";
+    break;
+  case 91:
+    $clas="percent-91";
+    break;
+  case 92:
+    $clas="percent-92";
+    break;
+  case 93:
+    $clas="percent-93";
+    break;
+  case 94:
+    $clas="percent-94";
+    break;
+  case 95:
+    $clas="percent-95";
+    break;
+  case 96:
+    $clas="percent-96";
+    break;
+  case 97:
+    $clas="percent-97";
+    break;
+  case 98:
+    $clas="percent-98";
+    break;
+  case 99:
+    $clas="percent-99";
+    break;
+
+  case 100:
+    $clas="percent-100";
+    break;
+}
+
+
 
 switch($modelo){
   case 1:
@@ -168,7 +479,7 @@ switch($modelo){
         <div class="space20"></div>
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div id="clas-per" class="percent-80">
+            <div id="clas-per" class="<?= $clas; ?>">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
@@ -335,7 +646,7 @@ switch($modelo){
         <div class="space20"></div>
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div id="clas-per2" class="percent-40">
+            <div id="clas-per2" class="percent-51">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
@@ -507,7 +818,7 @@ switch($modelo){
         <div class="space20"></div>
         <div style="height: 60px;" >
           <div class="wrapper">
-            <div id="clas-per3" class="percent-40">
+            <div id="clas-per3" class="percent-51">
               <div class="speedometer play">
                 <div class="dial">
                   <div class="bar">
