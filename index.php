@@ -538,11 +538,11 @@
        <div class="space20"></div>
        <div class="space20"></div>
          <div id="prebut"  class="prebut">
-             <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+             <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
              <div class="space10"></div>
              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
              <div class="space10"></div>
-             <button type="submit"  class="btt blue" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
+             <button type="submit"  class="btt blue" style="text-decoration: none; color: #FFF; font-weight: bold; border:none;">Comparar</button>
              <div class="space10"></div>
              <a onclick="moreinicia();" href="#" style="text-decoration: none; color: #FFF; font-weight: bold;" class="btt blue">Reiniciar</a>
          </div>
@@ -644,11 +644,11 @@
 
      <div style="text-align: center; margin: 0 auto;">
          <div id="prebut2" class="prebut">
-             <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+             <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
              <div class="space10"></div>
              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
              <div class="space10"></div>
-             <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
+             <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold; border:none;">Comparar</button>
              <div class="space10"></div>
              <a id="breiniciar" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
          </div>
@@ -815,11 +815,11 @@
      </div>
      <div style="text-align: center; margin: 0 auto;">
          <div id="op2-prebut2" class="prebut">
-             <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+             <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
              <div class="space10"></div>
              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
              <div class="space10"></div>
-             <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
+             <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold; border:none;">Comparar</button>
              <div class="space10"></div>
              <a onclick="moreinicia();" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
          </div>
@@ -988,11 +988,11 @@
     </div>
     <div style="text-align: center; margin: 0 auto;">
         <div id="op3-prebut2" class="prebut">
-            <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+            <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
             <div class="space10"></div>
             <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
             <div class="space10"></div>
-            <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold;">Comparar</button>
+            <button id="compararmov" type="button" class="btt blue comparar" style="text-decoration: none; color: #FFF; font-weight: bold; border:none;">Comparar</button>
             <div class="space10"></div>
             <a onclick="moreinicia();" href="#" style="text-decoration: none; color: #FFF; font-size: 14px; font-weight: bold;" class="btt blue">Reiniciar</a>
         </div>

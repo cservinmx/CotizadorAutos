@@ -7,7 +7,8 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-
+.vermas{  text-decoration: underline; font-weight: bold; color: #1d2e5e;}
+.backbutton {font-weight: bold; color: #1d2e5e;}
 .speedometer {
   overflow: hidden;
   width: 236px;

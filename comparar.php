@@ -508,7 +508,7 @@ switch($modelo){
         <div class="space20"></div>
         <div class="space20"></div>
           <div id="prebut"  class="prebut">
-              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+              <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
               <div class="space10"></div>
               <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=<?= $link; ?>" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
               <div class="space10"></div>
@@ -675,11 +675,11 @@ switch($modelo){
         <div class="space20"></div>
         <div class="space20"></div>
           <div id="prebut"  class="prebut">
-              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+              <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
               <div class="space10"></div>
               <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;" title="">CONTÁCTENOS</a>
               <div class="space10"></div>
-              <button type="button"  id="op2comparar" class="btt blue" style="border: none; color: #FFF;" title="">Comparar</button>
+              <button type="button"  id="op2comparar" class="btt blue" style="border: none; color: #FFF;" >Comparar</button>
               <div class="space10"></div>
               <a onclick="boreinicia();" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
           </div>
@@ -847,7 +847,7 @@ switch($modelo){
         <div class="space20"></div>
         <div class="space20"></div>
           <div id="prebut"  class="prebut">
-              <a href="https://www.renting.cr/flota.php" target="_blank" style="text-decoration: underline; font-weight: bold;">Ver más información</a>
+              <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
               <div class="space10"></div>
               <a id="lightbox-btn3" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
               <div class="space10"></div>
