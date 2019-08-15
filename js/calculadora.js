@@ -47,46 +47,37 @@ $(document).ready(function(){
       case '1':
         $("#divimg").attr("src","img/hiluxsencilla.png");
         link="toyota-hilux-single";
-        ocultaropciones(this.value);
         break;
       case '2':
         $("#divimg").attr("src","img/Prado.png");
         link="toyota-prado";
-        ocultaropciones(this.value);
         break;
       case '3':
         $("#divimg").attr("src","img/Fortuner.png");
         link="toyota-fortuner";
-        ocultaropciones(this.value);
         break;
       case '4':
         $("#divimg").attr("src","img/Rav4.png");
         link="toyota-rav4";
-        ocultaropciones(this.value);
         break;
       case '5':
         $("#divimg").attr("src","img/Rush.png");
         link="toyota-hilux-single";
-        ocultaropciones(this.value);
         break;
       case '6':
         $("#divimg").attr("src","img/Corolla.png");
         link="toyota-corolla";
-        ocultaropciones(this.value);
         break;
       case '7':
         $("#divimg").attr("src","img/Yaris.png");
-        ocultaropciones(this.value);
         link="toyota-yaris";
         break;
       case '8':
         $("#divimg").attr("src","img/Figo.png");
-        ocultaropciones(this.value);
         link="ford-figo";
         break;
       case '9':
         $("#divimg").attr("src","img/bego.png");
-        ocultaropciones(this.value);
         link="ford-bego";
         break;
 
@@ -110,6 +101,7 @@ $(document).ready(function(){
       tmovil=0;
     }
     dgarantia=$("#dgarantia").val();
+    ocultaropciones(modelo);
     precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
     var dir="https://www.renting.cr/planes-renting.php?vehicle=";
     var href=dir+link;
@@ -153,6 +145,8 @@ $(document).ready(function(){
         $("#modelo option[value='5']").hide();
         $("#modelo option[value='8']").hide();
         $("#modelo option[value='9']").show();
+        $("#pcontrato option[value='1']").attr("selected",true);
+        $("#pcontrato option[value='0']").hide(); //Oculta 36m
         precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
         console.log(precio);
         $("#clas-per").attr("class",thepercent(precio));
@@ -447,46 +441,37 @@ $("#op2-modelo").change(function(event){
     case '1':
       $("#op2-divimg").attr("src","img/hiluxsencilla.png");
       link="toyota-hilux-single";
-      ocultaropciones(this.value);
       break;
     case '2':
       $("#op2-divimg").attr("src","img/Prado.png");
       link="toyota-prado";
-      ocultaropciones(this.value);
       break;
     case '3':
       $("#op2-divimg").attr("src","img/Fortuner.png");
       link="toyota-fortuner";
-      ocultaropciones(this.value);
       break;
     case '4':
       $("#op2-divimg").attr("src","img/Rav4.png");
       link="toyota-rav4";
-      ocultaropciones(this.value);
       break;
     case '5':
       $("#op2-divimg").attr("src","img/Rush.png");
       link="toyota-hilux-single";
-      ocultaropciones(this.value);
       break;
     case '6':
       $("#op2-divimg").attr("src","img/Corolla.png");
       link="toyota-corolla";
-      ocultaropciones(this.value);
       break;
     case '7':
       $("#op2-divimg").attr("src","img/Yaris.png");
-      ocultaropciones(this.value);
       link="toyota-yaris";
       break;
     case '8':
       $("#op2-divimg").attr("src","img/Figo.png");
-      ocultaropciones(this.value);
       link="ford-figo";
       break;
     case '9':
       $("#op2-divimg").attr("src","img/bego.png");
-      ocultaropciones(this.value);
       link="ford-bego";
       break;
 
@@ -510,6 +495,7 @@ $("#op2-modelo").change(function(event){
       tmovil=0;
     }
   dgarantia=$("#op2-dgarantia").val();
+  ocultaropciones(modelo);
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
   var dir="https://www.renting.cr/planes-renting.php?vehicle=";
   var href=dir+link;
@@ -553,6 +539,8 @@ $("#op2-tvehiculo").change(function(event) {
       $("#op2-modelo option[value='5']").hide();
       $("#op2-modelo option[value='8']").hide();
       $("#op2-modelo option[value='9']").show();
+      $("#pcontrato option[value='1']").attr("selected",true);
+      $("#pcontrato option[value='0']").hide(); //Oculta 36m
       precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
       console.log(precio);
       $("#clas-per2").attr("class",thepercent(precio));
@@ -832,46 +820,37 @@ $("#op3-modelo").change(function(event){
     case '1':
       $("#op3-divimg").attr("src","img/hiluxsencilla.png");
       link="toyota-hilux-single";
-      ocultaropciones(this.value);
       break;
     case '2':
       $("#op3-divimg").attr("src","img/Prado.png");
       link="toyota-prado";
-      ocultaropciones(this.value);
       break;
     case '3':
       $("#op3-divimg").attr("src","img/Fortuner.png");
       link="toyota-fortuner";
-      ocultaropciones(this.value);
       break;
     case '4':
       $("#op3-divimg").attr("src","img/Rav4.png");
       link="toyota-rav4";
-      ocultaropciones(this.value);
       break;
     case '5':
       $("#op3-divimg").attr("src","img/Rush.png");
       link="toyota-hilux-single";
-      ocultaropciones(this.value);
       break;
     case '6':
       $("#op3-divimg").attr("src","img/Corolla.png");
       link="toyota-corolla";
-      ocultaropciones(this.value);
       break;
     case '7':
       $("#op3-divimg").attr("src","img/Yaris.png");
-      ocultaropciones(this.value);
       link="toyota-yaris";
       break;
     case '8':
       $("#op3-divimg").attr("src","img/Figo.png");
-      ocultaropciones(this.value);
       link="ford-figo";
       break;
     case '9':
       $("#op3-divimg").attr("src","img/bego.png");
-      ocultaropciones(this.value);
       link="ford-bego";
       break;
 
@@ -895,6 +874,7 @@ $("#op3-modelo").change(function(event){
       tmovil=0;
     }
   dgarantia=$("#op3-dgarantia").val();
+  ocultaropciones(modelo);
   precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
   var dir="https://www.renting.cr/planes-renting.php?vehicle=";
   var href=dir+link;
@@ -938,6 +918,8 @@ $("#op3-tvehiculo").change(function(event) {
       $("#op3-modelo option[value='5']").hide();
       $("#op3-modelo option[value='8']").hide();
       $("#op3-modelo option[value='9']").show();
+      $("#pcontrato option[value='1']").attr("selected",true);
+      $("#pcontrato option[value='0']").hide(); //Oculta 36m
       precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
       console.log(precio);
       $("#clas-per3").attr("class",thepercent(precio));
@@ -1217,42 +1199,57 @@ function ocultaropciones(modelo){
     console.log("oculta opciones del modelo: "+modelo);
     switch(modelo){
       case '0': //Hilux doble
+        $('#transmision').val('0').change();
+        $("#transmision option[value='0']").attr("selected",true);
         $("#transmision option[value='1']").hide(); //Oculta automatica
+        $("#tvehiculo option[value='0']").attr("selected",true);
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op2-transmision option[value='0']").attr("selected",true);
         $("#op2-transmision option[value='1']").hide(); //Oculta automatica
+        $("#op2-tvehiculo option[value='0']").attr("selected",true);
         $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op3-transmision option[value='0']").attr("selected",true);
         $("#op3-transmision option[value='1']").hide(); //Oculta automatica
+        $("#op3-tvehiculo option[value='0']").attr("selected",true);
         $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '1': //Hilux sencilla
+        $("#transmision option[value='0']").attr("selected",true);
         $("#transmision option[value='1']").hide(); //Oculta automatica
+        $("#tvehiculo option[value='0']").attr("selected",true);
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op2-transmision option[value='0']").attr("selected",true);
         $("#op2-transmision option[value='1']").hide(); //Oculta automatica
+        $("#op2-tvehiculo option[value='0']").attr("selected",true);
         $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op3-transmision option[value='0']").attr("selected",true);
         $("#op3-transmision option[value='1']").hide(); //Oculta automatica
-        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
+        $("#op3-tvehiculo option[value='0']").attr("selected",true);
+        $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '2'://Prado
+        $("#transmision option[value='1']").attr("selected",true);
         $("#transmision option[value='0']").hide(); //Oculta Manual
         $("#transmision option[value='1']").show(); // muestra automatica
-        $("#transmision").val('1').change(); //DEfautl automatica
         $("#tvehiculo option[value='0']").show();// muestra nuevos
         $("#tvehiculo option[value='1']").show(); //muestra seminuevos
-
+        $("#tvehiculo option[value='0']").attr("selected",true);
+        $("#op2-transmision option[value='1']").attr("selected",true);
         $("#op2-transmision option[value='0']").hide(); //Oculta Manual
         $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision").val('1').change(); //DEfautl automatica
+        $("#op2-tvehiculo option[value='1']").attr("selected",true);
         $("#op2-tvehiculo option[value='0']").show();// muestra nuevos
         $("#op2-tvehiculo option[value='1']").show(); //muestra seminuevos
-
+        $("#op3-transmision option[value='1']").attr("selected",true);
         $("#op3-transmision option[value='0']").hide(); //Oculta Manual
         $("#op3-transmision option[value='1']").show(); // muestra automatica
-        $("#op3-transmision").val('1').change(); //DEfautl automatica
+        $("#op3-tvehiculo option[value='0']").attr("selected",true);
         $("#op3-tvehiculo option[value='0']").show();// muestra nuevos
         $("#op3-tvehiculo option[value='1']").show(); //muestra seminuevos
 
       break;
       case '3': //Fortuner
+        $("#transmision option[value='1']").attr("selected",true);
         $("#transmision option[value='0']").hide(); //Oculta Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change(); //DEfautl automatica
@@ -1347,7 +1344,7 @@ function ocultaropciones(modelo){
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
         $('#transmision').val('1').change();
-        $("#tvehiculo option[value='0']").show(); //oculta nuevos
+        $("#tvehiculo option[value='0']").hide(); //oculta nuevos
       //  $('#tvehiculo').val('1').change();
 
         $("#op2-transmision option[value='0']").show(); //muestra Manual

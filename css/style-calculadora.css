@@ -14,7 +14,6 @@
   }
 
   .main{
-    /*border: solid 1px pink;*/
     margin: auto;
     max-width: 1266px;
     min-height: auto;
@@ -26,7 +25,6 @@
   .main h1{
           color:#ff852c;
           font-family: Arial,sans-serif;
-          /*font-size: 26px;*/
   }
 
   .main label, .main p, .main .chk, .main a {
@@ -34,49 +32,42 @@
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: normal;
-    /*font-size: 15.24pt;*/
     font-size: 15px;
   }
 
   .main .price_title{
     font-family: Verdana,sans-serif;
-    /*font-size: 13.84pt;*/
     font-size: 13px;
   }
   .main .price{
     font-family: Verdana,sans-serif;
-    /*font-size: 21.8pt;*/
     font-size: 21px;
   }
   .main .price_iva{
     font-family: Verdana,sans-serif;
-    /*font-size: 14pt;*/
     font-size: 14px;
     color: #1d2e5e;
   }
-.main select{ /*font-size: 15.24pt;*/ font-size: 15px; }
+.main select{  font-size: 15px; }
   .fiz{
     width: 41.77%;
     min-height: auto;
-   /*border: solid 1px green; */
   }
   .fiz2{
     width: 41.77%;
     margin: auto;
     min-height: auto;
-    border: solid 1px green; /**/
+    border: solid 1px green;
     float:left;
   }
   .fcen{
     width: 17.75%;
     min-width: 80px;
     min-height: 2px;
-    /*border: solid 1px black;*/
   }
   .fder{
     width: 39.5%;
     min-height: auto;
-    /*border: solid 1px red;*/
   }
   .cgray{background: #f2f2f2;}
   .cwhite{background: #fff;}
@@ -84,9 +75,7 @@
     background: url('../img/opc3.png');
     height: 49px;
     width: 238px;
-    border: none;
-  /*  border: solid 1px purple;
-    margin-top: -1px;*/
+    border: none
     float: right;
     margin-right: 120px;
   }
@@ -96,12 +85,10 @@
     float:right;
     width: 40.5%;
     padding-right: 130px;
-    /*border: solid 1px purple;*/
   }
   #botones_end{margin-top: 40px;}
   .btt{
         font-family: Verdana,sans-serif;
-        /*font-size: 14pt;*/
         font-size: 14px;
         color: #FFF;
         cursor: pointer;
@@ -133,7 +120,7 @@
   }
   .space10{height: 10px;}
   .space20{height: 20px;}
-  .space30{height: 36px;}
+  .space30{height: 30px;}
   .vspase20{width: 20px;}
   .vspase{width: 100px;}
   .inlines{white-space:nowrap; }
@@ -143,7 +130,6 @@
   .title{
     margin: auto;
     font-family: Arial,sans-serif;
-    /*font-size: 26.75pt;*/
     font-size: 26px;
     text-align: center;
   }
@@ -174,6 +160,9 @@
   	background-size: cover;
   	cursor: pointer;
   }
+  .selectsoption{text-align: justify; /* For Edge */
+  -moz-text-align-last: center; /* For Firefox prior 58.0 */
+  text-align-last: center;}
   .chk input[type="checkbox"]:checked + label span {
   	background: url(../img/checked.jpg);
   	background-size: cover;
@@ -252,8 +241,8 @@
 @media only screen and (max-width: 600px) {
   .inner-right-floats{width: 100%;}
   .main{ padding: 0 20px 0 20px;}
-  .main h1{font-size: 39.9pt;}
-  .main label, .main p, .main .chk, .main a { font-size: 18.85pt; }
+  .main h1{font-size: 39.9px;}
+  .main label, .main p, .main .chk, .main a { font-size: 18.85px; }
   .main .price{ font-size: 18px; }
   .fcen{display: none;}
   .fiz{width: 100%;}
