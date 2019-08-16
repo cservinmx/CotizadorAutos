@@ -160,9 +160,6 @@
   	background-size: cover;
   	cursor: pointer;
   }
-  .selectsoption{text-align: justify; /* For Edge */
-  -moz-text-align-last: center; /* For Firefox prior 58.0 */
-  text-align-last: center;}
   .chk input[type="checkbox"]:checked + label span {
   	background: url(../img/checked.jpg);
   	background-size: cover;
@@ -194,6 +191,111 @@
 .main{ padding: 0 20px 0 20px;}
 
 }
+
+/****  TABS Solo movil *******/
+/* Style the tab */
+.tab {
+  width: 100%
+ overflow: hidden;
+}
+
+.tab div.noactive{
+  float: left;
+  background: url('../img/pestana2.png');
+  cursor: pointer;
+  width: 177px;
+  height:71px;
+  font-family: Verdana,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  size: 17px;
+  border: none;
+}
+
+
+
+
+/* Create an active/current tablink class */
+.tab div.active{
+  float: left;
+  background: url('../img/pestana1.png');
+  width: 174px;
+  height:71px;
+  font-family: Verdana,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  size: 17px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+.btitle{margin: 25px 25px;}
+
+.closebutt{
+  width: 26px;
+  height:26px;
+  background: url('../img/close.png');
+  margin: 5px 5px 5px 0;
+  float: right;
+  cursor: pointer;
+}
+
+.tab button.active {
+background: url('../img/pestana1.png');
+width: 174px;
+height:71px;
+border: none;
+color: #FFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ border-top: none;
+}
+
+button.tabnew{
+  background: url('../img/pestana3.png');
+  width: 70px;
+  height:71px;
+  border: none;
+}
+
+
+@media only screen and (max-width: 540px) {
+
+.tab div.active{
+    background: url('../img/pestana1_113.png');
+    width: 113px;
+    height:46px;
+    font-size: 12px;
+  }
+
+  .tab button.active{
+      background: url('../img/pestana1_113.png');
+      width: 113px;
+      height:46px;
+      font-size: 12px;
+    }
+
+    button.tabnew{
+      background: url('../img/pestana3_46.png');
+      width: 45px;
+      height:46px;
+    }
+
+    .tab div.noactive{
+      background: url('../img/pestana2_113.png');
+      width: 113px;
+      height:46px;
+      font-size: 12px;
+    }
+
+    .btitle{margin: 15px 15px;}
+}
+/***** *********/
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -314,74 +416,4 @@
 
 }
 
-/****  TABS Solo movil *******/
-/* Style the tab */
-.tab {
-  width: 100%
- overflow: hidden;
-}
 
-.tab div.noactive{
-  float: left;
-  background: url('../img/pestana2.png');
-  cursor: pointer;
-  width: 177px;
-  height:71px;
-  font-family: Verdana,sans-serif;
-  font-weight: bold;
-  text-align: center;
-  size: 17px;
-  border: none;
-}
-
-
-
-
-/* Create an active/current tablink class */
-.tab div.active{
-  float: left;
-  background: url('../img/pestana1.png');
-  width: 174px;
-  height:71px;
-  font-family: Verdana,sans-serif;
-  font-weight: bold;
-  text-align: center;
-  size: 17px;
-  border: none;
-  color: #FFF;
-  cursor: pointer;
-}
-.btitle{margin: 25px 25px;}
-
-.closebutt{
-  width: 26px;
-  height:26px;
-  background: url('../img/close.png');
-  margin: 5px 5px 5px 0;
-  float: right;
-  cursor: pointer;
-}
-
-.tab button.active {
-background: url('../img/pestana1.png');
-width: 174px;
-height:71px;
-border: none;
-color: #FFF;
-}
-
-/* Style the tab content */
-.tabcontent {
- display: none;
- padding: 6px 12px;
- border: 1px solid #ccc;
- border-top: none;
-}
-
-button.tabnew{
-  background: url('../img/pestana3.png');
-  width: 70px;
-  height:71px;
-  border: none;
-}
-/***** *********/

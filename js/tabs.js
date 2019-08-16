@@ -49,8 +49,8 @@ $('.tabnew').click(function( event ) {
     tab="tab"+suma;
     if(numdiv==2){$(".tabnew").hide()}
     if(numdiv<3){
-      if(numdiv==1){ $("#op2").show(); }
-      if(numdiv==2){ $("#op3").show();}
+      if(numdiv==1){ $("#op2").show(); $("#op2").click(); }
+      if(numdiv==2){ $("#op3").show(); $("#op3").click();}
       //$('#newtab').append('<button class="tablinks" onclick="open(event, '+tab+')">Opción '+suma+'</button> ');
     //  $('#newtab').html('<div class="noactive" id="'+tab+'"><div id="close-'+suma+'"class="closebutt"></div><div class="btitle">Opción '+suma+'</div></div>');
     }else{
@@ -60,16 +60,25 @@ $('.tabnew').click(function( event ) {
 });
 
 $(".closebutt").click(function(event){
+  $("#op1").removeClass("noactive");
+  $("#op1").addClass("active");
+  $("#op1").click();
+
+
   if(this.id=="c2"){
       numdiv--;
       $("#op2").hide();
+     $("#op1").click();
   }else{
     numdiv--;
     numdiv--;
     $("#op3").hide();
+    $("#op1").click();
   }
 
-  $(".tabnew").show()
+
+
+  $(".tabnew").show();
 });
 
 $(".noactive, .active").click(function(event){
