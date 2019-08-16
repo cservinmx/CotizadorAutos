@@ -60,7 +60,7 @@ $('.tabnew').click(function( event ) {
 });
 
 $(".closebutt").click(function(event){
-  alert("entra");
+  //alert("entra");
   $("#op1").removeClass("noactive");
   $("#op1").addClass("active");
   $("#op1").click();

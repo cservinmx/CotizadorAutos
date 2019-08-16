@@ -18,12 +18,12 @@ $(document).ready(function(){
   });
 
 
-  /* Carga los JSON de la matriz Google*/
+  /* Carga los JSON de la matriz Google
     var m36=JSON.parse($("#36m").val());
     var m24=JSON.parse($("#24m").val());
     var m12=JSON.parse($("#12m").val());
     var m24_s=JSON.parse($("#24m_s").val());
-    var m12_s=JSON.parse($("#12m_s").val());
+    var m12_s=JSON.parse($("#12m_s").val());*/
   /* Fin carga JSON*/
 
   $(speed.trigger).on('click', function () {
@@ -41,7 +41,6 @@ $(document).ready(function(){
     switch (this.value) {
       case '0':
         $("#divimg").attr("src","img/hilux.png");
-        //$('select[name="transmision"] option[value="0"]').remove();
         link="toyota-hilux";
         break;
       case '1':
@@ -87,14 +86,12 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    //vsustituto=$("input[name*='vsustituto']").val();
     if($("#op-1-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
     tcobertura=$("#tcobertura").val();
-    //tmovil=$("input[name*='tmovil']").val();
     if($("#op-1-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -121,14 +118,12 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    //vsustituto=$("input[name*='vsustituto']").val();
     if($("#op-1-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
     tcobertura=$("#tcobertura").val();
-    //tmovil=$("input[name*='tmovil']").val();
     if($("#op-1-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -190,14 +185,12 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    //vsustituto=$("input[name*='vsustituto']").val();
     if($("#op-1-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
     tcobertura=$("#tcobertura").val();
-    //tmovil=$("input[name*='tmovil']").val();
     if($("#op-1-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -220,14 +213,12 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    //vsustituto=$("input[name*='vsustituto']").val();
     if($("#op-1-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
     tcobertura=$("#tcobertura").val();
-    //tmovil=$("input[name*='tmovil']").val();
     if($("#op-1-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -250,14 +241,12 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    //vsustituto=$("input[name*='vsustituto']").val();
     if($("#op-1-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
     tcobertura=$("#tcobertura").val();
-    //tmovil=$("input[name*='tmovil']").val();
     if($("#op-1-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -295,14 +284,12 @@ $(document).ready(function(){
       transmision=$("#transmision").val();
       pcontrato=$("#pcontrato").val();
       kilometraje=$("#kilometraje").val();
-      //vsustituto=$("input[name*='vsustituto']:checked").val();
       if($("#op-1-1:checked").val()==1){
         vsustituto=1;
       }else{
         vsustituto=0;
       }
       tcobertura=$("#tcobertura").val();
-      //tmovil=$("input[name*='tmovil']:checked").val();
       if($("#op-1-3:checked").val()==1){
         tmovil=1;
       }else{
@@ -325,14 +312,12 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    //vsustituto=$("input[name*='vsustituto']").val();
     if($("#op-1-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
     tcobertura=$("#tcobertura").val();
-    //tmovil=$("input[name*='tmovil']").val();
     if($("#op-1-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -355,14 +340,12 @@ $(document).ready(function(){
       transmision=$("#transmision").val();
       pcontrato=$("#pcontrato").val();
       kilometraje=$("#kilometraje").val();
-      //vsustituto=$("input[name*='vsustituto']:checked").val();
       if($("#op-1-1:checked").val()==1){
         vsustituto=1;
       }else{
         vsustituto=0;
       }
       tcobertura=$("#tcobertura").val();
-      //tmovil=$("input[name*='tmovil']:checked").val();
       if($("#op-1-3:checked").val()==1){
         tmovil=1;
       }else{
@@ -385,14 +368,12 @@ $(document).ready(function(){
     transmision=$("#transmision").val();
     pcontrato=$("#pcontrato").val();
     kilometraje=$("#kilometraje").val();
-    //vsustituto=$("input[name*='vsustituto']").val();
     if($("#op-1-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
     tcobertura=$("#tcobertura").val();
-    //tmovil=$("input[name*='tmovil']").val();
     if($("#op-1-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -436,7 +417,6 @@ $("#op2-modelo").change(function(event){
   switch (this.value) {
     case '0':
       $("#op2-divimg").attr("src","img/hilux.png");
-      //$('select[name="transmision"] option[value="0"]').remove();
       link="toyota-hilux";
       break;
     case '1':
@@ -482,14 +462,12 @@ $("#op2-modelo").change(function(event){
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  //vsustituto=$("input[name*='vsustituto2']").val();
   if($("#op-2-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
   tcobertura=$("#op2-tcobertura").val();
-  //tmovil=$("input[name*='tmovil2']").val();
   if($("#op-2-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -515,14 +493,12 @@ $("#op2-tvehiculo").change(function(event) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  //vsustituto=$("input[name*='vsustituto2']").val();
   if($("#op-2-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
   tcobertura=$("#op2-tcobertura").val();
-  //tmovil=$("input[name*='tmovil2']").val();
   if($("#op-2-3:checked").val()==1){
       tmovil=1;
     }else{
@@ -582,14 +558,12 @@ $('#op2-transmision').change(function( event ) {
   transmision=$("#op2-transmision").val();
   pcontrato=$("#op2-pcontrato").val();
   kilometraje=$("#op2-kilometraje").val();
-  //vsustituto=$("input[name*='vsustituto2']").val();
   if($("#op-2-1:checked").val()==1){
       vsustituto=1;
     }else{
       vsustituto=0;
     }
   tcobertura=$("#op2-tcobertura").val();
-  //tmovil=$("input[name*='tmovil2']").val();
   if($("#op-2-3:checked").val()==1){
       tmovil=1;
     }else{

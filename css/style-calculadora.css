@@ -111,6 +111,8 @@
         }
   .botones_end{text-align: center;}
   .prebut{margin: 0 auto; text-align: center;}
+  .vermas  {text-decoration: none; color: #23527c; }
+  /*.vermas a:hover { color: #23527c; }*/
   #prebut2{display:none;}
   .dimg img{
     width: 100%;
@@ -284,7 +286,7 @@ button.tabnew{
     }
 
     button.tabnew{
-      background: url('../img/pestana3_113.png');
+      background: url('../img/pestana3_46.png');
       width: 45px;
       height:46px;
     }

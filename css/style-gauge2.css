@@ -7,7 +7,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.vermas{  text-decoration: underline; font-weight: bold; color: #1d2e5e;}
+/*.vermas{  text-decoration: underline; font-weight: bold; color: #1d2e5e;}*/
 .backbutton {font-weight: bold; color: #1d2e5e;}
 .speedometer {
   overflow: hidden;
@@ -368,7 +368,13 @@
   -webkit-animation-name: to-99;
           animation-name: to-99;
 }
-
+.percent-995-static .animated,
+.percent-995-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-13.5deg);
+          transform: rotate(-13.52deg);
+}
 .percent-99-static .animated,
 .percent-99-static-sm .animated {
   -webkit-animation: none;
@@ -1692,12 +1698,18 @@
   -webkit-transform: rotate(-162.96deg);
           transform: rotate(-162.96deg);
 }
-.percent-1 .speedometer.play .animated,
-.percent-1-sm .speedometer.play .animated {
-  -webkit-animation-name: to-1;
-          animation-name: to-1;
+.percent-1-5 .speedometer.play .animated,
+.percent-1-5-sm .speedometer.play .animated {
+  -webkit-animation-name: to-1-5;
+          animation-name: to-1-5;
 }
-
+.percent-1-5-static .animated,
+.percent-1-5-static-sm .animated {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transform: rotate(-163.72deg);
+          transform: rotate(-163.72deg);
+}
 .percent-1-static .animated,
 .percent-1-static-sm .animated {
   -webkit-animation: none;
@@ -1722,6 +1734,16 @@
   100% {
     -webkit-transform: rotate(-14deg);
             transform: rotate(-14deg);
+  }
+}
+@-webkit-keyframes to-995 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-13.5deg);
+            transform: rotate(-13.52deg);
   }
 }
 @-webkit-keyframes to-99 {
@@ -2701,6 +2723,16 @@
             transform: rotate(-155.045deg);
   }
 }
+@-webkit-keyframes to-2-5 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-163.72deg);
+            transform: rotate(-162.96deg);
+  }
+}
 @-webkit-keyframes to-2 {
   0% {
     -webkit-transform: rotate(-180deg);
@@ -2709,6 +2741,16 @@
   100% {
     -webkit-transform: rotate(-158.015deg);
             transform: rotate(-158.015deg);
+  }
+}
+@-webkit-keyframes to-1-5 {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-163.72deg);
+            transform: rotate(-163.72deg);
   }
 }
 @-webkit-keyframes to-1 {
