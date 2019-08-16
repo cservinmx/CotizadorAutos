@@ -20,6 +20,7 @@
 <script type="text/javascript" src="js/calculadora.js"></script>
 <script type="text/javascript" src="js/precios.js"></script>
 <script type="text/javascript" src="js/tabs.js"></script>
+<!--<script type="text/javascript" src="js/localstorage.js"></script>-->
 </head>
 
 <body>
@@ -75,16 +76,6 @@
    $dgarantia= isset($_GET['dgarantia']) ? $_GET['dgarantia'] : 0;
    $precio= isset($_GET['hprecio']) ? $_GET['hprecio'] : 1035;
 
-   /*
-   echo "modelo ".$modelo;
-   echo "tvehiculo ".$tvehiculo;
-   echo "transmision ".$transmision;
-   echo "pcontrato ".$pcontrato;
-   echo "kilometraje ".$kilometraje;
-   echo "vsustituto ".$vsustituto;
-   echo "tcobertura ".$tcobertura;
-   echo "tmovil ".$tmovil;
-   echo "dgarantia ".$dgarantia;*/
 
    $min=351; //351 Valor real se agrega un margen para que no salga del tacometro
    $max=2022; // 2022 Valor real se agrega un margen para que no salga del tacometro
@@ -407,6 +398,10 @@
    }
 
    switch($modelo){
+     case 0:
+     $img="img/hilux.png";
+     $link="toyota-hilux";
+     break;
      case 1:
      $img="img/hiluxsencilla.png";
      $link="toyota-hilux-single";
@@ -442,10 +437,6 @@
      case 9:
      $img="img/bego.png";
      $link="ford-bego";
-     break;
-     default:
-     $img="img/hilux.png";
-     $link="toyota-hilux";
      break;
    }
 
@@ -1068,11 +1059,9 @@
   						<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
 
   					</div>
-
   				</div>
   			</div>
   		</div>
-
   	</body>
   </html>
 
