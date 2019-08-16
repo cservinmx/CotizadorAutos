@@ -4824,7 +4824,7 @@ console.log("Entra precios tvehiculo "+tvehiculo+" modelo "+modelo+" transmision
       }
       break;
       case '6': //Corolla validado
-      if(transmision==0){//Man
+      if(transmision==1){//Man
         if(meses==1){ //24meses
           /*con cobertura con deducible*/
             if(tcobertura==1 && tmovil==0 && vsustituto==0){
