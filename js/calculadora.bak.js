@@ -134,11 +134,10 @@ $(document).ready(function(){
     }else{
       tmovil=0;
     }
-
     dgarantia=$("#dgarantia").val();
     if(this.value==1){//Seminuevo
         $('#modelo').val(modelo).change();
-        ocultaropciones(modelo);
+          ocultaropciones(modelo);
         $("#pcontrato option[value='0']").hide();//Ocultar contrato a 36m
         $("#modelo option[value='0']").hide();
         $("#modelo option[value='1']").hide();
@@ -169,11 +168,11 @@ $(document).ready(function(){
       $("#modelo option[value='7']").show();
       $("#modelo option[value='8']").show();
       $("#modelo option[value='9']").hide();
-      $("#pcontrato option[value='0']").show();//mostrar contrato a 36m
-      $("#tvehiculo option[value='0']").show();
+      $("#pcontrato option[value='0']").show();//Ocultar contrato a 36m
+
       precio=precios(tvehiculo, modelo, transmision, pcontrato, kilometraje, vsustituto, tcobertura, tmovil, dgarantia, m36, m24, m12, m24_s, m12_s);
       console.log(precio);
-      $("#modelo").val(modelo).change();
+      $('#modelo').val(modelo).change();
       ocultaropciones(modelo);
       $("#clas-per").attr("class",thepercent(precio));
       $("#precio").html(precio);
@@ -1200,243 +1199,162 @@ function ocultaropciones(modelo){
     console.log("oculta opciones del modelo: "+modelo);
     switch(modelo){
       case '0': //Hilux doble
-        /****
-          Hilux Doble; Solo transmisión Manual, Nuevo, 36M, 24M, 12M
-        **/
-        //$('#transmision').val('0').change();
-        /*Tipo de Transmisión Manual ->0  Automática->1 */
-        $("#transmision option[value='0']").show();
+        $('#transmision').val('0').change();
         $("#transmision option[value='0']").attr("selected",true);
         $("#transmision option[value='1']").hide(); //Oculta automatica
-        /* Tipo de vehículo Nuevo ->0 Seminuevo->1  */
-        $("#tvehiculo option[value='0']").show(); //Muestra nuevos
         $("#tvehiculo option[value='0']").attr("selected",true);
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
-
-        $("#op2-transmision option[value='0']").show();
         $("#op2-transmision option[value='0']").attr("selected",true);
         $("#op2-transmision option[value='1']").hide(); //Oculta automatica
-        $("#op2-tvehiculo option[value='0']").show(); //Muestra nuevos
         $("#op2-tvehiculo option[value='0']").attr("selected",true);
         $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
-
-        $("#op2-transmision option[value='0']").show();
         $("#op3-transmision option[value='0']").attr("selected",true);
         $("#op3-transmision option[value='1']").hide(); //Oculta automatica
-        $("#op3-tvehiculo option[value='0']").show(); //Muestra nuevos
         $("#op3-tvehiculo option[value='0']").attr("selected",true);
         $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '1': //Hilux sencilla
-        /*
-          Hilux sencilla Solo transmisión Manual, Nuevo, 36M, 24M, 12M
-        */
-        $("#transmision option[value='0']").show();
         $("#transmision option[value='0']").attr("selected",true);
         $("#transmision option[value='1']").hide(); //Oculta automatica
-        $("#tvehiculo option[value='0']").show();
         $("#tvehiculo option[value='0']").attr("selected",true);
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
-
-        $("#op2-transmision option[value='0']").show();
         $("#op2-transmision option[value='0']").attr("selected",true);
         $("#op2-transmision option[value='1']").hide(); //Oculta automatica
-        $("#op2-tvehiculo option[value='0']").show();
         $("#op2-tvehiculo option[value='0']").attr("selected",true);
         $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
-        $("#op3-tvehiculo option[value='0']").show();
-
-        $("#op3-transmision option[value='0']").show();
         $("#op3-transmision option[value='0']").attr("selected",true);
         $("#op3-transmision option[value='1']").hide(); //Oculta automatica
-        $("#op3-tvehiculo option[value='0']").show();
         $("#op3-tvehiculo option[value='0']").attr("selected",true);
         $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '2'://Prado
-        /*
-          Prado: Solo en Automatico; Nueva a 36m, 24m y 12m, seminueva a 24m y 12m,
-        */
-        $("#transmision option[value='1']").show();// muestra automatica
         $("#transmision option[value='1']").attr("selected",true);
         $("#transmision option[value='0']").hide(); //Oculta Manual
+        $("#transmision option[value='1']").show(); // muestra automatica
         $("#tvehiculo option[value='0']").show();// muestra nuevos
         $("#tvehiculo option[value='1']").show(); //muestra seminuevos
         $("#tvehiculo option[value='0']").attr("selected",true);
-
-        $("#op2-transmision option[value='1']").show(); // muestra automatica
         $("#op2-transmision option[value='1']").attr("selected",true);
         $("#op2-transmision option[value='0']").hide(); //Oculta Manual
-        $("#op2-tvehiculo option[value='1']").show(); //muestra seminuevos
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
         $("#op2-tvehiculo option[value='1']").attr("selected",true);
         $("#op2-tvehiculo option[value='0']").show();// muestra nuevos
-
-
-        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $("#op2-tvehiculo option[value='1']").show(); //muestra seminuevos
         $("#op3-transmision option[value='1']").attr("selected",true);
         $("#op3-transmision option[value='0']").hide(); //Oculta Manual
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
         $("#op3-tvehiculo option[value='0']").attr("selected",true);
         $("#op3-tvehiculo option[value='0']").show();// muestra nuevos
         $("#op3-tvehiculo option[value='1']").show(); //muestra seminuevos
 
       break;
       case '3': //Fortuner
-        /*
-          Fortuner Solo Nueva en automático y a 36m, 24m y 12m
-        */
-        //$('#transmision').val('1').change(); //DEfautl automatica
-        $("#transmision option[value='1']").show(); // muestra automatica
         $("#transmision option[value='1']").attr("selected",true);
         $("#transmision option[value='0']").hide(); //Oculta Manual
-        $("#tvehiculo option[value='0']").show();
-        $("#tvehiculo option[value='1']").hide();
+        $("#transmision option[value='1']").show(); // muestra automatica
+        $('#transmision').val('1').change(); //DEfautl automatica
+        $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
 
-      //$('#op2-transmision').val('1').change(); //DEfautl automatica
-        $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision option[value='1']").attr("selected",true);
         $("#op2-transmision option[value='0']").hide(); //Oculta Manual
-        $("#op2-tvehiculo option[value='0']").show();
-        $("#op2-tvehiculo option[value='1']").hide();
+        $("#op2-transmision option[value='1']").show(); // muestra automatica
+        $('#op2-transmision').val('1').change(); //DEfautl automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
 
-        $("#op3-transmision option[value='1']").show();
         $("#op3-transmision option[value='0']").hide(); //Oculta Manual
-        $("#op3-transmision option[value='1']").attr("selected",true);
-        //$('#op3-transmision').val('1').change(); //DEfautl automatica
-        $("#op3-tvehiculo option[value='0']").show();
-        $("#op3-tvehiculo option[value='1']").hide();
+        $("#op3-transmision option[value='1']").show(); // muestra automatica
+        $('#op3-transmision').val('1').change(); //DEfautl automatica
+        $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '4': //Rav 4
-        /*
-          Rav 4 Versiones Nuevo, Manual y automático a 36m, 24m y 12, seminuevo manual y automático a 24m y 12 m
-        */
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
-        $("#transmision option[value='1']").attr("selected",true);
-        $("#tvehiculo option[value='1']").show(); //muestra seminuevos
-        $("#tvehiculo option[value='0']").show(); //muestra nuevos
-        //$('#transmision').val('1').change();
-
+        $('#transmision').val('1').change();
+        $("#tvehiculo option[value='1']").show(); //oculta seminuevos
         $("#op2-transmision option[value='0']").show(); //muestra Manual
         $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision option[value='1']").attr("selected",true);
-        $("#op2-tvehiculo option[value='1']").show(); //muestra seminuevos
-        $("#op2-tvehiculo option[value='0']").show(); //muestra nuevos
-        //$('#op2-transmision').val('1').change();
-
+        $('#op2-transmision').val('1').change();
+        $("#op2-tvehiculo option[value='1']").show(); //oculta seminuevos
         $("#op3-transmision option[value='0']").show(); //muestra Manual
         $("#op3-transmision option[value='1']").show(); // muestra automatica
-        $("#op3-transmision option[value='1']").attr("selected",true);
-        $("#op3-tvehiculo option[value='1']").show(); //muestra seminuevos
-        $("#op3-tvehiculo option[value='0']").show(); //muestra nuevos
+        $('#op3-transmision').val('1').change();
+        $("#op3-tvehiculo option[value='1']").show(); //oculta seminuevos
       break;
       case '5': //Rush
-      /*
-        Rush Solo Nueva en automática y manual
-      */
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
-        $("#transmision option[value='1']").attr("selected",true);
-        //$('#transmision').val('1').change(); //DEfautl automatica
-        $("#tvehiculo option[value='0']").show();
+        $('#transmision').val('1').change(); //DEfautl automatica
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
 
         $("#op2-transmision option[value='0']").show(); //muestra Manual
         $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision option[value='1']").attr("selected",true);
-        $("#op2-tvehiculo option[value='0']").show();
+        $('#op2-transmision').val('1').change(); //DEfautl automatica
         $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
 
         $("#op3-transmision option[value='0']").show(); //muestra Manual
         $("#op3-transmision option[value='1']").show(); // muestra automatica
-        $("#op3-transmision option[value='1']").attr("selected",true);
-        $("#op3-tvehiculo option[value='0']").show();
+        $('#op3-transmision').val('1').change(); //DEfautl automatica
         $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
       case '6': //Corolla
-      /*
-        Corolla Solo en Automático Nuevo 36m, 24m, 12m, Seminuevo 24m y 12m
-      */
         $("#transmision option[value='0']").hide(); //Oculta Manual
         $("#transmision option[value='1']").show(); // muestra automatica
-        $("#transmision option[value='1']").attr("selected",true);
-        $("#tvehiculo option[value='1']").show(); //muestra seminuevos
-        $("#tvehiculo option[value='0']").show(); //muestra nuevos
+        $('#transmision').val('1').change(); //Default automatico
 
         $("#op2-transmision option[value='0']").hide(); //Oculta Manual
         $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision option[value='1']").attr("selected",true);
-        $("#op2-tvehiculo option[value='1']").show(); //muestra seminuevos
-        $("#op2-tvehiculo option[value='0']").show(); //muestra nuevos
+        $('#op2-transmision').val('1').change(); //Default automatico
 
         $("#op3-transmision option[value='0']").hide(); //Oculta Manual
         $("#op3-transmision option[value='1']").show(); // muestra automatica
-        $("#op3-transmision option[value='1']").attr("selected",true);
-        $("#op3-tvehiculo option[value='1']").show(); //muestra seminuevos
-        $("#op3-tvehiculo option[value='0']").show(); //muestra nuevos
+        $('#op3-transmision').val('1').change(); //Default automatico
       break;
       case '7': //Yaris
-        /*
-          Yaris Versiones Nuevo, Manual y automático a 36m, 24m y 12, seminuevo manual y automático a 24m y 12 m
-        */
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
-        $("#transmision option[value='1']").attr("selected",true);
-        $("#tvehiculo option[value='0']").show();
-        $("#tvehiculo option[value='1']").show();
+        $('#transmision').val('1').change();
+        $("#tvehiculo option[value='1']").show(); //oculta seminuevos
 
         $("#op2-transmision option[value='0']").show(); //muestra Manual
         $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision option[value='1']").attr("selected",true);
-        $("#op2-tvehiculo option[value='0']").show();
-        $("#op2-tvehiculo option[value='1']").show();
+        $('#op2-transmision').val('1').change();
+        $("#op2-tvehiculo option[value='1']").show(); //oculta seminuevos
 
         $("#op3-transmision option[value='0']").show(); //muestra Manual
         $("#op3-transmision option[value='1']").show(); // muestra automatica
-        $("#op3-transmision option[value='1']").attr("selected",true);
-        $("#op3-tvehiculo option[value='1']").show();
-        $("#op3-tvehiculo option[value='0']").show();
+        $('#op3-transmision').val('1').change();
+        $("#op3-tvehiculo option[value='1']").show(); //oculta seminuevos
       break;
       case '8': //Figo
-        /*
-        Figo Solo Nuevo en automatico 36m 24m y 12m manual  a 24m y 12m
-        */
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
-        //$('#transmision').val('1').change(); //DEfautl automatica
-        $("#transmision option[value='1']").attr("selected",true);
+        $('#transmision').val('1').change(); //DEfautl automatica
         $("#tvehiculo option[value='1']").hide(); //oculta seminuevos
-        $("#tvehiculo option[value='0']").show();
-
 
         $("#op2-transmision option[value='0']").show(); //muestra Manual
         $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision option[value='1']").attr("selected",true);
-        $("#op2-tvehiculo option[value='0']").show();
-        $("#op2-tvehiculo option[value='1']").hide();
+        $('#op2-transmision').val('1').change(); //DEfautl automatica
+        $("#op2-tvehiculo option[value='1']").hide(); //oculta seminuevos
 
         $("#op3-transmision option[value='0']").show(); //muestra Manual
         $("#op3-transmision option[value='1']").show(); // muestra automatica
-        $("#op3-transmision option[value='1']").attr("selected",true);
-        $("#op3-tvehiculo option[value='0']").show();
-        $("#op3-tvehiculo option[value='1']").hide();
+        $('#op3-transmision').val('1').change(); //DEfautl automatica
+        $("#op3-tvehiculo option[value='1']").hide(); //oculta seminuevos
       break;
-      case '9': //bego
-        /*
-          Bego; Solo Seminuevo, automático y manual 24m y 12m
-        */
+      case '9':
         $("#transmision option[value='0']").show(); //muestra Manual
         $("#transmision option[value='1']").show(); // muestra automatica
-        $("#transmision option[value='1']").attr("selected",true);
+        $('#transmision').val('1').change();
         $("#tvehiculo option[value='0']").hide(); //oculta nuevos
+      //  $('#tvehiculo').val('1').change();
 
         $("#op2-transmision option[value='0']").show(); //muestra Manual
         $("#op2-transmision option[value='1']").show(); // muestra automatica
-        $("#op2-transmision option[value='1']").attr("selected",true);
+        $('#op2-transmision').val('1').change();
         $("#op2-tvehiculo option[value='0']").show(); //oculta nuevos
 
         $("#op3-transmision option[value='0']").show(); //muestra Manual
         $("#op3-transmision option[value='1']").show(); // muestra automatica
-        $("#op3-transmision option[value='1']").attr("selected",true);
+        $('#op3-transmision').val('1').change();
         $("#op3-tvehiculo option[value='0']").show(); //oculta nuevos
       break;
 

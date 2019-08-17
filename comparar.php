@@ -20,6 +20,7 @@
 <script type="text/javascript" src="js/calculadora.js"></script>
 <script type="text/javascript" src="js/precios.js"></script>
 <script type="text/javascript" src="js/tabs.js"></script>
+<!--<script type="text/javascript" src="js/localstorage.js"></script>-->
 </head>
 
 <body class="cgray">
@@ -398,6 +399,10 @@ switch($percent){
 
 
 switch($modelo){
+  case 0:
+  $img="img/hilux.png";
+  $link="toyota-hilux";
+  break;
   case 1:
   $img="img/hiluxsencilla.png";
   $link="toyota-hilux-single";
@@ -434,10 +439,7 @@ switch($modelo){
   $img="img/bego.png";
   $link="ford-bego";
   break;
-  default:
-  $img="img/hilux.png";
-  $link="toyota-hilux";
-  break;
+
 }
 
 
@@ -923,12 +925,12 @@ switch($modelo){
         <div class="space30"></div>
        <div class="inlines">
            <div class="float-left chk" style="margin-left: 26.5px;">
-               Sí <input type="checkbox" id="op-3-4" name="tmovil3" value="1" checked="checked">
+               Sí <input type="checkbox" id="op-3-3" name="tmovil3" value="1" checked="checked">
                <label for="op-3-4"><span></span></label>
            </div>
            <div class="float-left chk" style="width: 78px;"></div>
            <div class="float-left chk">
-               No <input type="checkbox" id="op-3-5" name="tmovil3" value="0">
+               No <input type="checkbox" id="op-3-4" name="tmovil3" value="0">
                <label for="op-3-5"><span></span></label>
            </div>
            <div class="cearboth"></div>

@@ -16,9 +16,8 @@ $(document).ready(function(){
 
 
 $("#backbutton").click(function (event){
-
   $("#backform").submit();
-})
+});
 
 /**** Botones comparar *********/
 /* Boton comparar*/
@@ -49,10 +48,9 @@ $('.tabnew').click(function( event ) {
     tab="tab"+suma;
     if(numdiv==2){$(".tabnew").hide()}
     if(numdiv<3){
-      if(numdiv==1){ $("#op2").show(); $("#op2").click(); }
-      if(numdiv==2){ $("#op3").show(); $("#op3").click();}
-      //$('#newtab').append('<button class="tablinks" onclick="open(event, '+tab+')">Opción '+suma+'</button> ');
-    //  $('#newtab').html('<div class="noactive" id="'+tab+'"><div id="close-'+suma+'"class="closebutt"></div><div class="btitle">Opción '+suma+'</div></div>');
+      if(numdiv==1){ $("#op2").show(); $("#bt-op2").click(); }
+      if(numdiv==2){ $("#op3").show(); $("#bt-op3").click();}
+
     }else{
       //lert("Comparar hasta 3");
       $(".tabnew").hide();
@@ -60,29 +58,31 @@ $('.tabnew').click(function( event ) {
 });
 
 $(".closebutt").click(function(event){
-  $("#op1").removeClass("noactive");
-  $("#op1").addClass("active");
-  $("#op1").click();
-
-
+  console.log("close  tab");
   if(this.id=="c2"){
       numdiv--;
       $("#op2").hide();
-     $("#op1").click();
+      $("#tab2").hide();
+      $("#op1").removeClass("noactive");
+      $("#op1").addClass("active");
+      $("#bt-op1").click();
+      $("#tab1").show();
   }else{
-    numdiv--;
-    numdiv--;
-    $("#op3").hide();
-    $("#op1").click();
+      numdiv--;
+      numdiv--;
+      $("#op3").hide();
+      $("#tab3").hide();
+      $("#op1").removeClass("noactive");
+      $("#op1").addClass("active");
+      $("#bt-op1").click();
+      $("#tab1").show();
   }
-
-
-
   $(".tabnew").show();
 });
 
-$(".noactive, .active").click(function(event){
-  if(this.id=="op2"){
+$(".innertab").click(function(event){
+  console.log("buton tab");
+  if(this.id=="bt-op2"){
     $("#tab1").hide();
     $("#tab2").show();
     $("#op2").removeClass("noactive");
@@ -92,7 +92,7 @@ $(".noactive, .active").click(function(event){
     $("#op3").removeClass("active");
     $("#op3").addClass("noactive");
     $("#tab3").hide();
-  }else if(this.id=="op3") {
+  }else if(this.id=="bt-op3") {
 
     $("#tab1").hide();
     $("#tab2").hide();
@@ -103,7 +103,7 @@ $(".noactive, .active").click(function(event){
     $("#op2").addClass("noactive");
     $("#op1").removeClass("active");
     $("#op1").addClass("noactive");
-  }else if(this.id=="op1"){
+  }else if(this.id=="bt-op1"){
     $("#tab1").show();
     $("#tab2").hide();
     $("#tab3").hide();
