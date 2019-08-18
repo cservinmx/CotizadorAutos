@@ -668,7 +668,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="op2-precio">1035</span></div>
+        <div class="price">$<span id="op2-precio">1035</span><input type="hidden" id="op2-hprecio" name="op2-hprecio" value=""></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -679,7 +679,7 @@ switch($modelo){
           <div id="prebut"  class="prebut">
               <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
               <div class="space10"></div>
-              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;" title="">CONTÁCTENOS</a>
+              <a id="lightbox-btn" href="https://www.renting.cr/planes-renting.php" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;" title="">CONTÁCTENOS</a>
               <div class="space10"></div>
               <button type="button"  id="op2comparar" class="btt blue" style="border: none; color: #FFF;" >Comparar</button>
               <div class="space10"></div>
@@ -840,7 +840,7 @@ switch($modelo){
           </div>
         </div>
         <div class="space20"></div>
-        <div class="price">$<span id="op3-precio">1035</span></div>
+        <div class="price">$<span id="op3-precio">1035</span><input type="hidden" id="op3-hprecio" name="op3-hprecio" value=""></div>
         <div class="space30"></div>
         <div class="price_iva">* Precio no incluye I.V.A.</div>
         <div class="cearboth"></div>
@@ -851,7 +851,7 @@ switch($modelo){
           <div id="prebut"  class="prebut">
               <a href="https://www.renting.cr/flota.php" target="_blank" class="vermas">Ver más información</a>
               <div class="space10"></div>
-              <a id="lightbox-btn3" href="https://www.renting.cr/planes-renting.php?vehicle=toyota-hilux" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
+              <a id="lightbox-btn3" href="https://www.renting.cr/planes-renting.php" target="_blank" class="btt orange" style="text-decoration: none; color: #FFF; font-weight: bold;">CONTÁCTENOS</a>
               <div class="space10"></div>
               <a onclick="boreinicia();" href="#" style="text-decoration: none; color: #FFF;" class="btt blue">Reiniciar</a>
           </div>

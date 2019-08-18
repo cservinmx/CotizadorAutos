@@ -57,7 +57,7 @@ $('.tabnew').click(function( event ) {
 });
 
 $(".closebutt").click(function(event){
-  console.log("close  tab");
+  //console.log("close  tab");
   if(this.id=="c2"){
       numdiv--;
       $("#op2").hide();
@@ -80,7 +80,7 @@ $(".closebutt").click(function(event){
 });
 
 $(".innertab").click(function(event){
-  console.log("buton tab");
+  //console.log("buton tab");
   if(this.id=="bt-op2"){
     $("#tab1").hide();
     $("#tab2").show();
