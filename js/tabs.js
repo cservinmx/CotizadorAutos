@@ -34,7 +34,6 @@ $("#op2comparar").click(function(event){
 });
 /* Fin botón comparar*/
 $("#compareclose").click(function(event){
-
     $("#opcion3").hide();
     $("#compareclose").hide();
     $("#op2comparar").show();
