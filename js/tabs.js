@@ -16,9 +16,8 @@ $(document).ready(function(){
 
 
 $("#backbutton").click(function (event){
-
   $("#backform").submit();
-})
+});
 
 /**** Botones comparar *********/
 /* Boton comparar*/
@@ -35,7 +34,6 @@ $("#op2comparar").click(function(event){
 });
 /* Fin botón comparar*/
 $("#compareclose").click(function(event){
-
     $("#opcion3").hide();
     $("#compareclose").hide();
     $("#op2comparar").show();
@@ -49,8 +47,13 @@ $('.tabnew').click(function( event ) {
     tab="tab"+suma;
     if(numdiv==2){$(".tabnew").hide()}
     if(numdiv<3){
+<<<<<<< HEAD
       if(numdiv==1){ $("#op2").show(); $("#op2").click(); }
       if(numdiv==2){ $("#op3").show(); $("#op3").click();}
+=======
+      if(numdiv==1){ $("#op2").show(); $("#bt-op2").click(); }
+      if(numdiv==2){ $("#op3").show(); $("#bt-op3").click();}
+>>>>>>> 475fb1b7baa413766f928e49934b0cc1e9b8eaa7
 
     }else{
       //lert("Comparar hasta 3");
@@ -59,12 +62,17 @@ $('.tabnew').click(function( event ) {
 });
 
 $(".closebutt").click(function(event){
+<<<<<<< HEAD
 
+=======
+  //console.log("close  tab");
+>>>>>>> 475fb1b7baa413766f928e49934b0cc1e9b8eaa7
   if(this.id=="c2"){
       numdiv--;
       $("#tab1").show();
       $("#op2").hide();
       $("#tab2").hide();
+<<<<<<< HEAD
       console.log("entra opcion2 ");
       $("#op1").removeClass("noactive");
       $("#op1").addClass("active");
@@ -79,12 +87,28 @@ $(".closebutt").click(function(event){
     $("#tab3").hide();
     $("#op1").trigger( "click" );
     console.log("entra opcion 3");
+=======
+      $("#op1").removeClass("noactive");
+      $("#op1").addClass("active");
+      $("#bt-op1").click();
+      $("#tab1").show();
+  }else{
+      numdiv--;
+      numdiv--;
+      $("#op3").hide();
+      $("#tab3").hide();
+      $("#op1").removeClass("noactive");
+      $("#op1").addClass("active");
+      $("#bt-op1").click();
+      $("#tab1").show();
+>>>>>>> 475fb1b7baa413766f928e49934b0cc1e9b8eaa7
   }
   $(".tabnew").show();
 });
 
-$(".noactive, .active").click(function(event){
-  if(this.id=="op2"){
+$(".innertab").click(function(event){
+  //console.log("buton tab");
+  if(this.id=="bt-op2"){
     $("#tab1").hide();
     $("#tab2").show();
     $("#op2").removeClass("noactive");
@@ -94,7 +118,7 @@ $(".noactive, .active").click(function(event){
     $("#op3").removeClass("active");
     $("#op3").addClass("noactive");
     $("#tab3").hide();
-  }else if(this.id=="op3") {
+  }else if(this.id=="bt-op3") {
 
     $("#tab1").hide();
     $("#tab2").hide();
@@ -105,7 +129,7 @@ $(".noactive, .active").click(function(event){
     $("#op2").addClass("noactive");
     $("#op1").removeClass("active");
     $("#op1").addClass("noactive");
-  }else if(this.id=="op1"){
+  }else if(this.id=="bt-op1"){
     $("#tab1").show();
     $("#tab2").hide();
     $("#tab3").hide();
