@@ -51,8 +51,7 @@ $('.tabnew').click(function( event ) {
     if(numdiv<3){
       if(numdiv==1){ $("#op2").show(); $("#op2").click(); }
       if(numdiv==2){ $("#op3").show(); $("#op3").click();}
-      //$('#newtab').append('<button class="tablinks" onclick="open(event, '+tab+')">Opción '+suma+'</button> ');
-    //  $('#newtab').html('<div class="noactive" id="'+tab+'"><div id="close-'+suma+'"class="closebutt"></div><div class="btitle">Opción '+suma+'</div></div>');
+
     }else{
       //lert("Comparar hasta 3");
       $(".tabnew").hide();
@@ -60,25 +59,27 @@ $('.tabnew').click(function( event ) {
 });
 
 $(".closebutt").click(function(event){
-  //alert("entra");
-  $("#op1").removeClass("noactive");
-  $("#op1").addClass("active");
-  $("#op1").click();
-
 
   if(this.id=="c2"){
       numdiv--;
+      $("#tab1").show();
       $("#op2").hide();
-     $("#op1").click();
+      $("#tab2").hide();
+      console.log("entra opcion2 ");
+      $("#op1").removeClass("noactive");
+      $("#op1").addClass("active");
+      //$("#op1").click();
+      $("#op1").trigger( "click" );
+
   }else{
     numdiv--;
     numdiv--;
+    $("#tab1").show();
     $("#op3").hide();
-    $("#op1").click();
+    $("#tab3").hide();
+    $("#op1").trigger( "click" );
+    console.log("entra opcion 3");
   }
-
-
-
   $(".tabnew").show();
 });
 
